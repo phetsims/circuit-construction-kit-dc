@@ -14,7 +14,7 @@ For a description of this simulation, associated resources, and a link to the pu
 </a>
 
 ### Documentation
-The <a href="http://bit.ly/phet-development-overview" target="_blank">PhET Development Overview</a> is the most complete guide to PhET Simulation
+The <a href="http://bit.ly/phet-html5-development-overview" target="_blank">PhET Development Overview</a> is the most complete guide to PhET Simulation
 Development. This guide includes how to obtain simulation code and its dependencies, notes about architecture & design, how to test and build
 the sims, as well as other important information.
 
