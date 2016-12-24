@@ -14,14 +14,11 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
 
-  // If running as phet-io, load the API
-  require( 'ifphetio!PHET_IO/simulations/circuit-construction-kit-dc/circuit-construction-kit-dc-api' );
-
   // constants
   var tandem = Tandem.createRootTandem();
 
   // strings
-  var circuitConstructionKitDCTitleString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/circuit-construction-kit-dc.title' );
+  var circuitConstructionKitDcTitleString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/circuit-construction-kit-dc.title' );
 
   var simOptions = {
     credits: {
@@ -39,7 +36,7 @@ define( function( require ) {
   // however, when running the unit tests we don't also want to launch the simulation.
   if ( !window.circuitConstructionKitTestSuite ) {
     SimLauncher.launch( function() {
-      var sim = new Sim( circuitConstructionKitDCTitleString, [
+      var sim = new Sim( circuitConstructionKitDcTitleString, [
         new ExploreScreen( tandem.createTandem( 'exploreScreen' ) )
       ], simOptions );
       sim.start();
