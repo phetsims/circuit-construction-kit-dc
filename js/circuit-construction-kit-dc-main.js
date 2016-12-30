@@ -28,7 +28,8 @@ define( function( require ) {
       qualityAssurance: 'Steele Dalton, Bryce Griebenow, Elise Morgan, Ben Roberts',
       graphicArts: 'Bryce Gruneich'
     },
-    tandem: tandem
+    tandem: tandem,
+    accessibility: true
   };
 
   // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis
