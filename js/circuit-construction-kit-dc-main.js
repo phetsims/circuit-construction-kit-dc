@@ -13,6 +13,7 @@ define( function( require ) {
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
+  var Input = require( 'SCENERY/input/Input' );
 
   // constants
   var tandem = Tandem.createRootTandem();
