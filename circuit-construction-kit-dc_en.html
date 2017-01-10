@@ -13,8 +13,7 @@
 <body bgcolor="black">
 
 <!-- a11y - hidden until needed to prevent premature announcement -->
-<div id='aria-live-elements' hidden
-     style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; clip: rect(0px 0px 0px 0px); pointer-events: none;">
+<div id='aria-live-elements' hidden style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; clip: rect(0px 0px 0px 0px); pointer-events: none;">
   <p id="assertive" aria-live="assertive" aria-atomic="true"></p>
   <p id="polite" aria-live="polite" aria-atomic="true"></p>
   <p id="assertive-alert" aria-live="assertive" role="alert" aria-atomic="true"></p>
@@ -38,7 +37,7 @@ The logo dimensions are given in splash.svg, currently at width="273.172px" heig
 </div>
 
 <script type="text/javascript">
-  (function() {
+  ( function() {
     // Identify the brand (assume generated brand if not provided with query parameters)
     var brandMatch = location.search.match( /brand=([^&]+)/ );
     var brand = brandMatch ? decodeURIComponent( brandMatch[ 1 ] ) : 'adapted-from-phet';
@@ -48,31 +47,32 @@ The logo dimensions are given in splash.svg, currently at width="273.172px" heig
 
     // Preloads, with more included for phet-io brand
     var preloads = ( brand === 'phet-io' ) ? [
-        '../sherpa/lib/jquery-2.1.0.js',
-        '../sherpa/lib/lodash-2.4.1.js',
-        '../sherpa/lib/FileSaver-b8054a2.js',
-        '../assert/js/assert.js',
-        '../query-string-machine/js/QueryStringMachine.js',
-        '../chipper/js/initialize-globals.js',
-        '../chipper/js/getVersionForBrand.js',
-        '../sherpa/lib/seedrandom-2.4.2.js',
-        '../sherpa/lib/game-up-camera-1.0.0.js',
-        '../sherpa/lib/base64-js-1.2.0.js',
-        '../sherpa/lib/TextEncoderLite-3c9f6f0.js',
+      '../sherpa/lib/jquery-2.1.0.js', 
+      '../sherpa/lib/lodash-2.4.1.js', 
+      '../sherpa/lib/FileSaver-b8054a2.js', 
+      '../assert/js/assert.js', 
+      '../query-string-machine/js/QueryStringMachine.js', 
+      '../chipper/js/initialize-globals.js', 
+      '../chipper/js/getVersionForBrand.js', 
+      '../sherpa/lib/seedrandom-2.4.2.js', 
+      '../sherpa/lib/game-up-camera-1.0.0.js', 
+      '../sherpa/lib/base64-js-1.2.0.js', 
+      '../sherpa/lib/TextEncoderLite-3c9f6f0.js', 
       '../sherpa/lib/lz-string-1.4.4.js', 
-      '../sherpa/lib/jsondiffpatch-0.1.31.js'
+      '../sherpa/lib/jsondiffpatch-0.1.31.js', 
+      '../phet-io/js/phetio-query-parameters.js'
     ] : [
-        '../sherpa/lib/jquery-2.1.0.js',
-        '../sherpa/lib/lodash-2.4.1.js',
-        '../sherpa/lib/FileSaver-b8054a2.js',
-        '../assert/js/assert.js',
-        '../query-string-machine/js/QueryStringMachine.js',
-        '../chipper/js/initialize-globals.js',
-        '../chipper/js/getVersionForBrand.js',
-        '../sherpa/lib/seedrandom-2.4.2.js',
-      '../sherpa/lib/game-up-camera-1.0.0.js',
-        '../sherpa/lib/base64-js-1.2.0.js',
-        '../sherpa/lib/TextEncoderLite-3c9f6f0.js',
+      '../sherpa/lib/jquery-2.1.0.js', 
+      '../sherpa/lib/lodash-2.4.1.js', 
+      '../sherpa/lib/FileSaver-b8054a2.js', 
+      '../assert/js/assert.js', 
+      '../query-string-machine/js/QueryStringMachine.js', 
+      '../chipper/js/initialize-globals.js', 
+      '../chipper/js/getVersionForBrand.js', 
+      '../sherpa/lib/seedrandom-2.4.2.js', 
+      '../sherpa/lib/game-up-camera-1.0.0.js', 
+      '../sherpa/lib/base64-js-1.2.0.js', 
+      '../sherpa/lib/TextEncoderLite-3c9f6f0.js', 
       '../sherpa/lib/lz-string-1.4.4.js'
     ];
 
