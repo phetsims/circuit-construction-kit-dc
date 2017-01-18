@@ -19,28 +19,13 @@
   <p id="assertive-alert" aria-live="assertive" role="alert" aria-atomic="true"></p>
   <p id="polite-status" aria-live="polite" role="status" aria-atomic="true"></p>
 </div>
-
-<!--
-Subtract off half the image width and height to center it.
-Additionally, move the entire image up by a bit.  This is done by changing the top margin to be lower than 50%
-
-The logo dimensions are given in splash.svg, currently at width="273.172px" height="130.05px"
--->
-<img id="splash" style="position: absolute;top: 45%;left: 50%;margin-left: -137px;margin-top: -65px;">
-<div id="progressBar"
-     style="position:absolute;top:50%;left:50%;margin-left:-147px;margin-top:50px;width:273px;height:10px">
-  <svg>
-    <rect id="progressBarBackground" x="10" y="10" width="273" height="10" rx="3" ry="3"
-          style="stroke: white;stroke-width:1"></rect>
-    <rect id="progressBarForeground" x="10" y="10" width="0" height="10" rx="3" ry="3" style="fill:#6acef5;"></rect>
-  </svg>
-</div>
+<img id="splash" style="position: absolute;top: 50%;left: 50%;margin-top: -210px;margin-left: -252px;">
 
 <script type="text/javascript">
   ( function() {
     // Identify the brand (assume generated brand if not provided with query parameters)
     var brandMatch = location.search.match( /brand=([^&]+)/ );
-    var brand = brandMatch ? decodeURIComponent( brandMatch[ 1 ] ) : 'adapted-from-phet';
+    var brand = brandMatch ? decodeURIComponent( brandMatch[ 1 ] ) : 'phet';
 
     // Load the desired splash screen image
     document.getElementById( 'splash' ).src = '../brand/' + brand + '/images/splash.svg';
@@ -53,14 +38,12 @@ The logo dimensions are given in splash.svg, currently at width="273.172px" heig
       '../assert/js/assert.js', 
       '../query-string-machine/js/QueryStringMachine.js', 
       '../chipper/js/initialize-globals.js', 
-      '../chipper/js/getVersionForBrand.js', 
       '../sherpa/lib/seedrandom-2.4.2.js', 
       '../sherpa/lib/game-up-camera-1.0.0.js', 
       '../sherpa/lib/base64-js-1.2.0.js', 
       '../sherpa/lib/TextEncoderLite-3c9f6f0.js', 
       '../sherpa/lib/lz-string-1.4.4.js', 
-      '../sherpa/lib/jsondiffpatch-0.1.31.js', 
-      '../phet-io/js/phetio-query-parameters.js'
+      '../sherpa/lib/jsondiffpatch-0.1.31.js'
     ] : [
       '../sherpa/lib/jquery-2.1.0.js', 
       '../sherpa/lib/lodash-2.4.1.js', 
@@ -68,7 +51,6 @@ The logo dimensions are given in splash.svg, currently at width="273.172px" heig
       '../assert/js/assert.js', 
       '../query-string-machine/js/QueryStringMachine.js', 
       '../chipper/js/initialize-globals.js', 
-      '../chipper/js/getVersionForBrand.js', 
       '../sherpa/lib/seedrandom-2.4.2.js', 
       '../sherpa/lib/game-up-camera-1.0.0.js', 
       '../sherpa/lib/base64-js-1.2.0.js', 
