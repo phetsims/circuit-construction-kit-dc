@@ -1,6 +1,6 @@
 {
   "name": "circuit-construction-kit-dc",
-  "version": "1.0.0-dev.1",
+  "version": "1.0.0-dev.5",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "grunt": "~1.0.0",
-    "grunt-eslint": "~19.0.0"
+    "grunt-eslint": "~19.0.0",
+    "uglify-js": "~2.4.0",
+    "requirejs": "~2.1.8"
   },
   "phet": {
     "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC",
