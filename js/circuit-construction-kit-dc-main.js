@@ -9,7 +9,9 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var ExploreScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/explore/ExploreScreen' );
+  var ExploreScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/explore/ExploreScreen' );
+  var ObjectsScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/objects/ObjectsScreen' );
+  var LabScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/LabScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
@@ -48,7 +50,9 @@ define( function( require ) {
   if ( !window.circuitConstructionKitTestSuite ) {
     SimLauncher.launch( function() {
       var sim = new Sim( circuitConstructionKitDcTitleString, [
-        new ExploreScreen( tandem.createTandem( 'exploreScreen' ) )
+        new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
+        new ObjectsScreen( tandem.createTandem( 'exploreScreen' ) ),
+        new LabScreen( tandem.createTandem( 'exploreScreen' ) )
       ], simOptions );
       sim.start();
     } );
