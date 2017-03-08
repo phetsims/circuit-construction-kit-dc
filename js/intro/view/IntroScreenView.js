@@ -1,7 +1,7 @@
 // Copyright 2015-2016, University of Colorado Boulder
 
 /**
- * The view for the Explore screen.
+ * The view for the Intro screen.
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
@@ -18,7 +18,7 @@ define( function( require ) {
    * @param {Tandem} tandem
    * @constructor
    */
-  function ExploreScreenView( circuitConstructionKitScreenModel, tandem ) {
+  function IntroScreenView( circuitConstructionKitScreenModel, tandem ) {
     CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
       numberOfLeftBatteriesInToolbox: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
@@ -26,7 +26,7 @@ define( function( require ) {
     } );
   }
 
-  circuitConstructionKitDc.register( 'ExploreScreenView', ExploreScreenView );
+  circuitConstructionKitDc.register( 'IntroScreenView', IntroScreenView );
 
-  return inherit( CircuitConstructionKitScreenView, ExploreScreenView );
+  return inherit( CircuitConstructionKitScreenView, IntroScreenView );
 } );
