@@ -1,7 +1,7 @@
 // Copyright 2015-2016, University of Colorado Boulder
 
 /**
- * Model for the Objects Screen.
+ * Model for the Explore Screen.
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
@@ -16,11 +16,11 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function ObjectsScreenModel( tandem ) {
+  function ExploreScreenModel( tandem ) {
     CircuitConstructionKitModel.call( this, tandem );
   }
 
-  circuitConstructionKitDc.register( 'ObjectsScreenModel', ObjectsScreenModel );
+  circuitConstructionKitDc.register( 'ExploreScreenModel', ExploreScreenModel );
 
-  return inherit( CircuitConstructionKitModel, ObjectsScreenModel );
+  return inherit( CircuitConstructionKitModel, ExploreScreenModel );
 } );

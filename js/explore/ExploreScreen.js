@@ -2,7 +2,7 @@
 // TODO: Review, document, annotate, i18n, bring up to standards
 
 /**
- * The "Objects Screen", used in both Black Box Study and DC simulations.
+ * The "Explore Screen", used in both Black Box Study and DC simulations.
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
@@ -11,8 +11,8 @@ define( function( require ) {
 
   // modules
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  var ObjectsScreenModel = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/objects/model/ObjectsScreenModel' );
-  var ObjectsScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/objects/view/ObjectsScreenView' );
+  var ExploreScreenModel = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/explore/model/ExploreScreenModel' );
+  var ExploreScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/explore/view/ExploreScreenView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
@@ -38,7 +38,7 @@ define( function( require ) {
   /**
    * @constructor
    */
-  function ObjectsScreen( tandem ) {
+  function ExploreScreen( tandem ) {
 
     var icon = new Rectangle( 0, 0, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
       fill: BACKGROUND_COLOR
@@ -80,7 +80,7 @@ define( function( require ) {
     icon.addChild( vBox );
 
     var options = {
-      name: 'Objects', //TODO i18n
+      name: 'Explore', //TODO i18n
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: icon,
       tandem: tandem
@@ -88,15 +88,15 @@ define( function( require ) {
 
     Screen.call( this,
       function() {
-        return new ObjectsScreenModel( tandem.createTandem( 'model' ) );
+        return new ExploreScreenModel( tandem.createTandem( 'model' ) );
       },
       function( model ) {
-        return new ObjectsScreenView( model, tandem.createTandem( 'view' ) );
+        return new ExploreScreenView( model, tandem.createTandem( 'view' ) );
       },
       options );
   }
 
-  circuitConstructionKitDc.register( 'ObjectsScreen', ObjectsScreen );
+  circuitConstructionKitDc.register( 'ExploreScreen', ExploreScreen );
 
-  return inherit( Screen, ObjectsScreen );
+  return inherit( Screen, ExploreScreen );
 } );
