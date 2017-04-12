@@ -15,7 +15,7 @@ define( function( require ) {
   var IntroScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/view/IntroScreenView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
-  var CCKIcon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/common/CCKIcon' );
+  var CCKIcon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/common/view/CCKIcon' );
   var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
   var Property = require( 'AXON/Property' );
 
