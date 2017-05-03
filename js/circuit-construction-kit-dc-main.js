@@ -51,8 +51,8 @@ define( function( require ) {
     SimLauncher.launch( function() {
       var sim = new Sim( circuitConstructionKitDcTitleString, [
         new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-        new ExploreScreen( tandem.createTandem( 'introScreen' ) ),
-        new LabScreen( tandem.createTandem( 'introScreen' ) )
+        new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
+        new LabScreen( tandem.createTandem( 'labScreen' ) )
       ], simOptions );
       sim.start();
     } );
