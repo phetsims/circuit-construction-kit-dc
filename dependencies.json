@@ -1,11 +1,11 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.12 Thu May 04 2017 05:43:07 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.13 Fri May 05 2017 11:31:26 GMT-0600 (MDT)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
   },
   "axon": {
-    "sha": "5db49894e7dc1018e63f61c751accee25eb05bdd",
+    "sha": "6d36cd1dc24e8eff566e9dd4fd05e9c920511f58",
     "branch": "master"
   },
   "brand": {
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "edec17d26af7dd5513a79a354b5b271791e3559d",
+    "sha": "79ebe807a68608277f08c88d415eee2cd70da37c",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "1f9a42685f8af98fccb7509a4c5829a0c59d045d",
+    "sha": "41dd7ba8a45ab679d787a60451db78d004f62c7d",
     "branch": "master"
   },
   "dot": {
@@ -61,8 +61,8 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "4a37da0f104723407a2f81c6d4d40a09d2ce1356",
-    "branch": "HEAD"
+    "sha": "ed3e260b55d430c2980c854f27a4296f04ed6ebb",
+    "branch": "master"
   },
   "tandem": {
     "sha": "30603e6651945c5adf8fb0d4861d9fa74cea385e",
