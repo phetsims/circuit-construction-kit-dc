@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.14 Fri May 05 2017 14:09:27 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.15 Fri May 05 2017 15:02:32 GMT-0600 (MDT)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "3ac3a3511548e05c4a8543de435c2e2a0d98de51",
+    "sha": "7529c2ea2916e18bd5fdb2a678d6f13fa778d3fa",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "364c4301b2771bef58a638780deddb9d2bdca28b",
+    "sha": "4304618aa493e429ceab7af42dc86ae44d07a7ba",
     "branch": "master"
   },
   "dot": {
