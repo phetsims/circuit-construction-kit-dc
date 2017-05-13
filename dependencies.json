@@ -1,11 +1,11 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.17 Thu May 11 2017 14:49:45 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.18 Fri May 12 2017 22:20:57 GMT-0600 (MDT)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
   },
   "axon": {
-    "sha": "7b0852e8d6883fd3c2bdf9b295315b6c1cd456c2",
+    "sha": "2a218045fb542b4ded5e847241891baff093182d",
     "branch": "master"
   },
   "brand": {
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "f8bbf0459275ddb1388a0dae69d5bc58819cad79",
+    "sha": "8d15db785e17d1bc890dc1b59ad060cdf90443fa",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "72856c0c902ea4e34c0767a912d8f259fb89b95a",
+    "sha": "b8e26a422c494aa8621c23d82002e032b71bf27c",
     "branch": "master"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "b4442fa1a5447d12d25c23f546c78bd3d71a5adb",
+    "sha": "0cb347eb19100451b3d6af1ee11326dbf6da3009",
     "branch": "legends-of-learning"
   },
   "kite": {
@@ -49,7 +49,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "981a2796b9b77b89546bdc365cc0f2ba99dfc2ab",
+    "sha": "a83739b9a01f15c5cf07396c4a318e27a5a5422f",
     "branch": "master"
   },
   "scenery-phet": {
@@ -65,7 +65,7 @@
     "branch": "master"
   },
   "tandem": {
-    "sha": "744bc32fd84bfb1f22eff82ce030f3354fff9f16",
+    "sha": "294a42debbba0395d0eae356686bf01d67d84aca",
     "branch": "master"
   }
 }
