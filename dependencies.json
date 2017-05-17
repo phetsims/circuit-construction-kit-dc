@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.18 Fri May 12 2017 22:20:57 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.19 Wed May 17 2017 10:49:20 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
@@ -13,15 +13,15 @@
     "branch": "master"
   },
   "chipper": {
-    "sha": "9dde2e9c6a7278ee953ed456794974744ee76483",
+    "sha": "28f09348764c0e5f5f3f503b970ad4a8629e6127",
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "8d15db785e17d1bc890dc1b59ad060cdf90443fa",
+    "sha": "602a0f7b54bab5b0389be4bc68b019f1a3c8f972",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "b8e26a422c494aa8621c23d82002e032b71bf27c",
+    "sha": "7624c13ab6f3c8fec62d2ecbeb34ee240f3ed8bd",
     "branch": "master"
   },
   "dot": {
@@ -29,8 +29,8 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "0cb347eb19100451b3d6af1ee11326dbf6da3009",
-    "branch": "legends-of-learning"
+    "sha": "3df8295266f756350611df11651c2e7c30e75ff2",
+    "branch": "master"
   },
   "kite": {
     "sha": "7d2df183bd47abec3c3f7da477eb9172556f04e8",
@@ -53,7 +53,7 @@
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "9f07ef29363904ab0a9546e9f1791879b3482913",
+    "sha": "270d150e7dd32c714acc512ef4b9c0aade2a6a95",
     "branch": "master"
   },
   "sherpa": {
@@ -61,7 +61,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "1c94ce397c2ce12d2cc1cfa3e75be76bb7b7d02b",
+    "sha": "0dc4b82d3f285dac626d9795f5c61b9f7909f1f7",
     "branch": "master"
   },
   "tandem": {
