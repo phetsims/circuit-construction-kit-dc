@@ -22,7 +22,8 @@ define( function( require ) {
     CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
       numberOfLeftBatteriesInToolbox: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
-      showResetAllButton: true // The reset all button should be shown.
+      showResetAllButton: true, // The reset all button should be shown.
+      showSeriesAmmeters: true
     } );
   }
 
