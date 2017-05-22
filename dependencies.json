@@ -1,11 +1,11 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.21 Wed May 17 2017 20:52:29 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.22 Mon May 22 2017 10:04:45 GMT-0600 (MDT)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
   },
   "axon": {
-    "sha": "2a218045fb542b4ded5e847241891baff093182d",
+    "sha": "045bd1b0b51cbad35ba5fb80b2eb78908194094c",
     "branch": "master"
   },
   "brand": {
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "6c0581daf9950f648c5d86ee75e6578e8e545126",
+    "sha": "d2f4808bfefc38db474abe45bda8db462d7ffd14",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "27411cd811ecc8da447f4f52d5b095de2461d4be",
+    "sha": "1cd3453dc23d027356129abb67a96ad2e24c0e06",
     "branch": "master"
   },
   "dot": {
@@ -29,8 +29,8 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "0cb347eb19100451b3d6af1ee11326dbf6da3009",
-    "branch": "legends-of-learning"
+    "sha": "ba42b77c2c6a6ee84203420019b3a4ed1c97f2ea",
+    "branch": "master"
   },
   "kite": {
     "sha": "7d2df183bd47abec3c3f7da477eb9172556f04e8",
@@ -41,7 +41,7 @@
     "branch": "master"
   },
   "phetcommon": {
-    "sha": "11406a819816d3569f962effc9681aad5d908bca",
+    "sha": "29164892095a5d8f47687c3ed57dab5c3fe2d82b",
     "branch": "master"
   },
   "query-string-machine": {
@@ -53,7 +53,7 @@
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "270d150e7dd32c714acc512ef4b9c0aade2a6a95",
+    "sha": "ea17699b4b3a21a4c350730293581e64a0760364",
     "branch": "master"
   },
   "sherpa": {
@@ -61,11 +61,11 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "0dc4b82d3f285dac626d9795f5c61b9f7909f1f7",
+    "sha": "730865f5dc182fec93cf17090a7d37a29da2294e",
     "branch": "master"
   },
   "tandem": {
-    "sha": "294a42debbba0395d0eae356686bf01d67d84aca",
+    "sha": "7b8b818841b0621e5d2fd23bc648ad01aa033caa",
     "branch": "master"
   }
 }
