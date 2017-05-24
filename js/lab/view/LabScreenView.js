@@ -25,6 +25,10 @@ define( function( require ) {
       showResetAllButton: true, // The reset all button should be shown.
       showSeriesAmmeters: true,
       numberOfCoinsInToolbox: 4,
+      numberOfErasersInToolbox: 4,
+      numberOfDogsInToolbox: 4,
+      numberOfPencilsInToolbox: 4,
+      numberOfHandsInToolbox: 4,
       numberOfDollarBillsInToolbox: 4,
       numberOfPaperClipsInToolbox: 4
     } );

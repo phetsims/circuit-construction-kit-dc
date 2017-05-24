@@ -25,6 +25,10 @@ define( function( require ) {
       showResetAllButton: true, // The reset all button should be shown.
       showResistivityControl: false,
       showBatteryResistanceControl: false,
+      numberOfErasersInToolbox: 4,
+      numberOfDogsInToolbox: 4,
+      numberOfPencilsInToolbox: 4,
+      numberOfHandsInToolbox: 4,
       numberOfCoinsInToolbox: 4,
       numberOfDollarBillsInToolbox: 4,
       numberOfPaperClipsInToolbox: 4
