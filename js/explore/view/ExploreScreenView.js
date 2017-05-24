@@ -25,7 +25,8 @@ define( function( require ) {
       showResetAllButton: true, // The reset all button should be shown.
       showResistivityControl: false,
       showBatteryResistanceControl: false,
-      numberOfCoinsInToolbox: 4
+      numberOfCoinsInToolbox: 4,
+      numberOfDollarBillsInToolbox: 4
     } );
   }
 

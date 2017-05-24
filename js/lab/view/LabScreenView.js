@@ -24,7 +24,8 @@ define( function( require ) {
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
       showSeriesAmmeters: true,
-      numberOfCoinsInToolbox: 4
+      numberOfCoinsInToolbox: 4,
+      numberOfDollarBillsInToolbox: 4
     } );
   }
 
