@@ -26,7 +26,8 @@ define( function( require ) {
       showResistivityControl: false,
       showBatteryResistanceControl: false,
       numberOfCoinsInToolbox: 4,
-      numberOfDollarBillsInToolbox: 4
+      numberOfDollarBillsInToolbox: 4,
+      numberOfPaperClipsInToolbox: 4
     } );
   }
 

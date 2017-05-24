@@ -25,7 +25,8 @@ define( function( require ) {
       showResetAllButton: true, // The reset all button should be shown.
       showSeriesAmmeters: true,
       numberOfCoinsInToolbox: 4,
-      numberOfDollarBillsInToolbox: 4
+      numberOfDollarBillsInToolbox: 4,
+      numberOfPaperClipsInToolbox: 4
     } );
   }
 
