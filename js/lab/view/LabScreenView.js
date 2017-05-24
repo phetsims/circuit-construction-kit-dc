@@ -23,7 +23,8 @@ define( function( require ) {
       numberOfLeftBatteriesInToolbox: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
-      showSeriesAmmeters: true
+      showSeriesAmmeters: true,
+      numberOfCoinsInToolbox: 4
     } );
   }
 
