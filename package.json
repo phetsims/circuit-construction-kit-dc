@@ -15,7 +15,8 @@
       "circuit-construction-kit-common"
     ],
     "preload": [
-      "../sherpa/lib/lz-string-1.4.4.js"
+      "../sherpa/lib/lz-string-1.4.4.js",
+      "../sherpa/lib/Tween-r12.js"
     ]
   }
 }

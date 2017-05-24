@@ -16,10 +16,10 @@
 
 <!-- a11y - aria-live attribute is used to send alerts and status updates to screen readers, otherwise invisible -->
 <div id='aria-live-elements' style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; clip: rect(0px 0px 0px 0px); pointer-events: none;">
-  <p id="assertive" aria-live="assertive" aria-atomic="true"></p>
-  <p id="polite" aria-live="polite" aria-atomic="true"></p>
-  <p id="assertive-alert" aria-live="assertive" role="alert" aria-atomic="true"></p>
-  <p id="polite-status" aria-live="polite" role="status" aria-atomic="true"></p>
+  <p id="assertive" aria-live="assertive"></p>
+  <p id="polite" aria-live="polite"></p>
+  <p id="assertive-alert" aria-live="assertive" role="alert"></p>
+  <p id="polite-status" aria-live="polite" role="status"></p>
 </div>
 
 <!--
@@ -60,8 +60,9 @@ The logo dimensions are given in splash.svg, currently at width="273.172px" heig
       '../sherpa/lib/seedrandom-2.4.2.js', 
       '../sherpa/lib/game-up-camera-1.0.0.js', 
       '../sherpa/lib/base64-js-1.2.0.js', 
-      '../sherpa/lib/TextEncoderLite-3c9f6f0.js', 
-      '../sherpa/lib/lz-string-1.4.4.js'
+      '../sherpa/lib/TextEncoderLite-3c9f6f0.js',
+      '../sherpa/lib/lz-string-1.4.4.js',
+      '../sherpa/lib/Tween-r12.js'
     ];
 
     if ( brand === 'phet-io' ) {
