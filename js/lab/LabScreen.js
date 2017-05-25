@@ -17,7 +17,10 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
   var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
   var Property = require( 'AXON/Property' );
-  var CCKIcon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKIcon' );
+  var Image = require( 'SCENERY/nodes/Image' );
+
+  // images
+  var labScreenIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );
 
   /**
    * @constructor
@@ -27,7 +30,7 @@ define( function( require ) {
     var options = {
       name: 'Lab', //TODO i18n
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
-      homeScreenIcon: new CCKIcon( tandem.createTandem( 'icon' ) ),
+      homeScreenIcon: new Image( labScreenIcon ),
       tandem: tandem
     };
 
