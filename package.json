@@ -1,6 +1,6 @@
 {
   "name": "circuit-construction-kit-dc",
-  "version": "1.0.0-dev.44",
+  "version": "1.0.0-dev.45",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
@@ -18,5 +18,6 @@
       "../sherpa/lib/lz-string-1.4.4.js",
       "../sherpa/lib/Tween-r12.js"
     ]
-  }
+  },
+  "false": {}
 }
