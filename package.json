@@ -12,7 +12,8 @@
   "phet": {
     "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC",
     "phetLibs": [
-      "circuit-construction-kit-common"
+      "circuit-construction-kit-common",
+      "twixt"
     ],
     "preload": [
       "../sherpa/lib/lz-string-1.4.4.js",
