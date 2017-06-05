@@ -19,13 +19,16 @@ define( function( require ) {
   var Property = require( 'AXON/Property' );
   var CCKIcon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKIcon' );
 
+  // strings
+  var exploreString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/explore' );
+
   /**
    * @constructor
    */
   function ExploreScreen( tandem ) {
 
     var options = {
-      name: 'Explore', //TODO i18n
+      name: exploreString, //TODO i18n
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: new CCKIcon( tandem.createTandem( 'icon' ) ),
       tandem: tandem

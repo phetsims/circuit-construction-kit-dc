@@ -19,6 +19,9 @@ define( function( require ) {
   var Property = require( 'AXON/Property' );
   var Image = require( 'SCENERY/nodes/Image' );
 
+  // strings
+  var labString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/lab' );
+
   // images
   var labScreenIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );
 
@@ -28,7 +31,7 @@ define( function( require ) {
   function LabScreen( tandem ) {
 
     var options = {
-      name: 'Lab', //TODO i18n
+      name: labString, //TODO i18n
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: new Image( labScreenIcon ),
       tandem: tandem

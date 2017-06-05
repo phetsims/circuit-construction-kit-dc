@@ -22,6 +22,10 @@ define( function( require ) {
   var LightBulb = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/model/LightBulb' );
   var Vector2 = require( 'DOT/Vector2' );
 
+  // strings
+  var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/intro' );
+
+
   // constants
   var BACKGROUND_COLOR = CircuitConstructionKitConstants.BACKGROUND_COLOR;
 
@@ -43,7 +47,7 @@ define( function( require ) {
     icon.addChild( lightBulbIcon );
 
     var options = {
-      name: 'Intro', //TODO i18n
+      name: introString, //TODO i18n
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: icon,
       tandem: tandem
