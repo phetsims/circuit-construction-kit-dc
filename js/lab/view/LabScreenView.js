@@ -30,7 +30,8 @@ define( function( require ) {
       numberOfPencilsInToolbox: 4,
       numberOfHandsInToolbox: 4,
       numberOfDollarBillsInToolbox: 4,
-      numberOfPaperClipsInToolbox: 4
+      numberOfPaperClipsInToolbox: 4,
+      numberOfHighVoltageBatteriesInToolbox: 4
     } );
   }
 
