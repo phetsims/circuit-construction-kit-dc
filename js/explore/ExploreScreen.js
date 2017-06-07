@@ -1,8 +1,7 @@
-// Copyright 2015-2016, University of Colorado Boulder
-// TODO: Review, document, annotate, i18n, bring up to standards
+// Copyright 2015-2017, University of Colorado Boulder
 
 /**
- * The "Explore Screen", used in both Black Box Study and DC simulations.
+ * The "Explore" Screen for the Circuit Construction Kit DC simulations.
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
@@ -23,6 +22,7 @@ define( function( require ) {
   var exploreString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/explore' );
 
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function ExploreScreen( tandem ) {
@@ -34,14 +34,12 @@ define( function( require ) {
       tandem: tandem
     };
 
-    Screen.call( this,
-      function() {
-        return new ExploreScreenModel( tandem.createTandem( 'model' ) );
-      },
-      function( model ) {
-        return new ExploreScreenView( model, tandem.createTandem( 'view' ) );
-      },
-      options );
+    Screen.call(
+      this,
+      function() { return new ExploreScreenModel( tandem.createTandem( 'model' ) ); },
+      function( model ) { return new ExploreScreenView( model, tandem.createTandem( 'view' ) ); },
+      options
+    );
   }
 
   circuitConstructionKitDc.register( 'ExploreScreen', ExploreScreen );

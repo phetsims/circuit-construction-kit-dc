@@ -1,8 +1,7 @@
-// Copyright 2015-2016, University of Colorado Boulder
-// TODO: Review, document, annotate, i18n, bring up to standards
+// Copyright 2015-2017, University of Colorado Boulder
 
 /**
- * The "Intro Screen", used in both Black Box Study and DC simulations.
+ * The "Intro" for the Circuit Construction Kit: DC simulation.
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
@@ -25,23 +24,22 @@ define( function( require ) {
   // strings
   var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/intro' );
 
-
   // constants
   var BACKGROUND_COLOR = CircuitConstructionKitConstants.BACKGROUND_COLOR;
 
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function IntroScreen( tandem ) {
 
+    // Create the icon
     var icon = new Rectangle( 0, 0, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
       fill: BACKGROUND_COLOR
     } );
-
     var groupTandem = tandem.createGroupTandem( 'lightBulbIconGroup' );
     var lightBulbIconModel = LightBulb.createAtPosition( new Vector2( 0, 0 ), groupTandem, groupTandem.createNextTandem() );
     var lightBulbIcon = new CCKLightBulbNode( null, null, lightBulbIconModel, new Property( true ), new Property( 'lifelike' ), tandem.createTandem( 'lightBulbIcon' ), { icon: true } );
-
     lightBulbIcon.mutate( { scale: icon.height * 0.8 / lightBulbIcon.height } );
     lightBulbIcon.center = icon.center;
     icon.addChild( lightBulbIcon );
@@ -53,13 +51,10 @@ define( function( require ) {
       tandem: tandem
     };
 
-    Screen.call( this,
-      function() {
-        return new IntroScreenModel( tandem.createTandem( 'model' ) );
-      },
-      function( model ) {
-        return new IntroScreenView( model, tandem.createTandem( 'view' ) );
-      },
+    Screen.call(
+      this,
+      function() { return new IntroScreenModel( tandem.createTandem( 'model' ) ); },
+      function( model ) { return new IntroScreenView( model, tandem.createTandem( 'view' ) ); },
       options );
   }
 

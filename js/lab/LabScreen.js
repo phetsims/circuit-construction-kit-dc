@@ -1,8 +1,7 @@
-// Copyright 2015-2016, University of Colorado Boulder
-// TODO: Review, document, annotate, i18n, bring up to standards
+// Copyright 2015-2017, University of Colorado Boulder
 
 /**
- * The "Lab Screen", used in both Black Box Study and DC simulations.
+ * The "Lab" Screen for the Circuit Construction Kit: DC simulation.
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
@@ -26,6 +25,7 @@ define( function( require ) {
   var labScreenIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );
 
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function LabScreen( tandem ) {
@@ -37,14 +37,12 @@ define( function( require ) {
       tandem: tandem
     };
 
-    Screen.call( this,
-      function() {
-        return new LabScreenModel( tandem.createTandem( 'model' ) );
-      },
-      function( model ) {
-        return new LabScreenView( model, tandem.createTandem( 'view' ) );
-      },
-      options );
+    Screen.call(
+      this,
+      function() { return new LabScreenModel( tandem.createTandem( 'model' ) ); },
+      function( model ) { return new LabScreenView( model, tandem.createTandem( 'view' ) ); },
+      options
+    );
   }
 
   circuitConstructionKitDc.register( 'LabScreen', LabScreen );
