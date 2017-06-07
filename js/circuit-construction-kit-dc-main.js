@@ -27,9 +27,9 @@ define( function( require ) {
     credits: {
       leadDesign: 'Amy Rouinfar',
       softwareDevelopment: 'Sam Reid',
-      team: 'Michael Dubson, Ariel Paul, Kathy Perkins',
+      team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Denzell Barnett',
       qualityAssurance: 'Steele Dalton, Bryce Griebenow, Elise Morgan, Ben Roberts',
-      graphicArts: 'Bryce Gruneich'
+      graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
     },
     tandem: tandem,
     accessibility: true
