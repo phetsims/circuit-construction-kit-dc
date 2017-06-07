@@ -31,7 +31,7 @@ define( function( require ) {
   function LabScreen( tandem ) {
 
     var options = {
-      name: labString, //TODO i18n
+      name: labString,
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: new Image( labScreenIcon ),
       tandem: tandem

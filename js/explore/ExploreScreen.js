@@ -28,7 +28,7 @@ define( function( require ) {
   function ExploreScreen( tandem ) {
 
     var options = {
-      name: exploreString, //TODO i18n
+      name: exploreString,
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: new CCKIcon( tandem.createTandem( 'icon' ) ),
       tandem: tandem

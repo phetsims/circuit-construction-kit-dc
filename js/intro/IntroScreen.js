@@ -47,7 +47,7 @@ define( function( require ) {
     icon.addChild( lightBulbIcon );
 
     var options = {
-      name: introString, //TODO i18n
+      name: introString,
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
       homeScreenIcon: icon,
       tandem: tandem
