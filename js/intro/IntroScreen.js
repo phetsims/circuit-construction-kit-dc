@@ -38,7 +38,7 @@ define( function( require ) {
       fill: BACKGROUND_COLOR
     } );
     var groupTandem = tandem.createGroupTandem( 'lightBulbIconGroup' );
-    var lightBulbIconModel = LightBulb.createAtPosition( new Vector2( 0, 0 ), groupTandem, groupTandem.createNextTandem() );
+    var lightBulbIconModel = LightBulb.createAtPosition( new Vector2( 0, 0 ), groupTandem, CircuitConstructionKitConstants.DEFAULT_RESISTANCE, groupTandem.createNextTandem() );
     var lightBulbIcon = new CCKLightBulbNode( null, null, lightBulbIconModel, new Property( true ), new Property( 'lifelike' ), tandem.createTandem( 'lightBulbIcon' ), { icon: true } );
     lightBulbIcon.mutate( { scale: icon.height * 0.8 / lightBulbIcon.height } );
     lightBulbIcon.center = icon.center;
