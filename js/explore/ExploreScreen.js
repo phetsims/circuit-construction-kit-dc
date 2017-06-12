@@ -16,10 +16,13 @@ define( function( require ) {
   var Screen = require( 'JOIST/Screen' );
   var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
   var Property = require( 'AXON/Property' );
-  var CCKIcon = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKIcon' );
+  var Image = require( 'SCENERY/nodes/Image' );
 
   // strings
   var exploreString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/explore' );
+
+  // images
+  var exploreScreenIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_DC/explore-screen-icon.png' );
 
   /**
    * @param {Tandem} tandem
@@ -30,7 +33,7 @@ define( function( require ) {
     var options = {
       name: exploreString,
       backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
-      homeScreenIcon: new CCKIcon( tandem.createTandem( 'icon' ) ),
+      homeScreenIcon: new Image( exploreScreenIcon ),
       tandem: tandem
     };
 
