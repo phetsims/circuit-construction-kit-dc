@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.62 Mon Jun 12 2017 12:17:51 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.63 Mon Jun 12 2017 15:38:37 GMT-0600 (MDT)",
   "assert": {
     "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
     "branch": "master"
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "8b7c003dab6df8f7af01984459b516edd0eb3b43",
+    "sha": "6c85ef16939fffe0a9f4fcfe2f0a8894995cb2a3",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "dd1f14cca3a77961f44fe1169e117b9750827acc",
+    "sha": "8042d8018d9b9cd706727d70073f6a723480236e",
     "branch": "master"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "11deb8aa2aabc1a4c6e9a34986292dbdce92ec81",
+    "sha": "b35547e9747cd53d5b3f702ac3caa95a907961d3",
     "branch": "master"
   },
   "kite": {
@@ -49,7 +49,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "f9b6cd2a03c2208c2e19c9f65fe29d374fe937aa",
+    "sha": "c2248424f0a27f1ae13694addc2622a3686c077e",
     "branch": "master"
   },
   "scenery-phet": {
