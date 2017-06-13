@@ -11,7 +11,7 @@ define( function( require ) {
   // modules
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var CCKScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKScreenView' );
+  var CircuitConstructionKitScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitConstructionKitScreenView' );
 
   /**
    * @param {CircuitConstructionKitModel} circuitConstructionKitScreenModel
@@ -19,7 +19,7 @@ define( function( require ) {
    * @constructor
    */
   function LabScreenView( circuitConstructionKitScreenModel, tandem ) {
-    CCKScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
+    CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
       numberOfLeftBatteriesInToolbox: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
@@ -37,5 +37,5 @@ define( function( require ) {
 
   circuitConstructionKitDc.register( 'LabScreenView', LabScreenView );
 
-  return inherit( CCKScreenView, LabScreenView );
+  return inherit( CircuitConstructionKitScreenView, LabScreenView );
 } );
