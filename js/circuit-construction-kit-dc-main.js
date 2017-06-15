@@ -18,6 +18,7 @@ define( function( require ) {
   var Input = require( 'SCENERY/input/Input' );
   var SolderNode = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/SolderNode' );
   var ChargeNode = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/ChargeNode' );
+  var VertexNode = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/VertexNode' );
 
   // constants
   var tandem = Tandem.createRootTandem();
@@ -54,16 +55,17 @@ define( function( require ) {
 
       // Create any simulation-specific raster images
       SolderNode.init( function() {
-
         ChargeNode.init( function() {
+          VertexNode.init( function() {
 
-          // Launch the simulation once everything is ready
-          var sim = new Sim( circuitConstructionKitDcTitleString, [
-            new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-            new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
-            new LabScreen( tandem.createTandem( 'labScreen' ) )
-          ], simOptions );
-          sim.start();
+            // Launch the simulation once everything is ready
+            var sim = new Sim( circuitConstructionKitDcTitleString, [
+              new IntroScreen( tandem.createTandem( 'introScreen' ) ),
+              new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
+              new LabScreen( tandem.createTandem( 'labScreen' ) )
+            ], simOptions );
+            sim.start();
+          } );
         } );
       } );
     } );
