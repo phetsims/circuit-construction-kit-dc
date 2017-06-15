@@ -16,6 +16,7 @@ define( function( require ) {
   var SimLauncher = require( 'JOIST/SimLauncher' );
   var Tandem = require( 'TANDEM/Tandem' );
   var Input = require( 'SCENERY/input/Input' );
+  var SolderNode = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/SolderNode' );
 
   // constants
   var tandem = Tandem.createRootTandem();
@@ -49,12 +50,18 @@ define( function( require ) {
   // running the unit tests we don't also want to launch the simulation.
   if ( !window.circuitConstructionKitTestSuite ) {
     SimLauncher.launch( function() {
-      var sim = new Sim( circuitConstructionKitDcTitleString, [
-        new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-        new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
-        new LabScreen( tandem.createTandem( 'labScreen' ) )
-      ], simOptions );
-      sim.start();
+
+      // Create any simulation-specific raster images
+      SolderNode.init( function() {
+
+        // Launch the simulation once everything is ready
+        var sim = new Sim( circuitConstructionKitDcTitleString, [
+          new IntroScreen( tandem.createTandem( 'introScreen' ) ),
+          new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
+          new LabScreen( tandem.createTandem( 'labScreen' ) )
+        ], simOptions );
+        sim.start();
+      } );
     } );
   }
 } );
