@@ -51,24 +51,21 @@ define( function( require ) {
   // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In
   // order to load the classes into an accessible namespace, the *-config.js and *-main.js are loaded however, when
   // running the unit tests we don't also want to launch the simulation.
+  // TODO: use todatanodeurl
   if ( !window.circuitConstructionKitTestSuite ) {
     SimLauncher.launch( function() {
 
       // Create any simulation-specific raster images
-      SolderNode.init( function() {
-        ChargeNode.init( function() {
-          VertexNode.init( function() {
-            SwitchNode.init( function() {
+      ChargeNode.init( function() {
+        SwitchNode.init( function() {
 
-              // Launch the simulation once everything is ready
-              var sim = new Sim( circuitConstructionKitDcTitleString, [
-                new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-                new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
-                new LabScreen( tandem.createTandem( 'labScreen' ) )
-              ], simOptions );
-              sim.start();
-            } );
-          } );
+          // Launch the simulation once everything is ready
+          var sim = new Sim( circuitConstructionKitDcTitleString, [
+            new IntroScreen( tandem.createTandem( 'introScreen' ) ),
+            new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
+            new LabScreen( tandem.createTandem( 'labScreen' ) )
+          ], simOptions );
+          sim.start();
         } );
       } );
     } );
