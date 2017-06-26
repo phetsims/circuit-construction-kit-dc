@@ -55,16 +55,14 @@ define( function( require ) {
 
       // Create any simulation-specific raster images
       ChargeNode.init( function() {
-        SwitchNode.init( function() {
 
-          // Launch the simulation once everything is ready
-          var sim = new Sim( circuitConstructionKitDcTitleString, [
-            new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-            new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
-            new LabScreen( tandem.createTandem( 'labScreen' ) )
-          ], simOptions );
-          sim.start();
-        } );
+        // Launch the simulation once everything is ready
+        var sim = new Sim( circuitConstructionKitDcTitleString, [
+          new IntroScreen( tandem.createTandem( 'introScreen' ) ),
+          new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
+          new LabScreen( tandem.createTandem( 'labScreen' ) )
+        ], simOptions );
+        sim.start();
       } );
     } );
   }
