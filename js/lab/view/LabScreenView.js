@@ -20,18 +20,18 @@ define( function( require ) {
    */
   function LabScreenView( circuitConstructionKitScreenModel, tandem ) {
     CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
-      numberOfLeftBatteriesInToolbox: 0, // Only show right-facing batteries.
+      numberOfLeftBatteries: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
       showSeriesAmmeters: true,
-      numberOfCoinsInToolbox: 4,
-      numberOfErasersInToolbox: 4,
-      numberOfDogsInToolbox: 4,
-      numberOfPencilsInToolbox: 4,
-      numberOfHandsInToolbox: 4,
-      numberOfDollarBillsInToolbox: 4,
-      numberOfPaperClipsInToolbox: 4,
-      numberOfHighVoltageBatteriesInToolbox: 4
+      numberOfCoins: 4,
+      numberOfErasers: 4,
+      numberOfDogs: 4,
+      numberOfPencils: 4,
+      numberOfHands: 4,
+      numberOfDollarBills: 4,
+      numberOfPaperClips: 4,
+      numberOfHighVoltageBatteries: 4
     } );
   }
 
