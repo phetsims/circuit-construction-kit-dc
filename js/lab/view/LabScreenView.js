@@ -31,7 +31,9 @@ define( function( require ) {
       numberOfHands: 4,
       numberOfDollarBills: 4,
       numberOfPaperClips: 4,
-      numberOfHighVoltageBatteries: 4
+      numberOfHighVoltageBatteries: 4,
+      numberOfHighResistanceResistors: 4,
+      numberOfHighResistanceLightBulbs: 4
     } );
   }
 
