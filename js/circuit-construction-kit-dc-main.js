@@ -9,6 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
+  require( 'SCENERY/nodes/Image' ); // Image is required for making toDataURLNodeSynchronous work in the built version
   var IntroScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/IntroScreen' );
   var ExploreScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/explore/ExploreScreen' );
   var LabScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/LabScreen' );
