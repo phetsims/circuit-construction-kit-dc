@@ -39,10 +39,10 @@ require.config( {
     SCENERY_PHET: '../../scenery-phet/js',
     SUN: '../../sun/js',
     TANDEM: '../../tandem/js',
-    TWIXT: '../../twixt/js',
 
     // sim dependencies
     CIRCUIT_CONSTRUCTION_KIT_COMMON: '../../circuit-construction-kit-common/js',
+    TWIXT: '../../twixt/js',
 
     // this sim
     CIRCUIT_CONSTRUCTION_KIT_DC: '.'
