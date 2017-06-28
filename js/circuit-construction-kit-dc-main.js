@@ -22,7 +22,8 @@ define( function( require ) {
   var tandem = Tandem.createRootTandem();
 
   // strings
-  var circuitConstructionKitDcTitleString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/circuit-construction-kit-dc.title' );
+  var circuitConstructionKitDcTitleString =
+    require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/circuit-construction-kit-dc.title' );
 
   var simOptions = {
     credits: {

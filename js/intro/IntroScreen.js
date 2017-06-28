@@ -17,7 +17,8 @@ define( function( require ) {
   var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
   var Property = require( 'AXON/Property' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
-  var CircuitConstructionKitLightBulbNode = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitConstructionKitLightBulbNode' );
+  var CircuitConstructionKitLightBulbNode =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitConstructionKitLightBulbNode' );
   var LightBulb = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/model/LightBulb' );
   var Vector2 = require( 'DOT/Vector2' );
 
@@ -34,12 +35,26 @@ define( function( require ) {
   function IntroScreen( tandem ) {
 
     // Create the icon
-    var icon = new Rectangle( 0, 0, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
-      fill: BACKGROUND_COLOR
-    } );
+    var icon = new Rectangle( 0, 0,
+      Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
+        fill: BACKGROUND_COLOR
+      } );
     var groupTandem = tandem.createGroupTandem( 'lightBulbIconGroup' );
-    var lightBulbIconModel = LightBulb.createAtPosition( new Vector2( 0, 0 ), groupTandem, CircuitConstructionKitConstants.DEFAULT_RESISTANCE, groupTandem.createNextTandem() );
-    var lightBulbIcon = new CircuitConstructionKitLightBulbNode( null, null, lightBulbIconModel, new Property( true ), new Property( 'lifelike' ), tandem.createTandem( 'lightBulbIcon' ), { icon: true } );
+    var lightBulbIconModel = LightBulb.createAtPosition(
+      new Vector2( 0, 0 ),
+      groupTandem,
+      CircuitConstructionKitConstants.DEFAULT_RESISTANCE,
+      groupTandem.createNextTandem()
+    );
+    var lightBulbIcon = new CircuitConstructionKitLightBulbNode(
+      null,
+      null,
+      lightBulbIconModel,
+      new Property( true ),
+      new Property( 'lifelike' ),
+      tandem.createTandem( 'lightBulbIcon' ), {
+        icon: true
+      } );
     lightBulbIcon.mutate( { scale: icon.height * 0.8 / lightBulbIcon.height } );
     lightBulbIcon.center = icon.center;
     icon.addChild( lightBulbIcon );
