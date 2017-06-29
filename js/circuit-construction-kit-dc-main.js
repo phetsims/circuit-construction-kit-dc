@@ -28,8 +28,8 @@ define( function( require ) {
   var simOptions = {
     credits: {
       leadDesign: 'Amy Rouinfar',
-      softwareDevelopment: 'Sam Reid',
-      team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Denzell Barnett',
+      softwareDevelopment: 'Sam Reid, Denzell Barnett',
+      team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
       qualityAssurance: 'Steele Dalton, Bryce Griebenow, Elise Morgan, Ben Roberts',
       graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
     },
