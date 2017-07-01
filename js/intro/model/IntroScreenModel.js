@@ -14,6 +14,7 @@ define( function( require ) {
   var inherit = require( 'PHET_CORE/inherit' );
 
   /**
+   * @param {Tandem} tandem
    * @constructor
    */
   function IntroScreenModel( tandem ) {

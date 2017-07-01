@@ -26,6 +26,8 @@ define( function( require ) {
       showResetAllButton: true, // The reset all button should be shown.
       showResistivityControl: false,
       showBatteryResistanceControl: false,
+
+      // 4 of each of the following "grab bag" items
       numberOfErasers: 4,
       numberOfDogs: 4,
       numberOfPencils: 4,

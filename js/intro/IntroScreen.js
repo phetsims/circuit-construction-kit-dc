@@ -25,9 +25,6 @@ define( function( require ) {
   // strings
   var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/intro' );
 
-  // constants
-  var BACKGROUND_COLOR = CircuitConstructionKitConstants.BACKGROUND_COLOR;
-
   /**
    * @param {Tandem} tandem
    * @constructor
@@ -37,7 +34,7 @@ define( function( require ) {
     // Create the icon
     var icon = new Rectangle( 0, 0,
       Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
-        fill: BACKGROUND_COLOR
+        fill: CircuitConstructionKitConstants.BACKGROUND_COLOR
       } );
     var groupTandem = tandem.createGroupTandem( 'lightBulbIconGroup' );
     var lightBulbIconModel = LightBulb.createAtPosition(
