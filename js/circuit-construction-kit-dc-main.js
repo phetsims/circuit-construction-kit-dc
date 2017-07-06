@@ -11,7 +11,6 @@ define( function( require ) {
   // modules
   require( 'SCENERY/nodes/Image' ); // Image is required for making toDataURLNodeSynchronous work in the built version
   var IntroScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/IntroScreen' );
-  var ExploreScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/explore/ExploreScreen' );
   var LabScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/LabScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
@@ -55,7 +54,6 @@ define( function( require ) {
       // Launch the simulation once everything is ready
       var sim = new Sim( circuitConstructionKitDcTitleString, [
         new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-        new ExploreScreen( tandem.createTandem( 'exploreScreen' ) ),
         new LabScreen( tandem.createTandem( 'labScreen' ) )
       ], simOptions );
       sim.start();

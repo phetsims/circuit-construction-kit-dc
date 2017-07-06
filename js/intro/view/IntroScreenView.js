@@ -25,7 +25,16 @@ define( function( require ) {
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
       showResistivityControl: false,
-      showBatteryResistanceControl: false
+      showBatteryResistanceControl: false,
+
+      // 4 of each of the following "grab bag" items
+      numberOfErasers: 1,
+      numberOfDogs: 1,
+      numberOfPencils: 1,
+      numberOfHands: 1,
+      numberOfCoins: 1,
+      numberOfDollarBills: 1,
+      numberOfPaperClips: 1
     } );
   }
 
