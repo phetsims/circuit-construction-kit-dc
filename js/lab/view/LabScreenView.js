@@ -25,13 +25,13 @@ define( function( require ) {
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
       showSeriesAmmeters: true,
-      numberOfCoins: 4,
-      numberOfErasers: 4,
-      numberOfDogs: 4,
-      numberOfPencils: 4,
-      numberOfHands: 4,
-      numberOfDollarBills: 4,
-      numberOfPaperClips: 4,
+      numberOfCoins: 2,
+      numberOfErasers: 2,
+      numberOfDogs: 2,
+      numberOfPencils: 2,
+      numberOfHands: 2,
+      numberOfDollarBills: 2,
+      numberOfPaperClips: 2,
       numberOfHighVoltageBatteries: 4,
       numberOfHighResistanceResistors: 4,
       numberOfHighResistanceLightBulbs: 4
