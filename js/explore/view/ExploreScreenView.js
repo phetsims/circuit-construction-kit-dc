@@ -28,13 +28,13 @@ define( function( require ) {
       showBatteryResistanceControl: false,
 
       // 4 of each of the following "grab bag" items
-      numberOfErasers: 2,
-      numberOfDogs: 2,
-      numberOfPencils: 2,
-      numberOfHands: 2,
-      numberOfCoins: 2,
-      numberOfDollarBills: 2,
-      numberOfPaperClips: 2
+      numberOfErasers: 1,
+      numberOfDogs: 1,
+      numberOfPencils: 1,
+      numberOfHands: 1,
+      numberOfCoins: 1,
+      numberOfDollarBills: 1,
+      numberOfPaperClips: 1
     } );
   }
 
