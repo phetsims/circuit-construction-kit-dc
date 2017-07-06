@@ -22,7 +22,7 @@ define( function( require ) {
   var exploreString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/explore' );
 
   // images
-  var exploreScreenIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_DC/explore-screen-icon.png' );
+  var exploreScreenIcon = require( 'image!CIRCUIT_CONSTRUCTION_KIT_DC/explore-screen-icon.png' );
 
   /**
    * @param {Tandem} tandem

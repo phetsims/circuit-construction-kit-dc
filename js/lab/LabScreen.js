@@ -22,7 +22,7 @@ define( function( require ) {
   var labString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/lab' );
 
   // images
-  var labScreenIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );
+  var labScreenIcon = require( 'image!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );
 
   /**
    * @param {Tandem} tandem
