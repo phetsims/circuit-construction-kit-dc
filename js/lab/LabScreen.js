@@ -19,7 +19,7 @@ define( function( require ) {
   var Image = require( 'SCENERY/nodes/Image' );
 
   // strings
-  var labString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/lab' );
+  var labString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/lab' );
 
   // images
   var labScreenIcon = require( 'image!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );

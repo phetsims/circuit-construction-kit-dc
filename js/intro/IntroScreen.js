@@ -23,7 +23,7 @@ define( function( require ) {
   var Vector2 = require( 'DOT/Vector2' );
 
   // strings
-  var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_COMMON/intro' );
+  var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/intro' );
 
   /**
    * @param {Tandem} tandem
