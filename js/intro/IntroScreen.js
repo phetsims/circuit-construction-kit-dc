@@ -14,7 +14,8 @@ define( function( require ) {
   var IntroScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/view/IntroScreenView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
-  var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
+  var CircuitConstructionKitCommonConstants =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
   var Property = require( 'AXON/Property' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
   var CircuitConstructionKitLightBulbNode =
@@ -34,13 +35,13 @@ define( function( require ) {
     // Create the icon
     var icon = new Rectangle( 0, 0,
       Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
-        fill: CircuitConstructionKitConstants.BACKGROUND_COLOR
+        fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
       } );
     var groupTandem = tandem.createGroupTandem( 'lightBulbIconGroup' );
     var lightBulbIconModel = LightBulb.createAtPosition(
       new Vector2( 0, 0 ),
       groupTandem,
-      CircuitConstructionKitConstants.DEFAULT_RESISTANCE,
+      CircuitConstructionKitCommonConstants.DEFAULT_RESISTANCE,
       groupTandem.createNextTandem()
     );
     var lightBulbIcon = new CircuitConstructionKitLightBulbNode(
@@ -58,7 +59,7 @@ define( function( require ) {
 
     var options = {
       name: introString,
-      backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
+      backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
       homeScreenIcon: icon,
       tandem: tandem
     };

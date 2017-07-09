@@ -14,7 +14,8 @@ define( function( require ) {
   var LabScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/view/LabScreenView' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Screen = require( 'JOIST/Screen' );
-  var CircuitConstructionKitConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitConstants' );
+  var CircuitConstructionKitCommonConstants =
+    require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
   var Property = require( 'AXON/Property' );
   var Image = require( 'SCENERY/nodes/Image' );
 
@@ -32,7 +33,7 @@ define( function( require ) {
 
     var options = {
       name: labString,
-      backgroundColorProperty: new Property( CircuitConstructionKitConstants.BACKGROUND_COLOR ),
+      backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
       homeScreenIcon: new Image( labScreenIcon ),
       tandem: tandem
     };
