@@ -27,22 +27,20 @@ define( function( require ) {
 
   /**
    * @param {Tandem} tandem
+   * @param {Object} options
    * @constructor
    */
-  function LabScreen( tandem ) {
-
-    var options = {
-      name: labString,
-      backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
-      homeScreenIcon: new Image( labScreenIcon ),
-      tandem: tandem
-    };
+  function LabScreen( tandem, options ) {
 
     Screen.call(
       this,
       function() { return new LabScreenModel( tandem.createTandem( 'model' ) ); },
-      function( model ) { return new LabScreenView( model, tandem.createTandem( 'view' ) ); },
-      options
+      function( model ) { return new LabScreenView( model, tandem.createTandem( 'view' ), options ); }, {
+        name: labString,
+        backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
+        homeScreenIcon: new Image( labScreenIcon ),
+        tandem: tandem
+      }
     );
   }
 

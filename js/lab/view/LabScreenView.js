@@ -17,10 +17,11 @@ define( function( require ) {
   /**
    * @param {CircuitConstructionKitModel} circuitConstructionKitScreenModel
    * @param {Tandem} tandem
+   * @param {Object} options
    * @constructor
    */
-  function LabScreenView( circuitConstructionKitScreenModel, tandem ) {
-    CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, {
+  function LabScreenView( circuitConstructionKitScreenModel, tandem, options ) {
+    CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, _.extend( {
       numberOfLeftBatteries: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
@@ -35,7 +36,7 @@ define( function( require ) {
       numberOfHighVoltageBatteries: 4,
       numberOfHighResistanceResistors: 4,
       numberOfHighResistanceLightBulbs: 4
-    } );
+    }, options ) );
   }
 
   circuitConstructionKitDc.register( 'LabScreenView', LabScreenView );
