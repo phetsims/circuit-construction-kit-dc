@@ -9,14 +9,14 @@ define( function( require ) {
   'use strict';
 
   // modules
+  var Property = require( 'AXON/Property' );
   var CircuitConstructionKitCommonConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  var Image = require( 'SCENERY/nodes/Image' );
-  var inherit = require( 'PHET_CORE/inherit' );
   var LabScreenModel = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/model/LabScreenModel' );
   var LabScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/view/LabScreenView' );
-  var Property = require( 'AXON/Property' );
   var Screen = require( 'JOIST/Screen' );
+  var inherit = require( 'PHET_CORE/inherit' );
+  var Image = require( 'SCENERY/nodes/Image' );
 
   // strings
   var labString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/lab' );
