@@ -24,6 +24,7 @@ define( function( require ) {
 
   // images
   var lightBulbImage = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_COMMON/lightbulb-middle.png' );
+  var lightBulbImageIcon = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_COMMON/lightbulb-middle-icon.png' );
 
   /**
    * @param {Tandem} tandem
@@ -32,20 +33,31 @@ define( function( require ) {
   function IntroScreen( tandem ) {
 
     // Create the icon
-    var icon = new Rectangle( 0, 0,
+    var homeScreenIcon = new Rectangle( 0, 0,
       Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
         fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
       } );
-    var lightBulbIcon = new Image( lightBulbImage, {
+    homeScreenIcon.addChild( new Image( lightBulbImage, {
       scale: 0.95,
-      center: icon.center
-    } );
-    icon.addChild( lightBulbIcon );
+      center: homeScreenIcon.center
+    } ) );
+
+    // Render a smaller icon for Edge because it is aliasing the image (even with mipmap on)
+    // see https://github.com/phetsims/circuit-construction-kit-dc/issues/120
+    var navigationBarIcon = new Rectangle( 0, 0,
+      Screen.MINIMUM_NAVBAR_ICON_SIZE.width, Screen.MINIMUM_NAVBAR_ICON_SIZE.height, {
+        fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
+      } );
+    navigationBarIcon.addChild( new Image( lightBulbImageIcon, {
+      scale: 1.05,
+      center: navigationBarIcon.center
+    } ) );
 
     var options = {
       name: introString,
       backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
-      homeScreenIcon: icon,
+      homeScreenIcon: homeScreenIcon,
+      navigationBarIcon: navigationBarIcon,
       tandem: tandem
     };
 
@@ -53,7 +65,8 @@ define( function( require ) {
       this,
       function() { return new IntroScreenModel( tandem.createTandem( 'model' ) ); },
       function( model ) { return new IntroScreenView( model, tandem.createTandem( 'view' ) ); },
-      options );
+      options
+    );
   }
 
   circuitConstructionKitDc.register( 'IntroScreen', IntroScreen );
