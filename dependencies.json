@@ -1,7 +1,7 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.116 Fri Jul 28 2017 13:42:12 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.117 Sun Jul 30 2017 12:18:21 GMT-0600 (MDT)",
   "assert": {
-    "sha": "5c3f92048a9c2ffd6df8ede54fd64f1f7a7e4ef2",
+    "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
   },
   "axon": {
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "3d8d197e463fbb686387eb8fd2be932c3fbc7118",
+    "sha": "b74adc21ad06eba4c754c651fbb384d95c527fe7",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "24eb334d5761524175596c4109ee341860087c18",
+    "sha": "f91c427b89750f97a9c391ec17e10d0e1acb5c01",
     "branch": "master"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "536deaad13517d4c1521fd3a94afa918d3f56489",
+    "sha": "2ec167887fd94a42a44c7dd8e61b802735d48760",
     "branch": "master"
   },
   "kite": {
@@ -49,11 +49,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "ea1bfd48815f8b64a1e4b0846f1a234fa0108042",
+    "sha": "1e0e867fe079952a067075459b1ff5a0848ffa34",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "2ebd7d9f4659bef524c453d1819c366a0c51401a",
+    "sha": "8cc2060f8d77fe42fced5fb5f249011ede668266",
     "branch": "master"
   },
   "sherpa": {
@@ -61,7 +61,7 @@
     "branch": "master"
   },
   "sun": {
-    "sha": "51d6866302eb3d321e356a27d3c8154518dab675",
+    "sha": "f76a05df156a9cea531cd5437848eb708fc18d3d",
     "branch": "master"
   },
   "tandem": {
