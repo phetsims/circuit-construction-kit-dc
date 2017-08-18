@@ -1,27 +1,27 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.152 Fri Aug 11 2017 20:34:04 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.153 Fri Aug 18 2017 11:13:41 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
   },
   "axon": {
-    "sha": "2545ad65c0142dbf4279682865e7f17f27e71d7e",
+    "sha": "62935a11739c6b82860668019e37fa3e3d5f77ce",
     "branch": "master"
   },
   "brand": {
-    "sha": "90738131ad331ea901c6d224a98a74a7e84b4e9a",
+    "sha": "cfca902dca800a6e8b80729a46611346c4f16250",
     "branch": "master"
   },
   "chipper": {
-    "sha": "3042728b573797221ff8fadc4c81d2aad8c98aed",
+    "sha": "d94eda878db6a65a47353fdde7e9d047fe6dadd8",
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "5c1826cbb42ad0e9db55da50c97b19fd7b5f89b7",
+    "sha": "a46405df5c6bf7a87d3d94b360e3c86e64c16ad6",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "5da7fd82e2cd3e5a9cc9327aa00d1ca54e6d65e4",
+    "sha": "5f475c12f3b67b35f3f9837791360219d06f1859",
     "branch": "master"
   },
   "dot": {
@@ -29,7 +29,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "e3c3c82fbc5102524cddef4adb5a007ffc285a64",
+    "sha": "cc9b9d621a7e0208399711dc249a13d649176a44",
     "branch": "master"
   },
   "kite": {
@@ -49,19 +49,19 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "7414c4fa884c071566cfeba6797e3859a6167c54",
+    "sha": "41bc57fb367defe349eb55e58ae83c10d25e0320",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "7bdef2eeb8d20cf69363d4e225ab01833fa7d206",
+    "sha": "b2cd86248d0cde69543fd04676e53e87f55fb016",
     "branch": "master"
   },
   "sherpa": {
-    "sha": "be8e800b7abf955abc99f5bc4d89ae8bcdcff4f3",
+    "sha": "dba01386dd884865c2111c0b5c63f31a4cdfbefb",
     "branch": "master"
   },
   "sun": {
-    "sha": "b5554519bd42730c8685cbbc11f41daff8c85ad9",
+    "sha": "50f640e713ff6c764ec1484fb546370c18abe1ad",
     "branch": "master"
   },
   "tandem": {
@@ -69,7 +69,7 @@
     "branch": "master"
   },
   "twixt": {
-    "sha": "3ca102d05924c24e6dd1450d3acdf44845fd5187",
+    "sha": "6f27c1ff4816ffc06a8ce2439b6b7db24bfad5f9",
     "branch": "master"
   }
 }
