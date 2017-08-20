@@ -1,12 +1,12 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.154 Fri Aug 18 2017 13:58:27 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.155 Sun Aug 20 2017 17:04:19 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
   },
   "axon": {
-    "sha": "62935a11739c6b82860668019e37fa3e3d5f77ce",
-    "branch": "master"
+    "sha": "526cfd5a687bf890f5d8ab58e765624a279951c8",
+    "branch": "unlink-noguard"
   },
   "brand": {
     "sha": "cfca902dca800a6e8b80729a46611346c4f16250",
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "565a2312cb6e5e5496532951dc5bc317b77a61da",
+    "sha": "5575de6f13fccbc0a1f219a8381ba2ed3d517bd6",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "dc5a1238082e7c97da66a853ca456a0a74970fbc",
+    "sha": "968aa2195376b85feff766612572a6e81a0be3df",
     "branch": "master"
   },
   "dot": {
