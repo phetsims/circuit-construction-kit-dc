@@ -33,11 +33,9 @@ define( function( require ) {
   function IntroScreen( tandem ) {
 
     // Create the icon
-    //REVIEW: Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, { ... } )
-    var homeScreenIcon = new Rectangle( 0, 0,
-      Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
-        fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
-      } );
+    var homeScreenIcon = Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, {
+      fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
+    } );
     homeScreenIcon.addChild( new Image( lightBulbImage, {
       scale: 0.95,
       center: homeScreenIcon.center
@@ -45,11 +43,9 @@ define( function( require ) {
 
     // Render a smaller icon for Edge because it is aliasing the image (even with mipmap on)
     // see https://github.com/phetsims/circuit-construction-kit-dc/issues/120
-    //REVIEW: Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, { ... } )
-    var navigationBarIcon = new Rectangle( 0, 0,
-      Screen.MINIMUM_NAVBAR_ICON_SIZE.width, Screen.MINIMUM_NAVBAR_ICON_SIZE.height, {
-        fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
-      } );
+    var navigationBarIcon = Rectangle.dimension( Screen.MINIMUM_NAVBAR_ICON_SIZE, {
+      fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
+    } );
     navigationBarIcon.addChild( new Image( lightBulbImageIcon, {
       scale: 1.05,
       center: navigationBarIcon.center
