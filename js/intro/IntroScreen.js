@@ -33,6 +33,7 @@ define( function( require ) {
   function IntroScreen( tandem ) {
 
     // Create the icon
+    //REVIEW: Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, { ... } )
     var homeScreenIcon = new Rectangle( 0, 0,
       Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.width, Screen.MINIMUM_HOME_SCREEN_ICON_SIZE.height, {
         fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
@@ -44,6 +45,7 @@ define( function( require ) {
 
     // Render a smaller icon for Edge because it is aliasing the image (even with mipmap on)
     // see https://github.com/phetsims/circuit-construction-kit-dc/issues/120
+    //REVIEW: Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, { ... } )
     var navigationBarIcon = new Rectangle( 0, 0,
       Screen.MINIMUM_NAVBAR_ICON_SIZE.width, Screen.MINIMUM_NAVBAR_ICON_SIZE.height, {
         fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR

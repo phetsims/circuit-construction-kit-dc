@@ -23,7 +23,7 @@ define( function( require ) {
     CircuitConstructionKitScreenView.call( this, circuitConstructionKitScreenModel, tandem, _.extend( {
       numberOfLeftBatteries: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
-      showResetAllButton: true, // The reset all button should be shown.
+      showResetAllButton: true, // The reset all button should be shown. REVIEW: doc repeats variable name
       showSeriesAmmeters: true,
       numberOfCoins: 1,
       numberOfErasers: 1,
