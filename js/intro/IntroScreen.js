@@ -20,7 +20,7 @@ define( function( require ) {
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
 
   // strings
-  var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/intro' );
+  var introString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/screen.intro' );
 
   // images
   var lightBulbImage = require( 'mipmap!CIRCUIT_CONSTRUCTION_KIT_COMMON/lightbulb-middle.png' );

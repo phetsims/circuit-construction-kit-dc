@@ -2,10 +2,10 @@
   "circuit-construction-kit-dc.title": {
     "value": "Circuit Construction Kit: DC"
   },
-  "intro": {
+  "screen.intro": {
     "value": "Intro"
   },
-  "lab": {
+  "screen.lab": {
     "value": "Lab"
   }
 }
