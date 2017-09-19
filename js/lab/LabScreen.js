@@ -9,7 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var CircuitConstructionKitCommonConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
+  var CCKCConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CCKCConstants' );
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -36,7 +36,7 @@ define( function( require ) {
       function() { return new LabScreenModel( tandem.createTandem( 'model' ) ); },
       function( model ) { return new LabScreenView( model, tandem.createTandem( 'view' ), options ); }, {
         name: labString,
-        backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
+        backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
         homeScreenIcon: new Image( labScreenIcon ),
         tandem: tandem
       }

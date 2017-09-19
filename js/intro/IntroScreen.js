@@ -9,7 +9,7 @@ define( function( require ) {
   'use strict';
 
   // modules
-  var CircuitConstructionKitCommonConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CircuitConstructionKitCommonConstants' );
+  var CCKCConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CCKCConstants' );
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
@@ -34,7 +34,7 @@ define( function( require ) {
 
     // Create the icon
     var homeScreenIcon = Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, {
-      fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
+      fill: CCKCConstants.BACKGROUND_COLOR
     } );
     homeScreenIcon.addChild( new Image( lightBulbImage, {
       scale: 0.95,
@@ -44,7 +44,7 @@ define( function( require ) {
     // Render a smaller icon for Edge because it is aliasing the image (even with mipmap on)
     // see https://github.com/phetsims/circuit-construction-kit-dc/issues/120
     var navigationBarIcon = Rectangle.dimension( Screen.MINIMUM_NAVBAR_ICON_SIZE, {
-      fill: CircuitConstructionKitCommonConstants.BACKGROUND_COLOR
+      fill: CCKCConstants.BACKGROUND_COLOR
     } );
     navigationBarIcon.addChild( new Image( lightBulbImageIcon, {
       scale: 1.05,
@@ -53,7 +53,7 @@ define( function( require ) {
 
     var options = {
       name: introString,
-      backgroundColorProperty: new Property( CircuitConstructionKitCommonConstants.BACKGROUND_COLOR ),
+      backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
       homeScreenIcon: homeScreenIcon,
       navigationBarIcon: navigationBarIcon,
       tandem: tandem

@@ -10,7 +10,7 @@ define( function( require ) {
 
   // modules
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  var CircuitConstructionKitScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitConstructionKitScreenView' );
+  var CCKCScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKCScreenView' );
   var CircuitElementToolFactory = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitElementToolFactory' );
   var inherit = require( 'PHET_CORE/inherit' );
   var Node = require( 'SCENERY/nodes/Node' );
@@ -56,7 +56,7 @@ define( function( require ) {
       circuitElementToolFactory.createDogToolNode( 1, tandem.createTandem( 'dogToolNode' ) )
     ];
 
-    CircuitConstructionKitScreenView.call( this, model, circuitElementToolNodes, tandem, _.extend( {
+    CCKCScreenView.call( this, model, circuitElementToolNodes, tandem, _.extend( {
       numberOfLeftBatteries: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown. REVIEW: doc repeats variable name
@@ -67,5 +67,5 @@ define( function( require ) {
 
   circuitConstructionKitDc.register( 'LabScreenView', LabScreenView );
 
-  return inherit( CircuitConstructionKitScreenView, LabScreenView );
+  return inherit( CCKCScreenView, LabScreenView );
 } );
