@@ -51,7 +51,6 @@ define( function( require ) {
     ];
 
     CCKCScreenView.call( this, model, circuitElementToolNodes, tandem, {
-      numberOfLeftBatteries: 0, // Only show right-facing batteries.
       toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown.
       showResistivityControl: false,
