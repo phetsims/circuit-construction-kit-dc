@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.164 Tue Oct 10 2017 12:05:54 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0-dev.165 Wed Oct 11 2017 10:23:29 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "master"
@@ -17,11 +17,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "1de141568124b07c92dfd557db25a89b99901752",
-    "branch": "furthest-electron"
+    "sha": "7d852b4c86d06a2c3a53bfc774212b5df97a736a",
+    "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "1ee5f1c03fcec0267c15ebdc704f849be8faac7c",
+    "sha": "22604c0e61e02e66328f68947c2954e2f9e80da8",
     "branch": "master"
   },
   "dot": {
@@ -49,11 +49,11 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "1d44afcbd2d3808fe5515017b46d174fa9ac3def",
+    "sha": "db7ea875eaba59fe7f4c929d8e88832c5f0ab995",
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "4f2733591bc8d9f494f466a08a561cb4db3b6f13",
+    "sha": "a90363b5f2629cefc880f205cc738a4277f3dc93",
     "branch": "master"
   },
   "sherpa": {
