@@ -1,75 +1,75 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-dev.165 Wed Oct 11 2017 10:23:29 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0 Mon Oct 30 2017 09:36:06 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "axon": {
     "sha": "b8dd4e51210531bb8fb2d12bfcb779821d49f95c",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "brand": {
     "sha": "cfca902dca800a6e8b80729a46611346c4f16250",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "chipper": {
     "sha": "66763c36d9e0bbb57fd40ddafa62115ac3cdd964",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "circuit-construction-kit-common": {
-    "sha": "7d852b4c86d06a2c3a53bfc774212b5df97a736a",
-    "branch": "master"
+    "sha": "edb560abfea4ffbf8bf0ac2d65bf7aa7cb7a3bd1",
+    "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "22604c0e61e02e66328f68947c2954e2f9e80da8",
-    "branch": "master"
+    "sha": "ffefa9e1bc1a10f25d8702cbb9e665a5ec1bfd27",
+    "branch": "1.0"
   },
   "dot": {
     "sha": "84bc5146e1a75e42674927d520777323f33c7e7e",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "joist": {
-    "sha": "3eff115f7ee1e367630fcf45081f2ece1d92285a",
-    "branch": "master"
+    "sha": "a71a08ac8a7e0a71a64ddc20d91e29675212e1e4",
+    "branch": "HEAD"
   },
   "kite": {
     "sha": "9689a3de27640c67fa66b8b343643f47da99d9d9",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "phet-core": {
     "sha": "054b2d6db39f0ce2b76a9ba26a12ec51bce17f98",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "phetcommon": {
     "sha": "5b0c8dd60e559bfc0062bf159f42df86fe49874d",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "query-string-machine": {
     "sha": "c74e454ec68033a9546b8181d4d962eb8ceef81f",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "scenery": {
     "sha": "db7ea875eaba59fe7f4c929d8e88832c5f0ab995",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "scenery-phet": {
     "sha": "a90363b5f2629cefc880f205cc738a4277f3dc93",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "sherpa": {
     "sha": "f0d5f7504e8bfc00109989c890bd84ec21ba2128",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "sun": {
     "sha": "d57850fdc9057f33ce4a216273d0d4c08b366422",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "tandem": {
     "sha": "f399e7ee0d418db571047da7c17201a6315cf737",
-    "branch": "master"
+    "branch": "HEAD"
   },
   "twixt": {
     "sha": "a2eaa10a8a7296fe32bf3d16213b8122c28bd585",
-    "branch": "master"
+    "branch": "HEAD"
   }
 }
