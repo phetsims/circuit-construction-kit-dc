@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.0-rc.3 Fri Oct 27 2017 10:57:52 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.0 Mon Oct 30 2017 09:36:06 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -18,10 +18,10 @@
   },
   "circuit-construction-kit-common": {
     "sha": "edb560abfea4ffbf8bf0ac2d65bf7aa7cb7a3bd1",
-    "branch": "circuit-construction-kit-dc-1.0"
+    "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "b641d64f9e53ea954d94ff4af16f40f5119aa23a",
+    "sha": "ffefa9e1bc1a10f25d8702cbb9e665a5ec1bfd27",
     "branch": "1.0"
   },
   "dot": {
@@ -30,7 +30,7 @@
   },
   "joist": {
     "sha": "a71a08ac8a7e0a71a64ddc20d91e29675212e1e4",
-    "branch": "circuit-construction-kit-dc-1.0"
+    "branch": "HEAD"
   },
   "kite": {
     "sha": "9689a3de27640c67fa66b8b343643f47da99d9d9",
