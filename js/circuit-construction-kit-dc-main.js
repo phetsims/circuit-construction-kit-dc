@@ -10,8 +10,8 @@ define( function( require ) {
 
   // modules
   require( 'SCENERY/nodes/Image' ); // Image is required for making toDataURLNodeSynchronous work in the built version
-  var Input = require( 'SCENERY/input/Input' );
   var IntroScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/IntroScreen' );
+  var KeyboardUtil = require( 'SCENERY/accessibility/KeyboardUtil' );
   var LabScreen = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/LabScreen' );
   var Sim = require( 'JOIST/Sim' );
   var SimLauncher = require( 'JOIST/SimLauncher' );
@@ -39,7 +39,7 @@ define( function( require ) {
   // is complete
   document.addEventListener( 'keydown', function( event ) {
     var keyCode = event.keyCode || event.which;
-    if ( keyCode === Input.KEY_TAB ) {
+    if ( keyCode === KeyboardUtil.KEY_TAB ) {
       event.preventDefault();
     }
   } );
