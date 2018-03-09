@@ -27,7 +27,7 @@ define( function( require ) {
       return self.circuitLayerNode.globalToLocalPoint( point );
     } );
 
-    var wireToolNode = circuitElementToolFactory.createWireToolNode( 20 );
+    var wireToolNode = circuitElementToolFactory.createWireToolNode( 25 );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
     var circuitElementToolNodes = [
