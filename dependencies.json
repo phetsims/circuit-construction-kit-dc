@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.3 Thu Aug 09 2018 20:25:16 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.3 Thu Aug 09 2018 23:26:37 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -13,15 +13,15 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "98ef252c9ae4d6d39cad627b2a9da66926bd850f",
-    "branch": "HEAD"
+    "sha": "fef25a197c2d79b31bf70f8a19c813832265a6dc",
+    "branch": "circuit-construction-kit-dc-1.0"
   },
   "circuit-construction-kit-common": {
     "sha": "edb560abfea4ffbf8bf0ac2d65bf7aa7cb7a3bd1",
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "2f8c24abcd660cf138a5dc0bd8762ef2053d3f3e",
+    "sha": "9e233bfc51369ffdc9778a0345a6891fe2daeb85",
     "branch": "1.0"
   },
   "dot": {
@@ -41,8 +41,8 @@
     "branch": "HEAD"
   },
   "phetcommon": {
-    "sha": "5b0c8dd60e559bfc0062bf159f42df86fe49874d",
-    "branch": "HEAD"
+    "sha": "8fd23a8b1964368d8c71e08528b04229db822643",
+    "branch": "circuit-construction-kit-dc-1.0"
   },
   "query-string-machine": {
     "sha": "c74e454ec68033a9546b8181d4d962eb8ceef81f",
@@ -50,7 +50,7 @@
   },
   "scenery": {
     "sha": "d0f3204dbe648b76a424a7d29d188ac0b8f22633",
-    "branch": "circuit-construction-kit-dc-1.0"
+    "branch": "HEAD"
   },
   "scenery-phet": {
     "sha": "a90363b5f2629cefc880f205cc738a4277f3dc93",
