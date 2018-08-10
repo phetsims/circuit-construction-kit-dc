@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.3 Wed Aug 08 2018 13:18:02 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.0.3 Thu Aug 09 2018 20:25:16 GMT-0600 (MDT)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -21,7 +21,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "b480d49d8441f17a915e92e5fa41105138b1b24a",
+    "sha": "2f8c24abcd660cf138a5dc0bd8762ef2053d3f3e",
     "branch": "1.0"
   },
   "dot": {
@@ -49,8 +49,8 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "a5719750786a536b2e0e775ffe0abaded1db1acf",
-    "branch": "HEAD"
+    "sha": "d0f3204dbe648b76a424a7d29d188ac0b8f22633",
+    "branch": "circuit-construction-kit-dc-1.0"
   },
   "scenery-phet": {
     "sha": "a90363b5f2629cefc880f205cc738a4277f3dc93",
