@@ -17,11 +17,11 @@ define( function( require ) {
    * @param {Tandem}
    * @constructor
    */
-  function LabScreenModel( tandem ) {
+  function LabModel( tandem ) {
     CircuitConstructionKitModel.call( this, tandem );
   }
 
-  circuitConstructionKitDc.register( 'LabScreenModel', LabScreenModel );
+  circuitConstructionKitDc.register( 'LabModel', LabModel );
 
-  return inherit( CircuitConstructionKitModel, LabScreenModel );
+  return inherit( CircuitConstructionKitModel, LabModel );
 } );

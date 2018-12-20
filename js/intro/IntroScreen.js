@@ -13,7 +13,7 @@ define( function( require ) {
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   var Image = require( 'SCENERY/nodes/Image' );
   var inherit = require( 'PHET_CORE/inherit' );
-  var IntroScreenModel = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/model/IntroScreenModel' );
+  var IntroModel = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/model/IntroModel' );
   var IntroScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/intro/view/IntroScreenView' );
   var Property = require( 'AXON/Property' );
   var Rectangle = require( 'SCENERY/nodes/Rectangle' );
@@ -61,7 +61,7 @@ define( function( require ) {
 
     Screen.call(
       this,
-      function() { return new IntroScreenModel( tandem.createTandem( 'model' ) ); },
+      function() { return new IntroModel( tandem.createTandem( 'model' ) ); },
       function( model ) { return new IntroScreenView( model, tandem.createTandem( 'view' ) ); },
       options
     );

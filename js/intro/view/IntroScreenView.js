@@ -16,7 +16,7 @@ define( function( require ) {
   var Node = require( 'SCENERY/nodes/Node' );
 
   /**
-   * @param {IntroScreenModel} model
+   * @param {IntroModel} model
    * @param {Tandem} tandem
    * @constructor
    */
