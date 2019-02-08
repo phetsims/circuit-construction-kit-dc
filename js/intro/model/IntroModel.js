@@ -11,17 +11,17 @@ define( function( require ) {
   // modules
   var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   var CircuitConstructionKitModel = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/model/CircuitConstructionKitModel' );
-  var inherit = require( 'PHET_CORE/inherit' );
 
-  /**
-   * @param {Tandem} tandem
-   * @constructor
-   */
-  function IntroModel( tandem ) {
-    CircuitConstructionKitModel.call( this, tandem );
+  class IntroModel extends CircuitConstructionKitModel {
+
+    /**
+     * @param {Tandem} tandem
+     * @constructor
+     */
+    constructor( tandem ) {
+      super( tandem );
+    }
   }
 
-  circuitConstructionKitDc.register( 'IntroModel', IntroModel );
-
-  return inherit( CircuitConstructionKitModel, IntroModel );
+  return circuitConstructionKitDc.register( 'IntroModel', IntroModel );
 } );
