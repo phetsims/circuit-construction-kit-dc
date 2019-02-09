@@ -5,11 +5,11 @@
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var Namespace = require( 'PHET_CORE/Namespace' );
+  const Namespace = require( 'PHET_CORE/Namespace' );
 
   return new Namespace( 'circuitConstructionKitDc' );
 } );

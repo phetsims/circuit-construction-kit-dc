@@ -26,6 +26,6 @@
     "simulation": true
   },
   "eslintConfig": {
-    "extends": "../chipper/eslint/sim_eslintrc.js"
+    "extends": "../chipper/eslint/sim_es6_eslintrc.js"
   }
 }

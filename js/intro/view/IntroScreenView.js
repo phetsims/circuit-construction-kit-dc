@@ -5,14 +5,14 @@
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
-  var CCKCScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKCScreenView' );
-  var circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  var CircuitElementToolFactory = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitElementToolFactory' );
-  var Node = require( 'SCENERY/nodes/Node' );
+  const CCKCScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKCScreenView' );
+  const circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
+  const CircuitElementToolFactory = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitElementToolFactory' );
+  const Node = require( 'SCENERY/nodes/Node' );
 
   class IntroScreenView extends CCKCScreenView {
 
@@ -21,13 +21,13 @@ define( function( require ) {
      * @param {Tandem} tandem
      */
     constructor( model, tandem ) {
-      var circuitElementToolFactory = new CircuitElementToolFactory( model.circuit, model.showLabelsProperty, model.viewTypeProperty,
+      const circuitElementToolFactory = new CircuitElementToolFactory( model.circuit, model.showLabelsProperty, model.viewTypeProperty,
         point => this.circuitLayerNode.globalToLocalPoint( point ) );
 
-      var wireToolNode = circuitElementToolFactory.createWireToolNode( 25, tandem.createTandem( 'wireToolNode' ) );
+      const wireToolNode = circuitElementToolFactory.createWireToolNode( 25, tandem.createTandem( 'wireToolNode' ) );
 
       // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
-      var circuitElementToolNodes = [
+      const circuitElementToolNodes = [
 
         // This page is duplicated in the Lab Screen View
         wireToolNode,
