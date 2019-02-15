@@ -9,6 +9,7 @@ define( require => {
   'use strict';
 
   // modules
+  const CCKCConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CCKCConstants' );
   const CCKCScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKCScreenView' );
   const circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   const CircuitElementToolFactory = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitElementToolFactory' );
@@ -26,7 +27,7 @@ define( require => {
         point => this.circuitLayerNode.globalToLocalPoint( point )
       );
 
-      const wireToolNode = circuitElementToolFactory.createWireToolNode( 25 );
+      const wireToolNode = circuitElementToolFactory.createWireToolNode( CCKCConstants.NUMBER_OF_WIRES );
 
       // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
       const circuitElementToolNodes = [
