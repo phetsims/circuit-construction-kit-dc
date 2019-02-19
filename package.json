@@ -13,7 +13,8 @@
     "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC",
     "phetLibs": [
       "circuit-construction-kit-common",
-      "twixt"
+      "twixt",
+      "griddle"
     ],
     "preload": [
       "../sherpa/lib/Tween-r12.js"
