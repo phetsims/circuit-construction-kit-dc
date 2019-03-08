@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.0.5 Tue Nov 06 2018 13:19:50 GMT-0700 (MST)",
+  "comment": "# circuit-construction-kit-dc 1.0.5 Fri Mar 08 2019 12:55:30 GMT-0500 (EST)",
   "assert": {
     "sha": "928741cfc8fe804334d5b35292140314511f8678",
     "branch": "HEAD"
@@ -9,8 +9,8 @@
     "branch": "HEAD"
   },
   "brand": {
-    "sha": "cfca902dca800a6e8b80729a46611346c4f16250",
-    "branch": "HEAD"
+    "sha": "ddfe15759c5323a3adcebe1cda0e4d5c70347dbc",
+    "branch": "circuit-construction-kit-dc-1.0"
   },
   "chipper": {
     "sha": "fef25a197c2d79b31bf70f8a19c813832265a6dc",
@@ -21,7 +21,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "5be02ef0340eb49bc957f6018d18c3f658d910a2",
+    "sha": "de701de0872bafd4b1b884414b69e234ce5a1fb9",
     "branch": "1.0"
   },
   "dot": {
@@ -29,8 +29,8 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "9161de1ad697b4cf882051a3a39c5e67c4396c79",
-    "branch": "HEAD"
+    "sha": "c5133ad4e847410965efd94203c3b4b0296f45fb",
+    "branch": "circuit-construction-kit-dc-1.0"
   },
   "kite": {
     "sha": "9689a3de27640c67fa66b8b343643f47da99d9d9",
