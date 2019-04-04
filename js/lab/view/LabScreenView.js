@@ -40,20 +40,21 @@ define( require => {
         circuitElementToolFactory.createSwitchToolNode( 5, tandem.createTandem( 'switchToolNode' ) ),
 
         new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+        circuitElementToolFactory.createFuseToolNode( 10, tandem.createTandem( 'fuseToolNode' ) ),
         circuitElementToolFactory.createHighVoltageBatteryToolNode( 4, tandem.createTandem( 'highVoltageBatteryToolNode' ) ),
         circuitElementToolFactory.createHighResistanceBulbToolNode( 4, tandem.createTandem( 'highResistanceBulbToolNode' ) ),
         circuitElementToolFactory.createHighResistanceResistorToolNode( 4, tandem.createTandem( 'highResistanceResistorToolNode' ) ),
-        circuitElementToolFactory.createDollarBillToolNode( 1, tandem.createTandem( 'dollarBillToolNode' ) ),
 
         new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+        circuitElementToolFactory.createDollarBillToolNode( 1, tandem.createTandem( 'dollarBillToolNode' ) ),
         circuitElementToolFactory.createPaperClipToolNode( 1, tandem.createTandem( 'paperClipToolNode' ) ),
         circuitElementToolFactory.createCoinToolNode( 1, tandem.createTandem( 'coinToolNode' ) ),
         circuitElementToolFactory.createEraserToolNode( 1, tandem.createTandem( 'eraserToolNode' ) ),
-        circuitElementToolFactory.createPencilToolNode( 1, tandem.createTandem( 'pencilToolNode' ) ),
 
         new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
         circuitElementToolFactory.createHandToolNode( 1, tandem.createTandem( 'handToolNode' ) ),
-        circuitElementToolFactory.createDogToolNode( 1, tandem.createTandem( 'dogToolNode' ) )
+        circuitElementToolFactory.createDogToolNode( 1, tandem.createTandem( 'dogToolNode' ) ),
+        circuitElementToolFactory.createPencilToolNode( 1, tandem.createTandem( 'pencilToolNode' ) )
       ];
 
       super( model, circuitElementToolNodes, tandem, _.extend( {

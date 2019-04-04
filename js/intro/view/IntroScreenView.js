@@ -38,12 +38,13 @@ define( require => {
         circuitElementToolFactory.createSwitchToolNode( 5, tandem.createTandem( 'switchToolNode' ) ),
 
         new Node( { children: [ wireToolNode ] } ), // Wire should appear at the top of each carousel page
+        circuitElementToolFactory.createFuseToolNode( 10, tandem.createTandem( 'fuseToolNode' ) ),
         circuitElementToolFactory.createDollarBillToolNode( 1, tandem.createTandem( 'dollarBillToolNode' ) ),
         circuitElementToolFactory.createPaperClipToolNode( 1, tandem.createTandem( 'paperClipToolNode' ) ),
         circuitElementToolFactory.createCoinToolNode( 1, tandem.createTandem( 'coinToolNode' ) ),
-        circuitElementToolFactory.createEraserToolNode( 1, tandem.createTandem( 'eraserToolNode' ) ),
 
         new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+        circuitElementToolFactory.createEraserToolNode( 1, tandem.createTandem( 'eraserToolNode' ) ),
         circuitElementToolFactory.createPencilToolNode( 1, tandem.createTandem( 'pencilToolNode' ) ),
         circuitElementToolFactory.createHandToolNode( 1, tandem.createTandem( 'handToolNode' ) ),
         circuitElementToolFactory.createDogToolNode( 1, tandem.createTandem( 'dogToolNode' ) )
