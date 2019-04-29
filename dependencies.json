@@ -1,11 +1,11 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.1.0-dev.3 Thu Apr 25 2019 12:12:48 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.1.0-dev.4 Mon Apr 29 2019 13:39:43 GMT-0600 (MDT)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "master"
   },
   "axon": {
-    "sha": "3e02ed9e1acde64cdc0c2e022832d0c28f5992b0",
+    "sha": "592e555a231db4950387ee86cf23acdd574a8eb3",
     "branch": "master"
   },
   "brand": {
@@ -17,19 +17,19 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "2a0550a1fd4665a5fe5a5fdf935f87358954f386",
+    "sha": "093cef616d8d85b02bac4e5c775368247c218f63",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "7164e2adcaa30b2d93e017b0cbb58c67a0307ad7",
+    "sha": "185ae1a7a5b850d749cb26dc94f0d41b1f5f3b36",
     "branch": "master"
   },
   "dot": {
-    "sha": "3720766c753e975a489389a38103ceda4310e869",
+    "sha": "edad94cd273f5de17d751aa69752d319761b2d9e",
     "branch": "master"
   },
   "griddle": {
-    "sha": "bd34b7676be012f0cf44c3dee21a5e5099d09b79",
+    "sha": "616fb318b3279f4c9c67657bac402332a7b1fce8",
     "branch": "master"
   },
   "joist": {
@@ -61,7 +61,7 @@
     "branch": "master"
   },
   "phet-io-wrappers": {
-    "sha": "290069e1e34cf535a15aaea05ae6672f80e60964",
+    "sha": "25ff7bbc46f0aa7691f52ddb729cd1686e05544a",
     "branch": "master"
   },
   "phetcommon": {
@@ -81,11 +81,11 @@
     "branch": "master"
   },
   "scenery-phet": {
-    "sha": "1daf20fe4b7284129489c47cc6640e13c3adbe5a",
+    "sha": "8d35d4b728d4505e6f8a10b34a4b16a076efa3d4",
     "branch": "master"
   },
   "sherpa": {
-    "sha": "e337874597449ebee1ce68bf9c3f5901233b2705",
+    "sha": "12772c1d2de2227d105419370de4e28b44b79b12",
     "branch": "master"
   },
   "sun": {
@@ -93,7 +93,7 @@
     "branch": "master"
   },
   "tambo": {
-    "sha": "d38b1526ad602aaa4c6ac2b21760f66cbc8c8910",
+    "sha": "ad138584cd6c0060495e6cba16b8f840025066ef",
     "branch": "master"
   },
   "tandem": {
