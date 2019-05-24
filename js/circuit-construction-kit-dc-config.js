@@ -46,6 +46,6 @@ require.config( {
     TWIXT: '../../twixt/js'
   },
 
-  // optional cache buster to make browser refresh load all included scripts, can be disabled with ?cacheBuster=false
-  urlArgs: phet.chipper.getCacheBusterArgs()
+  // optional cache bust to make browser refresh load all included scripts, can be disabled with ?cacheBust=false
+  urlArgs: phet.chipper.getCacheBustArgs()
 } );
