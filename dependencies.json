@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.1.0 Thu Jul 25 2019 19:44:54 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.1.0 Fri Jul 26 2019 15:15:04 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -21,7 +21,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "e41c2ef9bf569c1eb147d5ee24bacfd427b51e79",
+    "sha": "372d9841d138f6d79580faef2b2956f12b56eaac",
     "branch": "1.1"
   },
   "dot": {
@@ -53,8 +53,8 @@
     "branch": "HEAD"
   },
   "phetcommon": {
-    "sha": "412d3d857167437abbd7aacb8a809361dbb701ed",
-    "branch": "HEAD"
+    "sha": "3f7ca7eb73ad13b9e6668c30bdfdb52c36c40f92",
+    "branch": "circuit-construction-kit-dc-1.1"
   },
   "phetmarks": {
     "sha": "dfc5b1da1d7cc0939c484f7f26f7148f28264ee4",
