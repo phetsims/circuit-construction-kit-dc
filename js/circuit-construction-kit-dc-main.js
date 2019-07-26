@@ -28,7 +28,7 @@ define( require => {
       leadDesign: 'Amy Rouinfar',
       softwareDevelopment: 'Sam Reid, Denzell Barnett',
       team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
-      qualityAssurance: 'Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Liam Mulhall, Ben Roberts',
+      qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Liam Mulhall, Ben Roberts, Jacob Romero, Ethan Ward, Kathryn Woessner',
       graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
     },
     tandem: tandem,
