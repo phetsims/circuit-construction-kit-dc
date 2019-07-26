@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.1.0-rc.1 Mon Jul 15 2019 10:49:09 GMT-0600 (MDT)",
+  "comment": "# circuit-construction-kit-dc 1.1.0 Thu Jul 25 2019 19:44:54 GMT-0600 (MDT)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -21,7 +21,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "bc9c9b1602553f73966586c19cea5c12727189f6",
+    "sha": "e41c2ef9bf569c1eb147d5ee24bacfd427b51e79",
     "branch": "1.1"
   },
   "dot": {
