@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.1.1 Mon Aug 05 2019 15:05:31 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# circuit-construction-kit-dc 1.1.1 Mon Aug 19 2019 13:07:03 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "d8a2e8992420327ff72a6fc4bb93ec76549ded0e",
     "branch": "HEAD"
@@ -21,7 +21,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "2c0cf86a5cc08067a18ea74ad2769bfce93cdd12",
+    "sha": "3be6c1e48a09dc3cde7bfce9fec2aa8e93266e23",
     "branch": "1.1"
   },
   "dot": {
@@ -33,8 +33,8 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "9ea7dfdc8fe866f7aafd8e864ac6fbb06fc4fb64",
-    "branch": "HEAD"
+    "sha": "675fa5828434e137f315b4159f594fbf7b0fa5b5",
+    "branch": "circuit-construction-kit-dc-1.1"
   },
   "kite": {
     "sha": "38d4076754ae8dd00024a6973f8cf9d622dfcf5c",
@@ -65,12 +65,12 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "28f139b5a542bcf3ebfba3c2d6e562181d7dbfe2",
-    "branch": "HEAD"
+    "sha": "959efad9611976e2ed9fa759912c20edabedc374",
+    "branch": "circuit-construction-kit-dc-1.1"
   },
   "scenery-phet": {
-    "sha": "de648f0e5ac55f8a0e44e9522044706fbce0b7ae",
-    "branch": "HEAD"
+    "sha": "57b9fb23d52eeecce5cb1255db96e36dd35399cb",
+    "branch": "circuit-construction-kit-dc-1.1"
   },
   "sherpa": {
     "sha": "4877464e8013ff1459091c854a8c2234c3d0e7d6",
