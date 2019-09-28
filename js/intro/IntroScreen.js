@@ -56,7 +56,8 @@ define( require => {
         backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
         homeScreenIcon: homeScreenIcon,
         navigationBarIcon: navigationBarIcon,
-        tandem: tandem
+        tandem: tandem,
+        maxDT: CCKCConstants.MAX_DT
       };
 
       super(

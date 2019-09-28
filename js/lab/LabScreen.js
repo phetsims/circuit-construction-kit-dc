@@ -37,7 +37,8 @@ define( require => {
           name: labString,
           backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
           homeScreenIcon: new Image( labScreenIcon ),
-          tandem: tandem
+          tandem: tandem,
+          maxDT: CCKCConstants.MAX_DT
         }
       );
     }
