@@ -46,6 +46,6 @@ require.config( {
     TWIXT: '../../twixt/js'
   },
 
-  // optional cache bust to make browser refresh load all included scripts, can be enabled with ?cacheBust
+  // Cache busting is applied by default, but can be disabled via ?cacheBust=false, see initialize-globals.js
   urlArgs: phet.chipper.getCacheBustArgs()
 } );
