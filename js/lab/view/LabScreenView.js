@@ -13,6 +13,7 @@ define( require => {
   const CCKCScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CCKCScreenView' );
   const circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
   const CircuitElementToolFactory = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/view/CircuitElementToolFactory' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
 
   class LabScreenView extends CCKCScreenView {
@@ -57,7 +58,7 @@ define( require => {
         circuitElementToolFactory.createPencilToolNode( 1, tandem.createTandem( 'pencilToolNode' ) )
       ];
 
-      super( model, circuitElementToolNodes, tandem, _.extend( {
+      super( model, circuitElementToolNodes, tandem, merge( {
         toolboxOrientation: 'vertical', // The toolbox should be vertical
         showResetAllButton: true, // The reset all button should be shown. REVIEW: doc repeats variable name
                                   // REVIEW^(samreid): I'm not sure what to do, are you saying the doc is redundant?
