@@ -22,7 +22,7 @@ define( require => {
     /**
      * @param {CircuitConstructionKitModel} model
      * @param {Tandem} tandem
-     * @param {Object} options
+     * @param {Object} [options]
      */
     constructor( model, tandem, options ) {
       const circuitElementToolFactory = new CircuitElementToolFactory( model.circuit, model.showLabelsProperty, model.viewTypeProperty,
