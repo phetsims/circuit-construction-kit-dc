@@ -5,44 +5,40 @@
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const CCKCConstants = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/CCKCConstants' );
-  const circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  const Image = require( 'SCENERY/nodes/Image' );
-  const LabModel = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/model/LabModel' );
-  const LabScreenView = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/lab/view/LabScreenView' );
-  const Property = require( 'AXON/Property' );
-  const Screen = require( 'JOIST/Screen' );
+import Property from '../../../axon/js/Property.js';
+import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
+import Screen from '../../../joist/js/Screen.js';
+import Image from '../../../scenery/js/nodes/Image.js';
+import labScreenIcon from '../../images/lab-screen-icon_png.js';
+import circuitConstructionKitDcStrings from '../circuit-construction-kit-dc-strings.js';
+import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
+import LabModel from './model/LabModel.js';
+import LabScreenView from './view/LabScreenView.js';
 
-  // strings
-  const labString = require( 'string!CIRCUIT_CONSTRUCTION_KIT_DC/screen.lab' ); // eslint-disable-line
+const labString = circuitConstructionKitDcStrings.screen.lab;
 
-  // images
-  const labScreenIcon = require( 'image!CIRCUIT_CONSTRUCTION_KIT_DC/lab-screen-icon.png' );
 
-  class LabScreen extends Screen {
+class LabScreen extends Screen {
 
-    /**
-     * @param {Tandem} tandem
-     * @param {Object} [options]
-     */
-    constructor( tandem, options ) {
+  /**
+   * @param {Tandem} tandem
+   * @param {Object} [options]
+   */
+  constructor( tandem, options ) {
 
-      super(
-        () => new LabModel( tandem.createTandem( 'model' ) ),
-        model => new LabScreenView( model, tandem.createTandem( 'view' ), options ), {
-          name: labString,
-          backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
-          homeScreenIcon: new Image( labScreenIcon ),
-          tandem: tandem,
-          maxDT: CCKCConstants.MAX_DT
-        }
-      );
-    }
+    super(
+      () => new LabModel( tandem.createTandem( 'model' ) ),
+      model => new LabScreenView( model, tandem.createTandem( 'view' ), options ), {
+        name: labString,
+        backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
+        homeScreenIcon: new Image( labScreenIcon ),
+        tandem: tandem,
+        maxDT: CCKCConstants.MAX_DT
+      }
+    );
   }
+}
 
-  return circuitConstructionKitDc.register( 'LabScreen', LabScreen );
-} );
+circuitConstructionKitDc.register( 'LabScreen', LabScreen );
+export default LabScreen;

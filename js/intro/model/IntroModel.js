@@ -5,23 +5,21 @@
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  const CircuitConstructionKitModel = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/model/CircuitConstructionKitModel' );
+import CircuitConstructionKitModel
+  from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
+import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
-  class IntroModel extends CircuitConstructionKitModel {
+class IntroModel extends CircuitConstructionKitModel {
 
-    /**
-     * @param {Tandem} tandem
-     * @constructor
-     */
-    constructor( tandem ) {
-      super( tandem );
-    }
+  /**
+   * @param {Tandem} tandem
+   * @constructor
+   */
+  constructor( tandem ) {
+    super( tandem );
   }
+}
 
-  return circuitConstructionKitDc.register( 'IntroModel', IntroModel );
-} );
+circuitConstructionKitDc.register( 'IntroModel', IntroModel );
+export default IntroModel;

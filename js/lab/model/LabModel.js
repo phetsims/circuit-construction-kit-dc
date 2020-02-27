@@ -5,22 +5,20 @@
  *
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( require => {
-  'use strict';
 
-  // modules
-  const circuitConstructionKitDc = require( 'CIRCUIT_CONSTRUCTION_KIT_DC/circuitConstructionKitDc' );
-  const CircuitConstructionKitModel = require( 'CIRCUIT_CONSTRUCTION_KIT_COMMON/model/CircuitConstructionKitModel' );
+import CircuitConstructionKitModel
+  from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
+import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
-  class LabModel extends CircuitConstructionKitModel {
+class LabModel extends CircuitConstructionKitModel {
 
-    /**
-     * @param {Tandem}
-     */
-    constructor( tandem ) {
-      super( tandem );
-    }
+  /**
+   * @param {Tandem}
+   */
+  constructor( tandem ) {
+    super( tandem );
   }
+}
 
-  return circuitConstructionKitDc.register( 'LabModel', LabModel );
-} );
+circuitConstructionKitDc.register( 'LabModel', LabModel );
+export default LabModel;
