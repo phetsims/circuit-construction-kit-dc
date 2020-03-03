@@ -7,7 +7,7 @@
   <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="phet-sim-level" content="development">
-  
+
   <title>circuit-construction-kit-dc</title>
 </head>
 
@@ -19,35 +19,72 @@
 
   window.phet = window.phet || {};
   window.phet.chipper = window.phet.chipper || {};
-  window.phet.chipper.packageObject = {
-    "name": "circuit-construction-kit-dc",
-    "version": "1.2.0-dev.2",
-    "license": "GPL-3.0",
-    "repository": { "type": "git", "url": "https://github.com/phetsims/circuit-construction-kit-dc.git" },
-    "devDependencies": { "grunt": "~1.0.0" },
-    "phet": {
-      "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC",
-      "phetLibs": [ "circuit-construction-kit-common", "twixt", "griddle" ],
-      "runnable": true,
-      "supportedBrands": [ "phet", "adapted-from-phet" ],
-      "simulation": true,
-      "supportsSound": true
-    },
-    "eslintConfig": { "extends": "../chipper/eslint/sim_es6_eslintrc.js" }
-  };
-  window.phet.chipper.stringRepos = [ {
-    "repo": "circuit-construction-kit-common",
-    "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_COMMON"
-  }, {
-    "repo": "circuit-construction-kit-dc",
-    "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC"
-  }, { "repo": "griddle", "requirejsNamespace": "GRIDDLE" }, {
-    "repo": "joist",
-    "requirejsNamespace": "JOIST"
-  }, { "repo": "scenery-phet", "requirejsNamespace": "SCENERY_PHET" }, {
-    "repo": "sun",
-    "requirejsNamespace": "SUN"
-  }, { "repo": "tambo", "requirejsNamespace": "TAMBO" }, { "repo": "twixt", "requirejsNamespace": "TWIXT" } ];
+  window.phet.chipper.packageObject =
+    {
+      "name": "circuit-construction-kit-dc",
+      "version": "1.2.0-dev.2",
+      "license": "GPL-3.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/phetsims/circuit-construction-kit-dc.git"
+      },
+      "devDependencies": {
+        "grunt": "~1.0.0"
+      },
+      "phet": {
+        "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC",
+        "phetLibs": [
+          "circuit-construction-kit-common",
+          "twixt",
+          "griddle"
+        ],
+        "runnable": true,
+        "supportedBrands": [
+          "phet",
+          "adapted-from-phet"
+        ],
+        "simulation": true,
+        "supportsSound": true
+      },
+      "eslintConfig": {
+        "extends": "../chipper/eslint/sim_es6_eslintrc.js"
+      }
+    };
+  window.phet.chipper.stringRepos =
+    [
+      {
+        "repo": "circuit-construction-kit-common",
+        "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_COMMON"
+      },
+      {
+        "repo": "circuit-construction-kit-dc",
+        "requirejsNamespace": "CIRCUIT_CONSTRUCTION_KIT_DC"
+      },
+      {
+        "repo": "griddle",
+        "requirejsNamespace": "GRIDDLE"
+      },
+      {
+        "repo": "joist",
+        "requirejsNamespace": "JOIST"
+      },
+      {
+        "repo": "scenery-phet",
+        "requirejsNamespace": "SCENERY_PHET"
+      },
+      {
+        "repo": "sun",
+        "requirejsNamespace": "SUN"
+      },
+      {
+        "repo": "tambo",
+        "requirejsNamespace": "TAMBO"
+      },
+      {
+        "repo": "twixt",
+        "requirejsNamespace": "TWIXT"
+      }
+    ];
 
   // Identify the brand (assume generated brand if not provided with query parameters)
   const brandMatch = location.search.match( /brand=([^&]+)/ );
