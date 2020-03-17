@@ -28,8 +28,7 @@ const simOptions = {
     qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Liam Mulhall, Ben Roberts, Jacob Romero, Ethan Ward, Kathryn Woessner',
     graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
   },
-  tandem: tandem,
-  accessibility: true
+  tandem: tandem
 };
 
 // Support accessibility for deleting selected circuit elements, but don't support broader tab navigation until it
