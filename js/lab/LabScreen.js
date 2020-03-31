@@ -11,7 +11,7 @@ import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConst
 import Screen from '../../../joist/js/Screen.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import labScreenIcon from '../../images/lab-screen-icon_png.js';
-import circuitConstructionKitDcStrings from '../circuit-construction-kit-dc-strings.js';
+import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import LabModel from './model/LabModel.js';
 import LabScreenView from './view/LabScreenView.js';

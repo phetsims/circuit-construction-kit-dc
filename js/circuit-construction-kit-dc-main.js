@@ -11,7 +11,7 @@ import SimLauncher from '../../joist/js/SimLauncher.js';
 import KeyboardUtils from '../../scenery/js/accessibility/KeyboardUtils.js';
 import '../../scenery/js/nodes/Image.js'; // Image is required for making toDataURLNodeSynchronous work in the built version
 import Tandem from '../../tandem/js/Tandem.js';
-import circuitConstructionKitDcStrings from './circuit-construction-kit-dc-strings.js';
+import circuitConstructionKitDcStrings from './circuitConstructionKitDcStrings.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
 
