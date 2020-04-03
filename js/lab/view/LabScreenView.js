@@ -9,8 +9,7 @@
 import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import Resistor from '../../../../circuit-construction-kit-common/js/model/Resistor.js';
 import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
-import CircuitElementToolFactory
-  from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
+import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Node from '../../../../scenery/js/nodes/Node.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';

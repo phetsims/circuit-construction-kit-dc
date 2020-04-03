@@ -6,8 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import CircuitConstructionKitModel
-  from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
+import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
 class IntroModel extends CircuitConstructionKitModel {
