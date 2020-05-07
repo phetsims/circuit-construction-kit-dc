@@ -7,7 +7,7 @@
  */
 
 import Sim from '../../joist/js/Sim.js';
-import SimLauncher from '../../joist/js/SimLauncher.js';
+import simLauncher from '../../joist/js/simLauncher.js';
 import KeyboardUtils from '../../scenery/js/accessibility/KeyboardUtils.js';
 import '../../scenery/js/nodes/Image.js'; // Image is required for making toDataURLNodeSynchronous work in the built version
 import Tandem from '../../tandem/js/Tandem.js';
@@ -44,7 +44,7 @@ document.addEventListener( 'keydown', event => {
 // order to load the classes into an accessible namespace, the *-config.js and *-main.js are loaded however, when
 // running the unit tests we don't also want to launch the simulation.
 if ( !window.circuitConstructionKitTestSuite ) {
-  SimLauncher.launch( () => {
+  simLauncher.launch( () => {
 
     // Launch the simulation once everything is ready
     const sim = new Sim( circuitConstructionKitDcTitleString, [
