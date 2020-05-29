@@ -11,6 +11,7 @@ import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConst
 import lightBulbImageIcon from '../../../circuit-construction-kit-common/mipmaps/lightbulb-middle-icon_png.js';
 import lightBulbImage from '../../../circuit-construction-kit-common/mipmaps/lightbulb-middle_png.js';
 import Screen from '../../../joist/js/Screen.js';
+import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import Rectangle from '../../../scenery/js/nodes/Rectangle.js';
 import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
@@ -50,8 +51,14 @@ class IntroScreen extends Screen {
     const options = {
       name: introString,
       backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
-      homeScreenIcon: homeScreenIcon,
-      navigationBarIcon: navigationBarIcon,
+      homeScreenIcon: new ScreenIcon( homeScreenIcon, {
+        maxIconWidthProportion: 1,
+        maxIconHeightProportion: 1
+      } ),
+      navigationBarIcon: new ScreenIcon( navigationBarIcon, {
+        maxIconWidthProportion: 1,
+        maxIconHeightProportion: 1
+      } ),
       tandem: tandem,
       maxDT: CCKCConstants.MAX_DT
     };
