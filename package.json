@@ -19,11 +19,15 @@
     "runnable": true,
     "supportedBrands": [
       "phet",
-      "adapted-from-phet"
+      "adapted-from-phet",
+      "phet-io"
     ],
     "simulation": true,
     "supportsInteractiveDescriptions": true,
-    "supportsSound": true
+    "supportsSound": true,
+    "phet-io": {
+      "validation": true
+    }
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_es6_eslintrc.js"
