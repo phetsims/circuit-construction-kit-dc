@@ -23,29 +23,31 @@ class IntroScreenView extends CCKCScreenView {
     const circuitElementToolFactory = new CircuitElementToolFactory( model.circuit, model.showLabelsProperty, model.viewTypeProperty,
       point => this.circuitLayerNode.globalToLocalPoint( point ) );
 
-    const wireToolNode = circuitElementToolFactory.createWireToolNode( CCKCConstants.NUMBER_OF_WIRES, tandem.createTandem( 'wireToolNode' ) );
+    // TODO: Better way to structure tandems
+    const carouselTandem = tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'items' );
+    const wireToolNode = circuitElementToolFactory.createWireToolNode( CCKCConstants.NUMBER_OF_WIRES, carouselTandem.createTandem( 'wireToolNode' ) );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
     const circuitElementToolNodes = [
 
       // This page is duplicated in the Lab Screen View
       wireToolNode,
-      circuitElementToolFactory.createRightBatteryToolNode( 10, tandem.createTandem( 'rightBatteryToolNode' ) ),
-      circuitElementToolFactory.createLightBulbToolNode( 10, tandem.createTandem( 'lightBulbToolNode' ) ),
-      circuitElementToolFactory.createResistorToolNode( 10, Resistor.ResistorType.RESISTOR, tandem.createTandem( 'resistorToolNode' ) ),
-      circuitElementToolFactory.createSwitchToolNode( 5, tandem.createTandem( 'switchToolNode' ) ),
+      circuitElementToolFactory.createRightBatteryToolNode( 10, carouselTandem.createTandem( 'rightBatteryToolNode' ) ),
+      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'lightBulbToolNode' ) ),
+      circuitElementToolFactory.createResistorToolNode( 10, Resistor.ResistorType.RESISTOR, carouselTandem.createTandem( 'resistorToolNode' ) ),
+      circuitElementToolFactory.createSwitchToolNode( 5, carouselTandem.createTandem( 'switchToolNode' ) ),
 
       new Node( { children: [ wireToolNode ] } ), // Wire should appear at the top of each carousel page
-      circuitElementToolFactory.createFuseToolNode( 10, tandem.createTandem( 'fuseToolNode' ) ),
-      circuitElementToolFactory.createDollarBillToolNode( 1, tandem.createTandem( 'dollarBillToolNode' ) ),
-      circuitElementToolFactory.createPaperClipToolNode( 1, tandem.createTandem( 'paperClipToolNode' ) ),
-      circuitElementToolFactory.createCoinToolNode( 1, tandem.createTandem( 'coinToolNode' ) ),
+      circuitElementToolFactory.createFuseToolNode( 10, carouselTandem.createTandem( 'fuseToolNode' ) ),
+      circuitElementToolFactory.createDollarBillToolNode( 1, carouselTandem.createTandem( 'dollarBillToolNode' ) ),
+      circuitElementToolFactory.createPaperClipToolNode( 1, carouselTandem.createTandem( 'paperClipToolNode' ) ),
+      circuitElementToolFactory.createCoinToolNode( 1, carouselTandem.createTandem( 'coinToolNode' ) ),
 
       new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
-      circuitElementToolFactory.createEraserToolNode( 1, tandem.createTandem( 'eraserToolNode' ) ),
-      circuitElementToolFactory.createPencilToolNode( 1, tandem.createTandem( 'pencilToolNode' ) ),
-      circuitElementToolFactory.createHandToolNode( 1, tandem.createTandem( 'handToolNode' ) ),
-      circuitElementToolFactory.createDogToolNode( 1, tandem.createTandem( 'dogToolNode' ) )
+      circuitElementToolFactory.createEraserToolNode( 1, carouselTandem.createTandem( 'eraserToolNode' ) ),
+      circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
+      circuitElementToolFactory.createHandToolNode( 1, carouselTandem.createTandem( 'handToolNode' ) ),
+      circuitElementToolFactory.createDogToolNode( 1, carouselTandem.createTandem( 'dogToolNode' ) )
     ];
 
     super( model, circuitElementToolNodes, tandem, {
