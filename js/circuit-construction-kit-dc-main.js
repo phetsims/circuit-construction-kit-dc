@@ -54,7 +54,7 @@ if ( !window.circuitConstructionKitTestSuite ) {
     ], simOptions );
     sim.start();
 
-    // Disable sounds for joist/homescreen/navigation bar/carousel, but leave sound for the dog bark
+    // Disable sounds for joist/home screen/navigation bar/carousel, but leave sound for the dog bark
     soundManager.setOutputLevelForCategory( 'user-interface', 0 );
   } );
 }
