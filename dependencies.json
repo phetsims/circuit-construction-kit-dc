@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.2.0-dev.3 Mon Jul 27 2020 10:35:34 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# circuit-construction-kit-dc 1.2.0-dev.4 Mon Jul 27 2020 10:54:17 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "1a41cef653bbed1025af5768bea958d7e3e0f8ae",
     "branch": "master"
@@ -21,7 +21,7 @@
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "81657202303c7e787c483f3c6987e41c639c60aa",
+    "sha": "4c96d2448035c2d059591dc19510763e3049daf9",
     "branch": "master"
   },
   "dot": {
