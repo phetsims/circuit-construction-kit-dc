@@ -36,7 +36,7 @@ class LabScreenView extends CCKCScreenView {
       // This page is duplicated in the Intro Screen View
       wireToolNode,
       circuitElementToolFactory.createRightBatteryToolNode( 10, carouselTandem.createTandem( 'rightBatteryToolNode' ) ),
-      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'lightBulbToolNode' ) ),
+      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'lightBulbToolNode' ), model.circuit.lightBulbGroup ),
       circuitElementToolFactory.createResistorToolNode( 10, Resistor.ResistorType.RESISTOR, carouselTandem.createTandem( 'resistorToolNode' ) ),
       circuitElementToolFactory.createSwitchToolNode( 5, carouselTandem.createTandem( 'switchToolNode' ) ),
 
@@ -55,7 +55,8 @@ class LabScreenView extends CCKCScreenView {
       new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
       circuitElementToolFactory.createHandToolNode( 1, carouselTandem.createTandem( 'handToolNode' ) ),
       circuitElementToolFactory.createDogToolNode( 1, carouselTandem.createTandem( 'dogToolNode' ) ),
-      circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) )
+      circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
+      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'lightBulbToolNode' ), model.circuit.nonOhmicLightBulbGroup, 'Non-ohmic Light Bulb' )
     ];
 
     super( model, circuitElementToolNodes, tandem, merge( {
