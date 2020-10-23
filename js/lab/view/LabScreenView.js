@@ -56,7 +56,7 @@ class LabScreenView extends CCKCScreenView {
       circuitElementToolFactory.createHandToolNode( 1, carouselTandem.createTandem( 'handToolNode' ) ),
       circuitElementToolFactory.createDogToolNode( 1, carouselTandem.createTandem( 'dogToolNode' ) ),
       circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
-      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'lightBulbToolNode' ), model.circuit.nonOhmicLightBulbGroup, 'Non-ohmic Light Bulb' )
+      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'nonOhmicLightBulbToolNode' ), model.circuit.nonOhmicLightBulbGroup, 'Non-ohmic Light Bulb' )
     ];
 
     super( model, circuitElementToolNodes, tandem, merge( {
