@@ -32,6 +32,21 @@ class LabScreenView extends CCKCScreenView {
     const carouselTandem = tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' );
     const wireToolNode = circuitElementToolFactory.createWireToolNode( CCKCConstants.NUMBER_OF_WIRES, carouselTandem.createTandem( 'wireToolNode' ) );
 
+    const realisticLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'nonOhmicLightBulbToolNode' ), model.circuit.nonOhmicLightBulbGroup, circuitConstructionKitCommonStrings.realisticBulb );
+
+    // Show the realistic bulbs if selected
+    model.addRealisticBulbsProperty.link( addRealisticBulbs => realisticLightBulbToolNode.setVisible( addRealisticBulbs ) );
+
+    // Scroll to the realistic bulbs if selected, but not on startup
+    model.addRealisticBulbsProperty.lazyLink( addRealisticBulbs => {
+      if ( addRealisticBulbs ) {
+
+        // Due to the manual pagination code for carousel, we cannot index by element. As a workaround, we assume the
+        // realistic bulb is on the last page of the carousel.
+        this.circuitElementToolbox.carousel.scrollToItemIndex( this.circuitElementToolbox.carousel.numberOfPages - 1 );
+      }
+    } );
+
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
     const circuitElementToolNodes = [
 
@@ -58,8 +73,15 @@ class LabScreenView extends CCKCScreenView {
       circuitElementToolFactory.createHandToolNode( 1, carouselTandem.createTandem( 'handToolNode' ) ),
       circuitElementToolFactory.createDogToolNode( 1, carouselTandem.createTandem( 'dogToolNode' ) ),
       circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
-      circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'nonOhmicLightBulbToolNode' ), model.circuit.nonOhmicLightBulbGroup, circuitConstructionKitCommonStrings.realisticBulb )
+
+      // The automatic scrolling function assumes this be on the last page.
+      realisticLightBulbToolNode
     ];
+
+    // Check the assumption that the realistic light bulb tool node remains on the last page, so we can scroll to it
+    // without breaking the modularity of the pagination code.
+    assert && assert( circuitElementToolNodes.indexOf( realisticLightBulbToolNode ) >= circuitElementToolNodes.length - 5, 'realisticLightBulbToolNode should be' +
+                                                                                                                           ' on the last page' );
 
     super( model, circuitElementToolNodes, tandem, merge( {
       toolboxOrientation: 'vertical', // The toolbox should be vertical
