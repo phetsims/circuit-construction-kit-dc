@@ -32,7 +32,13 @@ class LabScreenView extends CCKCScreenView {
     const carouselTandem = tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' );
     const wireToolNode = circuitElementToolFactory.createWireToolNode( CCKCConstants.NUMBER_OF_WIRES, carouselTandem.createTandem( 'wireToolNode' ) );
 
-    const realisticLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode( 10, carouselTandem.createTandem( 'nonOhmicLightBulbToolNode' ), model.circuit.nonOhmicLightBulbGroup, circuitConstructionKitCommonStrings.realisticBulb );
+    const realisticLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
+      10,
+      carouselTandem.createTandem( 'realisticLightBulbToolNode' ),
+      model.circuit.realisticLightBulbGroup,
+      circuitConstructionKitCommonStrings.realisticBulb,
+      true
+    );
 
     // Show the realistic bulbs if selected
     model.addRealisticBulbsProperty.link( addRealisticBulbs => realisticLightBulbToolNode.setVisible( addRealisticBulbs ) );
