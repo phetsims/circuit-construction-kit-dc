@@ -37,11 +37,12 @@ class LabScreenView extends CCKCScreenView {
       carouselTandem.createTandem( 'realisticLightBulbToolNode' ),
       model.circuit.realisticLightBulbGroup,
       circuitConstructionKitCommonStrings.realisticBulb,
-      true
+      true,
+      model.addRealisticBulbsProperty
     );
 
     // Show the realistic bulbs if selected
-    model.addRealisticBulbsProperty.link( addRealisticBulbs => realisticLightBulbToolNode.setVisible( addRealisticBulbs ) );
+    // model.addRealisticBulbsProperty.link( addRealisticBulbs => realisticLightBulbToolNode.setVisible( addRealisticBulbs ) );
 
     // Scroll to the realistic bulbs if selected, but not on startup
     model.addRealisticBulbsProperty.lazyLink( addRealisticBulbs => {
