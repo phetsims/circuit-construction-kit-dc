@@ -14,7 +14,8 @@
     "phetLibs": [
       "circuit-construction-kit-common",
       "twixt",
-      "griddle"
+      "griddle",
+      "bamboo"
     ],
     "runnable": true,
     "supportedBrands": [
