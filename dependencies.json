@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.2.0-dev.8 Tue Jan 05 2021 12:39:14 GMT-0700 (Mountain Standard Time)",
+  "comment": "# circuit-construction-kit-dc 1.2.0-dev.10 Tue Jan 05 2021 13:31:04 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "3df8c5ff9a465b031f84195a90bbb7e1be10a14d",
     "branch": "master"
@@ -21,11 +21,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "5990066df77f79e08e247d5f3eba034db3dfcf04",
+    "sha": "15992f6e7af16bd08f178cad8b05274f683d15da",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "27b10b4c2ca2c909e6a3195baa7c99589666acd3",
+    "sha": "b66afa40f2ae74d02d490aa4f8858a8b62a9fff1",
     "branch": "master"
   },
   "dot": {
