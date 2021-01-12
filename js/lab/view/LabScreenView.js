@@ -47,10 +47,7 @@ class LabScreenView extends CCKCScreenView {
     // Scroll to the realistic bulbs if selected, but not on startup
     model.addRealisticBulbsProperty.lazyLink( addRealisticBulbs => {
       if ( addRealisticBulbs ) {
-
-        // Due to the manual pagination code for carousel, we cannot index by element. As a workaround, we assume the
-        // realistic bulb is on the last page of the carousel.
-        this.circuitElementToolbox.carousel.scrollToItemIndex( this.circuitElementToolbox.carousel.numberOfPages - 1 );
+        this.circuitElementToolbox.carousel.scrollToItem( realisticLightBulbToolNode );
       }
     } );
 
