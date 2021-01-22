@@ -24,6 +24,7 @@ the sims, as well as other important information.
 git clone https://github.com/phetsims/assert.git
 git clone https://github.com/phetsims/axon.git
 git clone https://github.com/phetsims/babel.git
+git clone https://github.com/phetsims/bamboo.git
 git clone https://github.com/phetsims/brand.git
 git clone https://github.com/phetsims/chipper.git
 git clone https://github.com/phetsims/circuit-construction-kit-common.git
