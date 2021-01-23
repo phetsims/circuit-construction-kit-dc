@@ -32,22 +32,22 @@ class LabScreenView extends CCKCScreenView {
     const carouselTandem = tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' );
     const wireToolNode = circuitElementToolFactory.createWireToolNode( CCKCConstants.NUMBER_OF_WIRES, carouselTandem.createTandem( 'wireToolNode' ) );
 
-    const realisticLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
+    const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
       10,
-      carouselTandem.createTandem( 'realisticLightBulbToolNode' ),
-      model.circuit.realisticLightBulbGroup,
-      circuitConstructionKitCommonStrings.realisticBulb,
+      carouselTandem.createTandem( 'realLightBulbToolNode' ),
+      model.circuit.realLightBulbGroup,
+      circuitConstructionKitCommonStrings.realBulb,
       true,
-      model.addRealisticBulbsProperty
+      model.addRealBulbsProperty
     );
 
-    // Show the realistic bulbs if selected
-    // model.addRealisticBulbsProperty.link( addRealisticBulbs => realisticLightBulbToolNode.setVisible( addRealisticBulbs ) );
+    // Show the real bulbs if selected
+    // model.addRealBulbsProperty.link( addRealBulbs => realLightBulbToolNode.setVisible( addRealisticBulbs ) );
 
-    // Scroll to the realistic bulbs if selected, but not on startup
-    model.addRealisticBulbsProperty.lazyLink( addRealisticBulbs => {
-      if ( addRealisticBulbs ) {
-        this.circuitElementToolbox.carousel.scrollToItem( realisticLightBulbToolNode );
+    // Scroll to the real bulbs if selected, but not on startup
+    model.addRealBulbsProperty.lazyLink( addRealBulbs => {
+      if ( addRealBulbs ) {
+        this.circuitElementToolbox.carousel.scrollToItem( realLightBulbToolNode );
       }
     } );
 
@@ -79,12 +79,12 @@ class LabScreenView extends CCKCScreenView {
       circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
 
       // The automatic scrolling function assumes this be on the last page.
-      realisticLightBulbToolNode
+      realLightBulbToolNode
     ];
 
-    // Check the assumption that the realistic light bulb tool node remains on the last page, so we can scroll to it
+    // Check the assumption that the real light bulb tool node remains on the last page, so we can scroll to it
     // without breaking the modularity of the pagination code.
-    assert && assert( circuitElementToolNodes.indexOf( realisticLightBulbToolNode ) >= circuitElementToolNodes.length - 5, 'realisticLightBulbToolNode should be' +
+    assert && assert( circuitElementToolNodes.indexOf( realLightBulbToolNode ) >= circuitElementToolNodes.length - 5, 'realLightBulbToolNode should be' +
                                                                                                                            ' on the last page' );
 
     super( model, circuitElementToolNodes, tandem, merge( {
