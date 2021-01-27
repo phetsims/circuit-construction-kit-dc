@@ -11,7 +11,6 @@ import CCKCConstants from '../../circuit-construction-kit-common/js/CCKCConstant
 import CCKCOptionsDialogContent from '../../circuit-construction-kit-common/js/view/CCKCOptionsDialogContent.js';
 import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
-import KeyboardUtils from '../../scenery/js/accessibility/KeyboardUtils.js';
 import '../../scenery/js/nodes/Image.js';
 import soundManager from '../../tambo/js/soundManager.js';
 import Tandem from '../../tandem/js/Tandem.js';
@@ -35,15 +34,6 @@ const simOptions = {
   },
   tandem: tandem
 };
-
-// Support accessibility for deleting selected circuit elements, but don't support broader tab navigation until it
-// is complete
-document.addEventListener( 'keydown', event => {
-  const keyCode = event.keyCode || event.which;
-  if ( keyCode === KeyboardUtils.KEY_TAB ) {
-    event.preventDefault();
-  }
-} );
 
 // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In
 // order to load the classes into an accessible namespace, the *-config.js and *-main.js are loaded however, when
