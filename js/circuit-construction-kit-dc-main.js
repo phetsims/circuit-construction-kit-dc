@@ -6,6 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import CCKCConstants from '../../circuit-construction-kit-common/js/CCKCConstants.js';
 // Image is required for making toDataURLNodeSynchronous work in the built version
 import CCKCOptionsDialogContent from '../../circuit-construction-kit-common/js/view/CCKCOptionsDialogContent.js';
 import Sim from '../../joist/js/Sim.js';
@@ -22,7 +23,7 @@ import LabScreen from './lab/LabScreen.js';
 const tandem = Tandem.ROOT;
 
 const circuitConstructionKitDcTitleString = circuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].title;
-
+CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
 const simOptions = {
   createOptionsDialogContent: tandem => new CCKCOptionsDialogContent( tandem ),
   credits: {
