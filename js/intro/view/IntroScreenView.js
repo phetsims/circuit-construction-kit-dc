@@ -43,7 +43,7 @@ class IntroScreenView extends CCKCScreenView {
       circuitElementToolFactory.createPaperClipToolNode( 1, carouselTandem.createTandem( 'paperClipToolNode' ) ),
       circuitElementToolFactory.createCoinToolNode( 1, carouselTandem.createTandem( 'coinToolNode' ) ),
 
-      new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+      new Node( { children: [ wireToolNode ] } ), // Wire should appear at the top of each carousel page
       circuitElementToolFactory.createEraserToolNode( 1, carouselTandem.createTandem( 'eraserToolNode' ) ),
       circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
       circuitElementToolFactory.createHandToolNode( 1, carouselTandem.createTandem( 'handToolNode' ) ),

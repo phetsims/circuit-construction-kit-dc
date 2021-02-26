@@ -61,19 +61,19 @@ class LabScreenView extends CCKCScreenView {
       circuitElementToolFactory.createResistorToolNode( 10, Resistor.ResistorType.RESISTOR, carouselTandem.createTandem( 'resistorToolNode' ) ),
       circuitElementToolFactory.createSwitchToolNode( 5, carouselTandem.createTandem( 'switchToolNode' ) ),
 
-      new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+      new Node( { children: [ wireToolNode ] } ), // Wire should appear at the top of each carousel page
       circuitElementToolFactory.createFuseToolNode( 10, carouselTandem.createTandem( 'fuseToolNode' ) ),
       circuitElementToolFactory.createHighVoltageBatteryToolNode( 4, carouselTandem.createTandem( 'highVoltageBatteryToolNode' ) ),
       circuitElementToolFactory.createHighResistanceBulbToolNode( 4, carouselTandem.createTandem( 'highResistanceBulbToolNode' ) ),
       circuitElementToolFactory.createHighResistanceResistorToolNode( 4, carouselTandem.createTandem( 'highResistanceResistorToolNode' ) ),
 
-      new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+      new Node( { children: [ wireToolNode ] } ), // Wire should appear at the top of each carousel page
       circuitElementToolFactory.createDollarBillToolNode( 1, carouselTandem.createTandem( 'dollarBillToolNode' ) ),
       circuitElementToolFactory.createPaperClipToolNode( 1, carouselTandem.createTandem( 'paperClipToolNode' ) ),
       circuitElementToolFactory.createCoinToolNode( 1, carouselTandem.createTandem( 'coinToolNode' ) ),
       circuitElementToolFactory.createEraserToolNode( 1, carouselTandem.createTandem( 'eraserToolNode' ) ),
 
-      new Node( { children: [ wireToolNode ] } ),// Wire should appear at the top of each carousel page
+      new Node( { children: [ wireToolNode ] } ), // Wire should appear at the top of each carousel page
       circuitElementToolFactory.createHandToolNode( 1, carouselTandem.createTandem( 'handToolNode' ) ),
       circuitElementToolFactory.createDogToolNode( 1, carouselTandem.createTandem( 'dogToolNode' ) ),
       circuitElementToolFactory.createPencilToolNode( 1, carouselTandem.createTandem( 'pencilToolNode' ) ),
