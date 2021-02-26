@@ -85,7 +85,7 @@ class LabScreenView extends CCKCScreenView {
     // Check the assumption that the real light bulb tool node remains on the last page, so we can scroll to it
     // without breaking the modularity of the pagination code.
     assert && assert( circuitElementToolNodes.indexOf( realLightBulbToolNode ) >= circuitElementToolNodes.length - 5, 'realLightBulbToolNode should be' +
-                                                                                                                           ' on the last page' );
+                                                                                                                      ' on the last page' );
 
     super( model, circuitElementToolNodes, tandem, merge( {
       toolboxOrientation: 'vertical', // The toolbox should be vertical
