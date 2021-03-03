@@ -53,7 +53,6 @@ class IntroScreenView extends CCKCScreenView {
     ];
 
     super( model, circuitElementToolNodes, tandem, {
-      showResetAllButton: true, // The reset all button should be shown.
       showAdvancedControls: false
     } );
   }

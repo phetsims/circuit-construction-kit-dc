@@ -81,8 +81,6 @@ class LabScreenView extends CCKCScreenView {
                                                                                                                       ' on the last page' );
 
     super( model, circuitElementToolNodes, tandem, merge( {
-      showResetAllButton: true, // The reset all button should be shown. REVIEW: doc repeats variable name
-                                // REVIEW^(samreid): I'm not sure what to do, are you saying the doc is redundant?
       showSeriesAmmeters: true
     }, options ) );
   }
