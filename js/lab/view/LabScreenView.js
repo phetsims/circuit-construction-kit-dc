@@ -88,7 +88,6 @@ class LabScreenView extends CCKCScreenView {
                                                                                                                       ' on the last page' );
 
     super( model, circuitElementToolNodes, tandem, merge( {
-      toolboxOrientation: 'vertical', // The toolbox should be vertical
       showResetAllButton: true, // The reset all button should be shown. REVIEW: doc repeats variable name
                                 // REVIEW^(samreid): I'm not sure what to do, are you saying the doc is redundant?
       showSeriesAmmeters: true
