@@ -22,15 +22,12 @@ class LabScreenView extends CCKCScreenView {
    */
   constructor( model, tandem, options ) {
 
-    // TODO: Better way to structure tandems
-    const carouselTandem = tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' );
-
     const circuitElementToolFactory = new CircuitElementToolFactory(
       model.circuit,
       model.showLabelsProperty,
       model.viewTypeProperty,
       point => this.circuitLayerNode.globalToLocalPoint( point ),
-      carouselTandem
+      tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' )
     );
 
     const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
@@ -61,9 +58,9 @@ class LabScreenView extends CCKCScreenView {
 
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createFuseToolNode(),
-      circuitElementToolFactory.createHighVoltageBatteryToolNode( 4, carouselTandem.createTandem( 'highVoltageBatteryToolNode' ) ),
-      circuitElementToolFactory.createHighResistanceBulbToolNode( 4, carouselTandem.createTandem( 'highResistanceBulbToolNode' ) ),
-      circuitElementToolFactory.createHighResistanceResistorToolNode( 4, carouselTandem.createTandem( 'highResistanceResistorToolNode' ) ),
+      circuitElementToolFactory.createHighVoltageBatteryToolNode(),
+      circuitElementToolFactory.createHighResistanceBulbToolNode(),
+      circuitElementToolFactory.createHighResistanceResistorToolNode(),
 
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createDollarBillToolNode(),
