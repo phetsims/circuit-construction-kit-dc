@@ -34,7 +34,8 @@ class LabScreenView extends CCKCScreenView {
       model.circuit.realLightBulbGroup,
       circuitConstructionKitCommonStrings.realBulb,
       true,
-      model.addRealBulbsProperty
+      model.addRealBulbsProperty,
+      'realLightBulbToolNode'
     );
 
     // Show the real bulbs if selected
