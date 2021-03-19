@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.3.0-dev.5 Fri Mar 19 2021 11:11:38 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# circuit-construction-kit-dc 1.3.0-dev.6 Fri Mar 19 2021 14:55:01 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "423d662a3672e3de42852ee6d6fdec705ac98dd5",
     "branch": "master"
@@ -21,11 +21,11 @@
     "branch": "master"
   },
   "circuit-construction-kit-common": {
-    "sha": "415fa8818fcd96166c3a7a738a684072bc5bec4c",
+    "sha": "ec55c81875211c3313e86f111ec2a57d6eb4d771",
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "5fb478f908446db23e078bf61fb8eed0491c63b9",
+    "sha": "f9cad703292ed87f0290da90b3c3462393f7b708",
     "branch": "master"
   },
   "dot": {
@@ -37,7 +37,7 @@
     "branch": "master"
   },
   "joist": {
-    "sha": "20740508e5420abf64693478a3b09ef162a56bc7",
+    "sha": "a749f3525a58575cdfd2cc911f25bd737edc0f6a",
     "branch": "master"
   },
   "kite": {
@@ -49,7 +49,7 @@
     "branch": "master"
   },
   "phet-io": {
-    "sha": "d7cd0534a8e201a608bd4e747ec411d7bd151fa6",
+    "sha": "27f798e58880a3dc2c116b8612bcb43fb74700a7",
     "branch": "master"
   },
   "phet-io-client-guides": {
@@ -73,7 +73,7 @@
     "branch": "master"
   },
   "scenery": {
-    "sha": "626cf99b40c3cfaf18ec7359565bd00bfd858a5d",
+    "sha": "36b2f0b5fc094b939168ca02a7de4854edf7ebe2",
     "branch": "master"
   },
   "scenery-phet": {
@@ -105,7 +105,7 @@
     "branch": "master"
   },
   "utterance-queue": {
-    "sha": "d885512f6850a668eff67867f8dea526a421293c",
+    "sha": "2b5aa3e48d0e940775770ad7039193de0c1ef222",
     "branch": "master"
   }
 }
