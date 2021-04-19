@@ -24,7 +24,9 @@
       "phet-io"
     ],
     "simulation": true,
-    "supportsInteractiveDescription": true,
+    "features":{
+      "supportsInteractiveDescription": true
+    },
     "supportsSound": true
   },
   "eslintConfig": {
