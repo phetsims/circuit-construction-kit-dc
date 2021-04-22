@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.2.2 Fri Apr 02 2021 12:55:56 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# circuit-construction-kit-dc 1.2.2 Thu Apr 22 2021 11:41:38 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "3df8c5ff9a465b031f84195a90bbb7e1be10a14d",
     "branch": "HEAD"
@@ -25,7 +25,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "dd2ec07c2609ff47e0186f8366e2f30a6fda41c1",
+    "sha": "e9c9a12c4d457dd0c9f3f930cc722687b9ff4cd9",
     "branch": "1.2"
   },
   "dot": {
@@ -73,8 +73,8 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "0d3858a7b740c435f2c61178f00161d37c66c332",
-    "branch": "HEAD"
+    "sha": "0e6e2363e82e8c2051f7460a465b11f188d5fd32",
+    "branch": "circuit-construction-kit-dc-1.2"
   },
   "scenery-phet": {
     "sha": "9745dbd40c7588d7fbc2442872c3267cba7f3d04",
