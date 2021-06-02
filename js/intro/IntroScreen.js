@@ -8,8 +8,8 @@
 
 import Property from '../../../axon/js/Property.js';
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
-import lightBulbImageIcon from '../../../circuit-construction-kit-common/mipmaps/lightbulb-middle-icon_png.js';
-import lightBulbImage from '../../../circuit-construction-kit-common/mipmaps/lightbulb-middle_png.js';
+import lightBulbImageIcon from '../../../circuit-construction-kit-common/mipmaps/light-bulb-middle-icon_png.js';
+import lightBulbImage from '../../../circuit-construction-kit-common/mipmaps/light-bulb-middle_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Image from '../../../scenery/js/nodes/Image.js';
