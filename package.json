@@ -24,10 +24,10 @@
       "phet-io"
     ],
     "simulation": true,
-    "features":{
+    "features": {
+      "supportsSound": true,
       "supportsInteractiveDescription": true
-    },
-    "supportsSound": true
+    }
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_eslintrc.js"
