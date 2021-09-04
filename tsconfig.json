@@ -1,0 +1,26 @@
+{
+  "extends": "../chipper/tsconfig-core.json",
+  "references": [
+    {
+      "path": "../../../circuit-construction-kit-common"
+    },
+    {
+      "path": "../twixt"
+    },
+    {
+      "path": "../griddle"
+    },
+    {
+      "path": "../bamboo"
+    },
+    {
+      "path": "../joist"
+    }
+  ],
+  "include": [
+    "js/**/*",
+    "sounds/**/*",
+    "mipmaps/**/*",
+    "images/**/*"
+  ]
+}
