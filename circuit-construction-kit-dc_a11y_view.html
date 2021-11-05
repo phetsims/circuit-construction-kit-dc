@@ -219,7 +219,6 @@
   const IS_BUILT_STRING = '{{IS_BUILT}}';
   const IS_BUILT = IS_BUILT_STRING.indexOf( '\{\{' ) !== 0; // escape for better syntax highlighting support
 
-
   // Grab all query parameters to pass to the simulation, and a couple of params that are required for this test
   let simulationQueryString = window.location.search;
   if ( simulationQueryString.indexOf( '?' ) >= 0 ) {
@@ -235,8 +234,10 @@
   noPostMessage && ( simulationQueryString += 'postMessageOnLoad&postMessageOnError&' );
   noAccessibility && ( simulationQueryString += 'supportsInteractiveDescription=true' );
 
+
+  // in unbuilt mode and on phet-server, the brand suffix is removed
+  const filenameEnding = ( window.location.hostname === 'phet.colorado.edu' || !IS_BUILT ) ? '.html' : '_phet.html';
   const repoLocale = 'circuit-construction-kit-dc_en';
-  const filenameEnding = IS_BUILT ? '_phet.html' : '.html';
   const simURL = repoLocale + filenameEnding + simulationQueryString;
 
   // set the source of the sim iframe
