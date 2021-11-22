@@ -14,7 +14,7 @@
       "path": "../bamboo"
     },
     {
-      "path": "../joist"
+      "path": "../joist/tsconfig-module.json"
     }
   ],
   "include": [
