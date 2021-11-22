@@ -5,7 +5,7 @@
       "path": "../circuit-construction-kit-common"
     },
     {
-      "path": "../twixt"
+      "path": "../twixt/tsconfig-module.json"
     },
     {
       "path": "../griddle"
