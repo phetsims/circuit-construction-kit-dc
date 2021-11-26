@@ -12,8 +12,8 @@ import lightBulbImageIcon from '../../../circuit-construction-kit-common/mipmaps
 import lightBulbImage from '../../../circuit-construction-kit-common/mipmaps/light-bulb-middle_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import Image from '../../../scenery/js/nodes/Image.js';
-import Rectangle from '../../../scenery/js/nodes/Rectangle.js';
+import { Image } from '../../../scenery/js/imports.js';
+import { Rectangle } from '../../../scenery/js/imports.js';
 import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import IntroModel from './model/IntroModel.js';
