@@ -18,15 +18,12 @@ class IntroScreenView extends CCKCScreenView {
    */
   constructor( model, tandem ) {
 
-    // TODO: Better way to structure tandems
-    const carouselTandem = tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' );
-
     const circuitElementToolFactory = new CircuitElementToolFactory(
       model.circuit,
       model.showLabelsProperty,
       model.viewTypeProperty,
       point => this.circuitLayerNode.globalToLocalPoint( point ),
-      carouselTandem
+      tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'circuitElementTools' )
     );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node

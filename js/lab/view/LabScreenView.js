@@ -27,7 +27,7 @@ class LabScreenView extends CCKCScreenView {
       model.showLabelsProperty,
       model.viewTypeProperty,
       point => this.circuitLayerNode.globalToLocalPoint( point ),
-      tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'tools' )
+      tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'circuitElementTools' )
     );
 
     const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
