@@ -8,8 +8,8 @@
 
 import Property from '../../../axon/js/Property.js';
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
-import lightBulbImageIcon from '../../../circuit-construction-kit-common/mipmaps/light-bulb-middle-icon_png.js';
-import lightBulbImage from '../../../circuit-construction-kit-common/mipmaps/light-bulb-middle_png.js';
+import lightBulbMiddleIcon_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleIcon_png.js';
+import lightBulbMiddle_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddle_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import { Image } from '../../../scenery/js/imports.js';
@@ -33,7 +33,7 @@ class IntroScreen extends Screen {
     const homeScreenIcon = Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, {
       fill: CCKCConstants.BACKGROUND_COLOR
     } );
-    homeScreenIcon.addChild( new Image( lightBulbImage, {
+    homeScreenIcon.addChild( new Image( lightBulbMiddle_png, {
       scale: 0.95,
       center: homeScreenIcon.center
     } ) );
@@ -43,7 +43,7 @@ class IntroScreen extends Screen {
     const navigationBarIcon = Rectangle.dimension( Screen.MINIMUM_NAVBAR_ICON_SIZE, {
       fill: CCKCConstants.BACKGROUND_COLOR
     } );
-    navigationBarIcon.addChild( new Image( lightBulbImageIcon, {
+    navigationBarIcon.addChild( new Image( lightBulbMiddleIcon_png, {
       scale: 1.05,
       center: navigationBarIcon.center
     } ) );
