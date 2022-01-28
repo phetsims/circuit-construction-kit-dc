@@ -16,7 +16,7 @@ class IntroModel extends CircuitConstructionKitModel {
    * @constructor
    */
   constructor( tandem ) {
-    super( tandem );
+    super( false, tandem );
   }
 }
 
