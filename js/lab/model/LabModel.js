@@ -12,7 +12,7 @@ import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 class LabModel extends CircuitConstructionKitModel {
 
   constructor( tandem ) {
-    super( false, tandem );
+    super( false, true, tandem );
   }
 }
 
