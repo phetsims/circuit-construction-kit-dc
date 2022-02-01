@@ -11,7 +11,7 @@
       "path": "../griddle"
     },
     {
-      "path": "../bamboo"
+      "path": "../bamboo/tsconfig-module.json"
     },
     {
       "path": "../joist/tsconfig-module.json"
