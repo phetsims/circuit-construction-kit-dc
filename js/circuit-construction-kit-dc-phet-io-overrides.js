@@ -28,6 +28,18 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.model.circuit.batteryGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
+    "circuitConstructionKitDc.introScreen.model.circuit.batteryGroup.archetype.voltageProperty": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.introScreen.model.circuit.circuitChangedEmitter": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.introScreen.model.circuit.circuitElements.elementAddedEmitter": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.introScreen.model.circuit.circuitElements.elementRemovedEmitter": {
+      "phetioFeatured": true
+    },
     "circuitConstructionKitDc.introScreen.model.circuit.circuitElements.lengthProperty": {
       "phetioFeatured": true
     },
@@ -44,6 +56,9 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.model.circuit.fuseGroup.archetype.isRepairableProperty": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.introScreen.model.circuit.fuseGroup.archetype.isTrippedProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.model.circuit.fuseGroup.archetype.isValueDisplayableProperty": {
@@ -247,6 +262,9 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.view.circuitNode.cutButton.visibleProperty": {
       "phetioFeatured": false
     },
+    "circuitConstructionKitDc.introScreen.view.circuitNode.lightBulbNodeGroup.archetype.socketNode.inputEnabledProperty": {
+      "phetioFeatured": false
+    },
     "circuitConstructionKitDc.introScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
@@ -289,9 +307,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.view.sensorToolbox.ammeterLabel.textProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.view.sensorToolbox.ammeterLabel.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.introScreen.view.sensorToolbox.ammeterToolIconWithLabel.visibleProperty": {
       "phetioFeatured": true
     },
@@ -299,9 +314,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.view.sensorToolbox.voltmeterLabel.textProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.introScreen.view.sensorToolbox.voltmeterLabel.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.view.sensorToolbox.voltmeterToolIconWithLabel.visibleProperty": {
@@ -343,6 +355,15 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.model.circuit.batteryGroup.archetype.voltageProperty": {
       "phetioFeatured": true
     },
+    "circuitConstructionKitDc.labScreen.model.circuit.circuitChangedEmitter": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.labScreen.model.circuit.circuitElements.elementAddedEmitter": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.labScreen.model.circuit.circuitElements.elementRemovedEmitter": {
+      "phetioFeatured": true
+    },
     "circuitConstructionKitDc.labScreen.model.circuit.circuitElements.lengthProperty": {
       "phetioFeatured": true
     },
@@ -359,6 +380,9 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.fuseGroup.archetype.isRepairableProperty": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.labScreen.model.circuit.fuseGroup.archetype.isTrippedProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.fuseGroup.archetype.isValueDisplayableProperty": {
@@ -658,6 +682,12 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.circuitNode.cutButton.visibleProperty": {
       "phetioFeatured": false
     },
+    "circuitConstructionKitDc.labScreen.view.circuitNode.highResistanceLightBulbNodeGroup.archetype.socketNode.inputEnabledProperty": {
+      "phetioFeatured": false
+    },
+    "circuitConstructionKitDc.labScreen.view.circuitNode.lightBulbNodeGroup.archetype.socketNode.inputEnabledProperty": {
+      "phetioFeatured": false
+    },
     "circuitConstructionKitDc.labScreen.view.circuitNode.seriesAmmeterNodeGroup.archetype.readoutPanel.visibleProperty": {
       "phetioFeatured": true
     },
@@ -700,9 +730,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.ammeterLabel.textProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.view.sensorToolbox.ammeterLabel.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.ammeterToolIconWithLabel.visibleProperty": {
       "phetioFeatured": true
     },
@@ -716,9 +743,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.voltmeterLabel.textProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.view.sensorToolbox.voltmeterLabel.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.voltmeterToolIconWithLabel.visibleProperty": {
