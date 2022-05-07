@@ -9,11 +9,11 @@ import circuitConstructionKitDc from './circuitConstructionKitDc.js';
 
 type StringsType = {
   'circuit-construction-kit-dc': {
-    'title': string
-  },
+    'title': string;
+  };
   'screen': {
-    'intro': string,
-    'lab': string
+    'intro': string;
+    'lab': string;
   }
 };
 
