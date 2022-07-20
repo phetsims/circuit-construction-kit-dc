@@ -12,8 +12,8 @@ import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import { Image } from '../../../scenery/js/imports.js';
 import labScreenIcon_png from '../../images/labScreenIcon_png.js';
-import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
+import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
 import LabModel from './model/LabModel.js';
 import LabScreenView from './view/LabScreenView.js';
 

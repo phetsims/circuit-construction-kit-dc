@@ -6,12 +6,11 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import circuitConstructionKitCommonStrings from '../../../../circuit-construction-kit-common/js/circuitConstructionKitCommonStrings.js';
 import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
 import merge from '../../../../phet-core/js/merge.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
-
-import circuitConstructionKitCommonStrings from '../../../../circuit-construction-kit-common/js/circuitConstructionKitCommonStrings.js';
 
 class LabScreenView extends CCKCScreenView {
 

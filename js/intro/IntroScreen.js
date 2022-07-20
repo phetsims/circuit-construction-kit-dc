@@ -8,14 +8,13 @@
 
 import Property from '../../../axon/js/Property.js';
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
-import lightBulbMiddleIcon_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleIcon_png.js';
 import lightBulbMiddle_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddle_png.js';
+import lightBulbMiddleIcon_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleIcon_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import { Image } from '../../../scenery/js/imports.js';
-import { Rectangle } from '../../../scenery/js/imports.js';
-import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
+import { Image, Rectangle } from '../../../scenery/js/imports.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
+import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
 
