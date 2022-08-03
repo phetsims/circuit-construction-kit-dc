@@ -88,7 +88,7 @@
       background: #e5c45b;
       border-radius: 1em;
       padding: .25em .75em 1em;
-      min-height: 10em;
+      min-height: 18em;
     }
 
     p.alert_copy {
@@ -141,6 +141,19 @@
       border-radius: .2em;
     }
 
+    .activity-log-heading-container {
+      display: flex;
+      align-content: space-between;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 0.5em;
+    }
+
+    .activity-log-heading-item {
+      align-self: center;
+      font-size: 1.17em;
+    }
+
     /* ************SAFARI ONLY *********************** */
     .left-safari {
       display: inline-block;
@@ -173,10 +186,13 @@
         <iframe id="iframe" allowfullscreen scrolling="no" title="Interact with Circuit Construction Kit: DC"></iframe>
       </div>
       <div id="alerts">
-        <h3>Activity log of Responsive Descriptions</h3>
+        <div class="activity-log-heading-container">
+          <h3 class="activity-log-heading-item">Activity log of Responsive Descriptions</h3>
+          <button class="activity-log-heading-item" id="clear-activity-log-button">Clear Log</button>
+        </div>
         <details>
           <summary>About Responsive Descriptions</summary>
-          Responsive Descriptions deliver changes made to interactive objects (Object Responses) and changes to the surrounding context (Context Responses). Only responses powered by ARIA Live appear in the activity log below, and most are Context Responses. Most responses powered by ARIA Live are delivered politely, but some are really important so we make them assertive (occasional line highlighted in pink). Note that many Object Responses are delivered using the aria-valuetext attribute (see grey text under slider interactions in the blue box). 
+          Responsive Descriptions deliver changes made to interactive objects (Object Responses) and changes to the surrounding context (Context Responses). Only responses powered by ARIA Live appear in the activity log below, and most are Context Responses. Most responses powered by ARIA Live are delivered politely, but some are really important so we make them assertive (occasional line highlighted in pink). Note that many Object Responses are delivered using the aria-valuetext attribute (see grey text under slider interactions in the blue box).
         </details>
         <div id='alert-copy-container' class='alert_copy_container' role='presentation'>
           <div id='polite-element-container'>
@@ -247,6 +263,9 @@
 </script>
 
 <script>
+
+  // Number of alerts that remain in the Activity log before fading out.
+  const ACTIVITY_LOG_LENGTH = 10;
 
   /*******************************************************************************
    * Helper Functions
@@ -443,12 +462,12 @@
 
             // items fade out as they get older
             for ( let j = 0; j < listElement.children.length; j++ ) {
-              listElement.children[ j ].style.opacity = 1.0 / ( j + 1 ) + 0.25;
+              listElement.children[ j ].style.opacity = 1.0 / ( j + 1 ) + 0.50;
             }
 
             // if the list is too large, remove the last items from the list
             const childrenArray = Array.prototype.slice.call( listElement.children );
-            const fadeArray = childrenArray.slice( 5, childrenArray.length );
+            const fadeArray = childrenArray.slice( ACTIVITY_LOG_LENGTH, childrenArray.length );
 
             for ( let i = 0; i < fadeArray.length; i++ ) {
               const fadeChild = fadeArray[ i ];
@@ -469,6 +488,16 @@
     } );
 
     liveObserver.observe( originalElement, mutationConfig )
+  }
+
+  /**
+   * Remove all alerts from the activity log by removing all children of the parent containing them. Solution to clear
+   * children from https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
+   */
+  function clearActivityLog( listElement ) {
+    while( listElement.firstChild ) {
+      listElement.removeChild( listElement.lastChild );
+    }
   }
 
 </script>
@@ -530,6 +559,10 @@
       for ( let i = 0; i < ariaLiveElementsContainer.children.length; i++ ) {
         addLiveObserver( ariaLiveElementsContainer.children[ i ], alertList, MUTATION_OBSERVER_CONFIG );
       }
+
+      // clear all alerts when the "Clear Log" button is pressed
+      const clearButton = document.getElementById( 'clear-activity-log-button' );
+      clearButton.addEventListener( 'click', () => clearActivityLog( alertList ) );
 
       // set focus to the loaded iframe
       document.getElementById( 'iframe' ).focus();
