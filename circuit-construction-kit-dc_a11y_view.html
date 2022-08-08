@@ -19,8 +19,7 @@
     }
 
     body {
-      margin: 1em 1em 2em;
-      width: 100%;
+      margin: 1em;
       background: #ccc;
     }
 
@@ -28,10 +27,6 @@
       margin-top: .55em;
       margin-bottom: 0;
       padding: 0;
-    }
-
-    #content {
-      margin: 1em;
     }
 
     .alert_copy_container ul {
@@ -107,8 +102,7 @@
 
     div.wrapper {
       height: auto;
-      width: 95%;
-      margin-bottom: 2em;
+      width: 97%;
     }
 
     .dynamic {
@@ -172,10 +166,17 @@
       <details>
         <summary>About the A11y View Tool</summary>
         <p>
-          The A11y View is a design and presentation tool that we use to visually review and demonstrate the Interactive Description design of a simulation. The descriptions we design live within our accessibility layer, we call the Parallel DOM, or PDOM. The HTML of the PDOM provides document and interaction semantics for State Descriptions (copied into the blue box), and timely delivery of Responsive Descriptions (copied into the orange box). For a learner accessing the simulation with screen reader software, the State Descriptions provide on-demand access the current state of simulation while Responsive Descriptions deliver relevant changes - in real time - as the learner interacts with the simulation.
+          The A11y View is a design and presentation tool that we use to visually review and demonstrate the Interactive
+          Description design of a simulation. The descriptions we design live within our accessibility layer, we call
+          the Parallel DOM, or PDOM. The HTML of the PDOM provides document and interaction semantics for State
+          Descriptions (copied into the blue box), and timely delivery of Responsive Descriptions (copied into the
+          orange box). For a learner accessing the simulation with screen reader software, the State Descriptions
+          provide on-demand access the current state of simulation while Responsive Descriptions deliver relevant
+          changes - in real time - as the learner interacts with the simulation.
         </p>
         <p>
-          <b>Please note</b> that learners who use screen reader software do not use this A11y View, they use the same simulation that all learners use.
+          <b>Please note</b> that learners who use screen reader software do not use this A11y View, they use the same
+          simulation that all learners use.
         </p>
       </details>
     </div>
@@ -192,7 +193,12 @@
         </div>
         <details>
           <summary>About Responsive Descriptions</summary>
-          Responsive Descriptions deliver changes made to interactive objects (Object Responses) and changes to the surrounding context (Context Responses). Only responses powered by ARIA Live appear in the activity log below, and most are Context Responses. Most responses powered by ARIA Live are delivered politely, but some are really important so we make them assertive (occasional line highlighted in pink). Note that many Object Responses are delivered using the aria-valuetext attribute (see grey text under slider interactions in the blue box).
+          Responsive Descriptions deliver changes made to interactive objects (Object Responses) and changes to the
+          surrounding context (Context Responses). Only responses powered by ARIA Live appear in the activity log below,
+          and most are Context Responses. Most responses powered by ARIA Live are delivered politely, but some are
+          really important so we make them assertive (occasional line highlighted in pink). Note that many Object
+          Responses are delivered using the aria-valuetext attribute (see grey text under slider interactions in the
+          blue box).
         </details>
         <div id='alert-copy-container' class='alert_copy_container' role='presentation'>
           <div id='polite-element-container'>
@@ -208,7 +214,10 @@
         <h3>State Descriptions for Circuit Construction Kit: DC</h3>
         <details>
           <summary>About State Descriptions</summary>
-          State Descriptions provide on-demand access to a full description of the current state of the simulation. This lengthy description is accessible to the learner from the moment the simulation loads, and during any point as they explore. The dynamic parts of the State Descriptions update silently as the learner interacts and makes changes.
+          State Descriptions provide on-demand access to a full description of the current state of the simulation. This
+          lengthy description is accessible to the learner from the moment the simulation loads, and during any point as
+          they explore. The dynamic parts of the State Descriptions update silently as the learner interacts and makes
+          changes.
         </details>
         <div id="dom-copy-container" class="dom_copy_container" role="presentation"></div>
       </div>
@@ -313,7 +322,7 @@
 
       // make sure that styling is removed, unless some styling was added just for the copy
       // TODO: pdom-style is not used anywhere. Should we keep it? https://github.com/phetsims/chipper/issues/916
-      if ( element.className !== "pdom-style" ) {
+      if ( element.className !== 'pdom-style' ) {
         element.removeAttribute( 'style' );
       }
     }
@@ -329,7 +338,7 @@
   function addInlineAttributesTHTML( rootNode ) {
 
     // all elements in the PDOM - a defensive copy since we may be adding new elements to the DOM
-    const allElements = Array.prototype.slice.call( rootNode.getElementsByTagName( "*" ) );
+    const allElements = Array.prototype.slice.call( rootNode.getElementsByTagName( '*' ) );
 
     for ( let i = 0; i < allElements.length; i++ ) {
       const element = allElements[ i ];
@@ -495,7 +504,7 @@
    * children from https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript
    */
   function clearActivityLog( listElement ) {
-    while( listElement.firstChild ) {
+    while ( listElement.firstChild ) {
       listElement.removeChild( listElement.lastChild );
     }
   }
