@@ -760,9 +760,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.ammeterToolNode.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.view.sensorToolbox.seriesAmmeterToolNode.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.visibleProperty": {
       "phetioFeatured": true
     },
