@@ -5,15 +5,19 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
+import TReadOnlyProperty from '../../axon/js/TReadOnlyProperty.js';
 import circuitConstructionKitDc from './circuitConstructionKitDc.js';
 
 type StringsType = {
   'circuit-construction-kit-dc': {
     'title': string;
+    'titleProperty': TReadOnlyProperty<string>;
   };
   'screen': {
     'intro': string;
+    'introProperty': TReadOnlyProperty<string>;
     'lab': string;
+    'labProperty': TReadOnlyProperty<string>;
   }
 };
 
