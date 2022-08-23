@@ -8,6 +8,7 @@
 
 import CCKCConstants from '../../circuit-construction-kit-common/js/CCKCConstants.js';
 import CCKCOptionsDialogContent from '../../circuit-construction-kit-common/js/view/CCKCOptionsDialogContent.js';
+import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim from '../../joist/js/Sim.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 // Image is required for making toDataURLNodeSynchronous work in the built version
@@ -24,7 +25,13 @@ const tandem = Tandem.ROOT;
 const circuitConstructionKitDcTitleString = circuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].title;
 CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
 const simOptions = {
-  createOptionsDialogContent: tandem => new CCKCOptionsDialogContent( tandem ),
+  preferencesModel: new PreferencesModel( {
+    generalOptions: {
+      customPreferences: [ {
+        createContent: tandem => new CCKCOptionsDialogContent( tandem )
+      } ]
+    }
+  } ),
   credits: {
     leadDesign: 'Amy Rouinfar',
     softwareDevelopment: 'Sam Reid, Denzell Barnett',
