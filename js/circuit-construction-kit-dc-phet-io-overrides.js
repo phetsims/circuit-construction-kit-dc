@@ -331,7 +331,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.view.sensorToolbox.voltmeterToolIconWithLabel.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.view.zoomControlPanel.visibleProperty": {
+    "circuitConstructionKitDc.introScreen.view.zoomButtonGroup.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.addRealBulbsProperty": {
@@ -769,7 +769,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.voltmeterToolIconWithLabel.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.view.zoomControlPanel.visibleProperty": {
+    "circuitConstructionKitDc.labScreen.view.zoomButtonGroup.visibleProperty": {
       "phetioFeatured": true
     }
   };
