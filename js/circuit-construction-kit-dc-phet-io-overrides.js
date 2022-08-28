@@ -110,7 +110,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.model.circuit.resistorGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.model.circuit.selectedCircuitElementProperty": {
+    "circuitConstructionKitDc.introScreen.model.circuit.selectionProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.closedProperty": {
@@ -135,9 +135,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.model.circuit.vertexGroup.archetype.isDraggableProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.introScreen.model.circuit.vertexGroup.archetype.isSelectedProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.model.circuit.vertexGroup.archetype.positionProperty": {
@@ -464,7 +461,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.model.circuit.resistorGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.selectedCircuitElementProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.selectionProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.seriesAmmeterGroup.archetype.endVertexProperty": {
@@ -498,9 +495,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.vertexGroup.archetype.isDraggableProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.model.circuit.vertexGroup.archetype.isSelectedProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.vertexGroup.archetype.positionProperty": {
