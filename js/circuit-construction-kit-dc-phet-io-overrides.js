@@ -239,9 +239,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.view.circuitNode.cutButton.visibleProperty": {
       "phetioFeatured": false
     },
-    "circuitConstructionKitDc.introScreen.view.circuitNode.lightBulbNodeGroup.archetype.socketNode.inputEnabledProperty": {
-      "phetioFeatured": false
-    },
     "circuitConstructionKitDc.introScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
@@ -603,12 +600,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": false
     },
     "circuitConstructionKitDc.labScreen.view.circuitNode.cutButton.visibleProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.labScreen.view.circuitNode.highResistanceLightBulbNodeGroup.archetype.socketNode.inputEnabledProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.labScreen.view.circuitNode.lightBulbNodeGroup.archetype.socketNode.inputEnabledProperty": {
       "phetioFeatured": false
     },
     "circuitConstructionKitDc.labScreen.view.circuitNode.seriesAmmeterNodeGroup.archetype.readoutPanel.visibleProperty": {
