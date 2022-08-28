@@ -602,9 +602,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.circuitNode.cutButton.visibleProperty": {
       "phetioFeatured": false
     },
-    "circuitConstructionKitDc.labScreen.view.circuitNode.seriesAmmeterNodeGroup.archetype.readoutPanel.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.labScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
