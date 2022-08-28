@@ -24,27 +24,11 @@ const tandem = Tandem.ROOT;
 
 const circuitConstructionKitDcTitleString = circuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].title;
 CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
-const simOptions = {
-  preferencesModel: new PreferencesModel( {
-    generalOptions: {
-      customPreferences: [ {
-        createContent: tandem => new CCKCGeneralPreferencesContentNode( tandem.createTandem( 'simPreferences' ) )
-      } ]
-    }
-  } ),
-  credits: {
-    leadDesign: 'Amy Rouinfar',
-    softwareDevelopment: 'Sam Reid, Denzell Barnett',
-    team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
-    qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Megan Lai, Brooklyn Lash, Matthew Moore, Liam Mulhall, Devon Quispe, Ben Roberts, Jacob Romero, Ethan Ward, Kathryn Woessner',
-    graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
-  },
-  tandem: tandem
-};
 
 // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In
 // order to load the classes into an accessible namespace, the *-config.js and *-main.js are loaded however, when
 // running the unit tests we don't also want to launch the simulation.
+// @ts-ignore
 if ( !window.circuitConstructionKitTestSuite ) {
   simLauncher.launch( () => {
 
@@ -52,7 +36,22 @@ if ( !window.circuitConstructionKitTestSuite ) {
     const sim = new Sim( circuitConstructionKitDcTitleString, [
       new IntroScreen( tandem.createTandem( 'introScreen' ) ),
       new LabScreen( tandem.createTandem( 'labScreen' ) )
-    ], simOptions );
+    ], {
+      preferencesModel: new PreferencesModel( {
+        generalOptions: {
+          customPreferences: [ {
+            createContent: tandem => new CCKCGeneralPreferencesContentNode( tandem.createTandem( 'simPreferences' ) )
+          } ]
+        }
+      } ),
+      credits: {
+        leadDesign: 'Amy Rouinfar',
+        softwareDevelopment: 'Sam Reid, Denzell Barnett',
+        team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
+        qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Megan Lai, Brooklyn Lash, Matthew Moore, Liam Mulhall, Devon Quispe, Ben Roberts, Jacob Romero, Ethan Ward, Kathryn Woessner',
+        graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
+      }
+    } );
     sim.start();
 
     // Disable sounds for joist/home screen/navigation bar/carousel, but leave sound for the dog bark

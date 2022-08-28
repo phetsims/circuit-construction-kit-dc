@@ -7,19 +7,17 @@
  */
 
 import circuitConstructionKitCommonStrings from '../../../../circuit-construction-kit-common/js/circuitConstructionKitCommonStrings.js';
-import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
+import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
+import CCKCScreenView, { CCKCScreenViewOptions } from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
+import { Node } from '../../../../scenery/js/imports.js';
 import merge from '../../../../phet-core/js/merge.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
 class LabScreenView extends CCKCScreenView {
 
-  /**
-   * @param {CircuitConstructionKitModel} model
-   * @param {Tandem} tandem
-   * @param {Object} [options]
-   */
-  constructor( model, tandem, options ) {
+  public constructor( model: CircuitConstructionKitModel, tandem: Tandem, options?: CCKCScreenViewOptions ) {
 
     const circuitElementToolFactory = new CircuitElementToolFactory(
       model.circuit,
@@ -31,7 +29,7 @@ class LabScreenView extends CCKCScreenView {
 
     const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
       model.circuit.realLightBulbGroup,
-      circuitConstructionKitCommonStrings.realBulb,
+      circuitConstructionKitCommonStrings.realBulbProperty,
       true,
       model.addRealBulbsProperty,
       'realLightBulbToolNode'
@@ -48,7 +46,7 @@ class LabScreenView extends CCKCScreenView {
     } );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
-    const circuitElementToolNodes = [
+    const circuitElementToolNodes: Node[] = [
 
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createRightBatteryToolNode(),
@@ -80,7 +78,6 @@ class LabScreenView extends CCKCScreenView {
     // without breaking the modularity of the pagination code.
     assert && assert( circuitElementToolNodes.indexOf( realLightBulbToolNode ) >= circuitElementToolNodes.length - 5, 'realLightBulbToolNode should be' +
                                                                                                                       ' on the last page' );
-
     super( model, circuitElementToolNodes, tandem, merge( {
       showSeriesAmmeters: true
     }, options ) );

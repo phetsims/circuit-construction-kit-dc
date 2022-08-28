@@ -11,6 +11,7 @@ import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConst
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import { Image } from '../../../scenery/js/imports.js';
+import Tandem from '../../../tandem/js/Tandem.js';
 import labScreenIcon_png from '../../images/labScreenIcon_png.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
@@ -19,17 +20,13 @@ import LabScreenView from './view/LabScreenView.js';
 
 const labString = circuitConstructionKitDcStrings.screen.lab;
 
-class LabScreen extends Screen {
+class LabScreen extends Screen<LabModel, LabScreenView> {
 
-  /**
-   * @param {Tandem} tandem
-   * @param {Object} [options]
-   */
-  constructor( tandem, options ) {
+  public constructor( tandem: Tandem ) {
 
     super(
       () => new LabModel( tandem.createTandem( 'model' ) ),
-      model => new LabScreenView( model, tandem.createTandem( 'view' ), options ), {
+      model => new LabScreenView( model, tandem.createTandem( 'view' ) ), {
         name: labString,
         backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
         homeScreenIcon: new ScreenIcon( new Image( labScreenIcon_png ), {

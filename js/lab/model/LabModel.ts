@@ -7,11 +7,12 @@
  */
 
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
 class LabModel extends CircuitConstructionKitModel {
 
-  constructor( tandem ) {
+  public constructor( tandem: Tandem ) {
     super( false, true, tandem );
   }
 }

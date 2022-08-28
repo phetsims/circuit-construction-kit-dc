@@ -1,4 +1,5 @@
 /* eslint-disable */
+// @ts-ignore
 window.phet.preloads.phetio.phetioElementsOverrides =
   {
     "circuitConstructionKitDc.introScreen.model.circuit.batteryGroup.archetype.endVertexProperty": {
