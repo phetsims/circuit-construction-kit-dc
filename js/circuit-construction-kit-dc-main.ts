@@ -22,7 +22,7 @@ import LabScreen from './lab/LabScreen.js';
 // constants
 const tandem = Tandem.ROOT;
 
-const circuitConstructionKitDcTitleString = circuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].title;
+const circuitConstructionKitDcTitleStringProperty = circuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].titleProperty;
 CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
 
 // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In
@@ -33,7 +33,7 @@ if ( !window.circuitConstructionKitTestSuite ) {
   simLauncher.launch( () => {
 
     // Launch the simulation once everything is ready
-    const sim = new Sim( circuitConstructionKitDcTitleString, [
+    const sim = new Sim( circuitConstructionKitDcTitleStringProperty, [
       new IntroScreen( tandem.createTandem( 'introScreen' ) ),
       new LabScreen( tandem.createTandem( 'labScreen' ) )
     ], {

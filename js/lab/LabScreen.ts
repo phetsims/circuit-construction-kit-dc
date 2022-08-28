@@ -18,7 +18,7 @@ import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.
 import LabModel from './model/LabModel.js';
 import LabScreenView from './view/LabScreenView.js';
 
-const labString = circuitConstructionKitDcStrings.screen.lab;
+const labStringProperty = circuitConstructionKitDcStrings.screen.labProperty;
 
 class LabScreen extends Screen<LabModel, LabScreenView> {
 
@@ -27,7 +27,7 @@ class LabScreen extends Screen<LabModel, LabScreenView> {
     super(
       () => new LabModel( tandem.createTandem( 'model' ) ),
       model => new LabScreenView( model, tandem.createTandem( 'view' ) ), {
-        name: labString,
+        name: labStringProperty,
         backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
         homeScreenIcon: new ScreenIcon( new Image( labScreenIcon_png ), {
           maxIconWidthProportion: 1,

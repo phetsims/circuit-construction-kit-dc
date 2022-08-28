@@ -18,8 +18,7 @@ import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
 
-const introString = circuitConstructionKitDcStrings.screen.intro;
-
+const introStringProperty = circuitConstructionKitDcStrings.screen.introProperty;
 
 class IntroScreen extends Screen {
 
@@ -48,7 +47,7 @@ class IntroScreen extends Screen {
     } ) );
 
     const options = {
-      name: introString,
+      name: introStringProperty,
       backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
       homeScreenIcon: new ScreenIcon( homeScreenIcon, {
         maxIconWidthProportion: 1,
