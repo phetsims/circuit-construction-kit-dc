@@ -18,7 +18,7 @@ import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.
 import LabModel from './model/LabModel.js';
 import LabScreenView from './view/LabScreenView.js';
 
-const labStringProperty = circuitConstructionKitDcStrings.screen.labProperty;
+const labStringProperty = circuitConstructionKitDcStrings.screen.labStringProperty;
 
 class LabScreen extends Screen<LabModel, LabScreenView> {
 

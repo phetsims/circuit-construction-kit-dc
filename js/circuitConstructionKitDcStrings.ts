@@ -11,13 +11,13 @@ import circuitConstructionKitDc from './circuitConstructionKitDc.js';
 type StringsType = {
   'circuit-construction-kit-dc': {
     'title': string;
-    'titleProperty': TReadOnlyProperty<string>;
+    'titleStringProperty': TReadOnlyProperty<string>;
   };
   'screen': {
     'intro': string;
-    'introProperty': TReadOnlyProperty<string>;
+    'introStringProperty': TReadOnlyProperty<string>;
     'lab': string;
-    'labProperty': TReadOnlyProperty<string>;
+    'labStringProperty': TReadOnlyProperty<string>;
   }
 };
 

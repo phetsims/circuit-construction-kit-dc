@@ -18,7 +18,7 @@ import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
 
-const introStringProperty = circuitConstructionKitDcStrings.screen.introProperty;
+const introStringProperty = circuitConstructionKitDcStrings.screen.introStringProperty;
 
 class IntroScreen extends Screen {
 

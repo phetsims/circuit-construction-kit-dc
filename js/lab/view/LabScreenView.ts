@@ -29,7 +29,7 @@ class LabScreenView extends CCKCScreenView {
 
     const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
       model.circuit.realLightBulbGroup,
-      circuitConstructionKitCommonStrings.realBulbProperty,
+      circuitConstructionKitCommonStrings.realBulbStringProperty,
       true,
       model.addRealBulbsProperty,
       'realLightBulbToolNode'
