@@ -38,7 +38,7 @@ if ( !window.circuitConstructionKitTestSuite ) {
       new LabScreen( tandem.createTandem( 'labScreen' ) )
     ], {
       preferencesModel: new PreferencesModel( {
-        generalOptions: {
+        simulationOptions: {
           customPreferences: [ {
             createContent: tandem => new CCKCGeneralPreferencesContentNode( tandem.createTandem( 'simPreferences' ) )
           } ]
