@@ -15,14 +15,14 @@ import simLauncher from '../../joist/js/simLauncher.js';
 import '../../scenery/js/nodes/Image.js';
 import soundManager from '../../tambo/js/soundManager.js';
 import Tandem from '../../tandem/js/Tandem.js';
-import circuitConstructionKitDcStrings from './circuitConstructionKitDcStrings.js';
+import CircuitConstructionKitDcStrings from './CircuitConstructionKitDcStrings.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
 
 // constants
 const tandem = Tandem.ROOT;
 
-const circuitConstructionKitDcTitleStringProperty = circuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].titleStringProperty;
+const circuitConstructionKitDcTitleStringProperty = CircuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].titleStringProperty;
 CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
 
 // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In

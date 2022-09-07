@@ -21,8 +21,8 @@ type StringsType = {
   }
 };
 
-const circuitConstructionKitDcStrings = getStringModule( 'CIRCUIT_CONSTRUCTION_KIT_DC' ) as StringsType;
+const CircuitConstructionKitDcStrings = getStringModule( 'CIRCUIT_CONSTRUCTION_KIT_DC' ) as StringsType;
 
-circuitConstructionKitDc.register( 'circuitConstructionKitDcStrings', circuitConstructionKitDcStrings );
+circuitConstructionKitDc.register( 'CircuitConstructionKitDcStrings', CircuitConstructionKitDcStrings );
 
-export default circuitConstructionKitDcStrings;
+export default CircuitConstructionKitDcStrings;

@@ -14,11 +14,11 @@ import { Image } from '../../../scenery/js/imports.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import labScreenIcon_png from '../../images/labScreenIcon_png.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
-import circuitConstructionKitDcStrings from '../circuitConstructionKitDcStrings.js';
+import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import LabModel from './model/LabModel.js';
 import LabScreenView from './view/LabScreenView.js';
 
-const labStringProperty = circuitConstructionKitDcStrings.screen.labStringProperty;
+const labStringProperty = CircuitConstructionKitDcStrings.screen.labStringProperty;
 
 class LabScreen extends Screen<LabModel, LabScreenView> {
 

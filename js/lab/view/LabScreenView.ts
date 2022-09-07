@@ -6,7 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import circuitConstructionKitCommonStrings from '../../../../circuit-construction-kit-common/js/circuitConstructionKitCommonStrings.js';
+import CircuitConstructionKitCommonStrings from '../../../../circuit-construction-kit-common/js/CircuitConstructionKitCommonStrings.js';
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import CCKCScreenView, { CCKCScreenViewOptions } from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
@@ -29,7 +29,7 @@ class LabScreenView extends CCKCScreenView {
 
     const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
       model.circuit.realLightBulbGroup,
-      circuitConstructionKitCommonStrings.realBulbStringProperty,
+      CircuitConstructionKitCommonStrings.realBulbStringProperty,
       true,
       model.addRealBulbsProperty,
       'realLightBulbToolNode'
