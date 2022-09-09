@@ -230,37 +230,16 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.model.zoomProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.view.circuitElementEditContainerNode.tapInstructionTextNode.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.introScreen.view.circuitNode.cutButton.enabledProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.introScreen.view.circuitNode.cutButton.visibleProperty": {
-      "phetioFeatured": false
-    },
     "circuitConstructionKitDc.introScreen.view.displayOptionsPanel.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.introScreen.view.meterNodes.ammeterNode1.probeTextNode.readoutText.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.view.meterNodes.ammeterNode1.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.view.meterNodes.ammeterNode2.probeTextNode.readoutText.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.introScreen.view.meterNodes.ammeterNode2.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.view.meterNodes.voltmeterNode1.probeTextNode.readoutText.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.introScreen.view.meterNodes.voltmeterNode1.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.introScreen.view.meterNodes.voltmeterNode2.probeTextNode.readoutText.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.view.meterNodes.voltmeterNode2.visibleProperty": {
@@ -593,34 +572,13 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.advancedAccordionBox.wireResistivityControl.slider.visibleProperty": {
       "phetioFeatured": false
     },
-    "circuitConstructionKitDc.labScreen.view.circuitElementEditContainerNode.tapInstructionTextNode.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.view.circuitNode.cutButton.enabledProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.labScreen.view.circuitNode.cutButton.visibleProperty": {
-      "phetioFeatured": false
-    },
     "circuitConstructionKitDc.labScreen.view.displayOptionsPanel.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.view.meterNodes.ammeterNode1.probeTextNode.readoutText.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.view.meterNodes.ammeterNode2.probeTextNode.readoutText.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.view.meterNodes.ammeterNode2.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.view.meterNodes.voltmeterNode1.probeTextNode.readoutText.visibleProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.labScreen.view.meterNodes.voltmeterNode1.visibleProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.view.meterNodes.voltmeterNode2.probeTextNode.readoutText.visibleProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.view.meterNodes.voltmeterNode2.visibleProperty": {
