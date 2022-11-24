@@ -17,7 +17,7 @@
     "branch": "HEAD"
   },
   "chipper": {
-    "sha": "cf45db20147771e56382466896ca8e0a2bf79a5a",
+    "sha": "bae399b63050eb1a2abfa0dc5ae9fdf4dcd8c70d",
     "branch": "HEAD"
   },
   "circuit-construction-kit-common": {
@@ -25,7 +25,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "5918229fb2a6fa0fafb8b20e3dc9e946d85727d4",
+    "sha": "a0bcfe891a001406b40dc49f2cf71bcc65d03310",
     "branch": "1.2"
   },
   "dot": {
