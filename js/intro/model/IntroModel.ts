@@ -7,15 +7,12 @@
  */
 
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
 class IntroModel extends CircuitConstructionKitModel {
 
-  /**
-   * @param {Tandem} tandem
-   * @constructor
-   */
-  constructor( tandem ) {
+  public constructor( tandem: Tandem ) {
     super( false, false, tandem );
   }
 }

@@ -8,15 +8,13 @@
 
 import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
+import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
+import IntroModel from '../model/IntroModel.js';
 
 class IntroScreenView extends CCKCScreenView {
 
-  /**
-   * @param {IntroModel} model
-   * @param {Tandem} tandem
-   */
-  constructor( model, tandem ) {
+  public constructor( model: IntroModel, tandem: Tandem ) {
 
     const circuitElementToolFactory = new CircuitElementToolFactory(
       model.circuit,
@@ -50,7 +48,9 @@ class IntroScreenView extends CCKCScreenView {
     ];
 
     super( model, circuitElementToolNodes, tandem, {
-      showAdvancedControls: false
+      showAdvancedControls: false,
+      circuitElementToolboxOptions: {},
+      tandem: tandem
     } );
   }
 }

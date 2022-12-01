@@ -17,15 +17,13 @@ import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
+import Tandem from '../../../tandem/js/Tandem.js';
 
 const introStringProperty = CircuitConstructionKitDcStrings.screen.introStringProperty;
 
 class IntroScreen extends Screen {
 
-  /**
-   * @param {Tandem} tandem
-   */
-  constructor( tandem ) {
+  public constructor( tandem: Tandem ) {
 
     // Create the icon
     const homeScreenIcon = Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, {
