@@ -69,7 +69,6 @@ class LabScreenView extends CCKCScreenView {
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createPencilToolNode(),
       circuitElementToolFactory.createHandToolNode(),
-      circuitElementToolFactory.createDogToolNode(),
 
       realLightBulbToolNode // The automatic scrolling function assumes this be on the last page.
     ];

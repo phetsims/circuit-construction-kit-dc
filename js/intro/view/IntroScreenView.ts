@@ -43,8 +43,7 @@ class IntroScreenView extends CCKCScreenView {
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createEraserToolNode(),
       circuitElementToolFactory.createPencilToolNode(),
-      circuitElementToolFactory.createHandToolNode(),
-      circuitElementToolFactory.createDogToolNode()
+      circuitElementToolFactory.createHandToolNode()
     ];
 
     super( model, circuitElementToolNodes, tandem, {
