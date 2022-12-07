@@ -28,7 +28,7 @@ CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
 // Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In
 // order to load the classes into an accessible namespace, the *-config.js and *-main.js are loaded however, when
 // running the unit tests we don't also want to launch the simulation.
-// @ts-ignore
+// @ts-expect-error
 if ( !window.circuitConstructionKitTestSuite ) {
   simLauncher.launch( () => {
 
