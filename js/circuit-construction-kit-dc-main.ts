@@ -25,36 +25,32 @@ const tandem = Tandem.ROOT;
 const circuitConstructionKitDcTitleStringProperty = CircuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].titleStringProperty;
 CCKCConstants.CAROUSEL_SCALE = CCKCConstants.DC_CAROUSEL_SCALE;
 
-// Circuit Construction Kit has unit tests for checking the mathematics for the Modified Nodal Analysis algorithm.  In
-// order to load the classes into an accessible namespace, the *-config.js and *-main.js are loaded however, when
-// running the unit tests we don't also want to launch the simulation.
-// @ts-expect-error
-if ( !window.circuitConstructionKitTestSuite ) {
-  simLauncher.launch( () => {
+simLauncher.launch( () => {
 
-    // Launch the simulation once everything is ready
-    const sim = new Sim( circuitConstructionKitDcTitleStringProperty, [
-      new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-      new LabScreen( tandem.createTandem( 'labScreen' ) )
-    ], {
-      preferencesModel: new PreferencesModel( {
-        simulationOptions: {
-          customPreferences: [ {
-            createContent: tandem => new CCKCSimulationPreferencesContentNode( tandem.createTandem( 'simPreferences' ) )
-          } ]
-        }
-      } ),
-      credits: {
-        leadDesign: 'Amy Rouinfar',
-        softwareDevelopment: 'Sam Reid, Denzell Barnett',
-        team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
-        qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Megan Lai, Brooklyn Lash, Matthew Moore, Liam Mulhall, Devon Quispe, Ben Roberts, Jacob Romero, Ethan Ward, Kathryn Woessner',
-        graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
+  // Launch the simulation once everything is ready
+  const sim = new Sim( circuitConstructionKitDcTitleStringProperty, [
+    new IntroScreen( tandem.createTandem( 'introScreen' ) ),
+    new LabScreen( tandem.createTandem( 'labScreen' ), {
+      showNoncontactAmmeters: true
+    } )
+  ], {
+    preferencesModel: new PreferencesModel( {
+      simulationOptions: {
+        customPreferences: [ {
+          createContent: tandem => new CCKCSimulationPreferencesContentNode( tandem.createTandem( 'simPreferences' ) )
+        } ]
       }
-    } );
-    sim.start();
-
-    // Disable sounds for joist/home screen/navigation bar/carousel, but leave sound for the dog bark
-    soundManager.setOutputLevelForCategory( 'user-interface', 0 );
+    } ),
+    credits: {
+      leadDesign: 'Amy Rouinfar',
+      softwareDevelopment: 'Sam Reid, Denzell Barnett',
+      team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
+      qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Bryce Griebenow, Ethan Johnson, Megan Lai, Brooklyn Lash, Matthew Moore, Liam Mulhall, Devon Quispe, Ben Roberts, Jacob Romero, Ethan Ward, Kathryn Woessner',
+      graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
+    }
   } );
-}
+  sim.start();
+
+  // Disable sounds for joist/home screen/navigation bar/carousel, but leave sound for the dog bark
+  soundManager.setOutputLevelForCategory( 'user-interface', 0 );
+} );

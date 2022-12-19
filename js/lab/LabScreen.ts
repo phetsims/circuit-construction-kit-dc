@@ -22,11 +22,15 @@ const labStringProperty = CircuitConstructionKitDcStrings.screen.labStringProper
 
 class LabScreen extends Screen<LabModel, LabScreenView> {
 
-  public constructor( tandem: Tandem ) {
+  public constructor( tandem: Tandem, providedOptions: { showNoncontactAmmeters: boolean } ) {
 
     super(
       () => new LabModel( tandem.createTandem( 'model' ) ),
-      model => new LabScreenView( model, tandem.createTandem( 'view' ) ), {
+      model => new LabScreenView( model, tandem.createTandem( 'view' ), {
+        showNoncontactAmmeters: providedOptions.showNoncontactAmmeters,
+        circuitElementToolboxOptions: {},
+        tandem: tandem.createTandem( 'view' )
+      } ), {
         name: labStringProperty,
         backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
         homeScreenIcon: new ScreenIcon( new Image( labScreenIcon_png ), {
