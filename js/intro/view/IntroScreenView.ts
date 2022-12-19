@@ -6,6 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
@@ -47,7 +48,7 @@ class IntroScreenView extends CCKCScreenView {
 
     super( model, circuitElementToolNodes, tandem, {
       showAdvancedControls: false,
-      circuitElementToolboxOptions: {},
+      circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE },
       tandem: tandem
     } );
   }
