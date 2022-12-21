@@ -18,6 +18,8 @@ type StringsType = {
     'introStringProperty': LinkableProperty<string>;
     'lab': string;
     'labStringProperty': LinkableProperty<string>;
+    'codap': string;
+    'codapStringProperty': LinkableProperty<string>;
   }
 };
 

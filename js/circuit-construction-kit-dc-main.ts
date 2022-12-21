@@ -17,6 +17,8 @@ import Tandem from '../../tandem/js/Tandem.js';
 import CircuitConstructionKitDcStrings from './CircuitConstructionKitDcStrings.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
+import CodapScreen from './codap/CodapScreen.js';
+import CCKCQueryParameters from '../../circuit-construction-kit-common/js/CCKCQueryParameters.js';
 
 // constants
 const tandem = Tandem.ROOT;
@@ -25,13 +27,17 @@ const circuitConstructionKitDcTitleStringProperty = CircuitConstructionKitDcStri
 
 simLauncher.launch( () => {
 
-  // Launch the simulation once everything is ready
-  const sim = new Sim( circuitConstructionKitDcTitleStringProperty, [
+  const showCodapScreen = CCKCQueryParameters.codap;
+
+  const screensToShow = showCodapScreen ? [ new CodapScreen( tandem.createTandem( 'codapScreen' ) ) ] : [
     new IntroScreen( tandem.createTandem( 'introScreen' ) ),
     new LabScreen( tandem.createTandem( 'labScreen' ), {
       showNoncontactAmmeters: true
     } )
-  ], {
+  ];
+
+  // Launch the simulation once everything is ready
+  const sim = new Sim( circuitConstructionKitDcTitleStringProperty, screensToShow, {
     preferencesModel: new PreferencesModel( {
       simulationOptions: {
         customPreferences: [ {
