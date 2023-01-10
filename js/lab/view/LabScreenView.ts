@@ -10,7 +10,6 @@ import CircuitConstructionKitCommonStrings from '../../../../circuit-constructio
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import CCKCScreenView, { CCKCScreenViewOptions } from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
-import { Node } from '../../../../scenery/js/imports.js';
 import merge from '../../../../phet-core/js/merge.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
@@ -27,27 +26,18 @@ class LabScreenView extends CCKCScreenView {
       tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'circuitElementTools' )
     );
 
-    let realLightBulbToolNode: Node | null = null;
-    const createLightBulbNode = {
+    const realBulbItem = {
       createNode: ( tandem: Tandem ) => {
-        const created = circuitElementToolFactory.createLightBulbToolNode(
+        return circuitElementToolFactory.createLightBulbToolNode(
           tandem,
           model.circuit.realLightBulbGroup,
           CircuitConstructionKitCommonStrings.realBulbStringProperty,
           true,
           model.addRealBulbsProperty
         );
-        realLightBulbToolNode = created;
-        return created;
-      }
+      },
+      tandemName: 'realBulbToolNode'
     };
-
-    // Scroll to the real bulbs if selected, but not on startup
-    model.addRealBulbsProperty.lazyLink( addRealBulbs => {
-      if ( addRealBulbs ) {
-        this.circuitElementToolbox.carousel.scrollToItem( realLightBulbToolNode! );
-      }
-    } );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
     const circuitElementToolNodes = [
@@ -73,12 +63,21 @@ class LabScreenView extends CCKCScreenView {
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode4' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createPencilToolNode( tandem ), tandemName: 'pencilToolNode' },
 
-      createLightBulbNode // The automatic scrolling function assumes this be on the last page.
+      realBulbItem
     ];
 
     super( model, circuitElementToolNodes, tandem, merge( {
       showSeriesAmmeters: true
     }, options ) );
+
+    // Scroll to the real bulbs if selected, but not on startup
+    model.addRealBulbsProperty.link( addRealBulbs => {
+      this.circuitElementToolbox.carousel.setItemVisibility( realBulbItem, addRealBulbs );
+
+      if ( addRealBulbs ) {
+        this.circuitElementToolbox.carousel.scrollToItem( realBulbItem );
+      }
+    } );
   }
 }
 
