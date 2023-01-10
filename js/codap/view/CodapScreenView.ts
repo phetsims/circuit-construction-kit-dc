@@ -13,7 +13,6 @@ import CircuitElementToolFactory from '../../../../circuit-construction-kit-comm
 import { Node, Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
-import { combineOptions } from '../../../../phet-core/js/optionize.js';
 import RectangularPushButton from '../../../../sun/js/buttons/RectangularPushButton.js';
 import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import Bounds2 from '../../../../dot/js/Bounds2.js';
@@ -22,9 +21,7 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 
 class CodapScreenView extends CCKCScreenView {
 
-  public constructor( model: CircuitConstructionKitModel, tandem: Tandem, providedOptions?: CCKCScreenViewOptions ) {
-
-    const options = combineOptions<CCKCScreenViewOptions>( { showMeterPhetioIndex: true }, providedOptions );
+  public constructor( model: CircuitConstructionKitModel, tandem: Tandem, options?: CCKCScreenViewOptions ) {
 
     const circuitElementToolFactory = new CircuitElementToolFactory(
       model.circuit,
@@ -34,55 +31,55 @@ class CodapScreenView extends CCKCScreenView {
       tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'circuitElementTools' )
     );
 
-    const realLightBulbToolNode = circuitElementToolFactory.createLightBulbToolNode(
-      model.circuit.realLightBulbGroup,
-      CircuitConstructionKitCommonStrings.realBulbStringProperty,
-      true,
-      model.addRealBulbsProperty,
-      'realLightBulbToolNode'
-    );
-
-    // Show the real bulbs if selected
-    // model.addRealBulbsProperty.link( addRealBulbs => realLightBulbToolNode.setVisible( addRealisticBulbs ) );
+    let realLightBulbToolNode: Node | null = null;
+    const createLightBulbNode = {
+      createNode: ( tandem: Tandem ) => {
+        const created = circuitElementToolFactory.createLightBulbToolNode(
+          tandem,
+          model.circuit.realLightBulbGroup,
+          CircuitConstructionKitCommonStrings.realBulbStringProperty,
+          true,
+          model.addRealBulbsProperty
+        );
+        realLightBulbToolNode = created;
+        return created;
+      }
+    };
 
     // Scroll to the real bulbs if selected, but not on startup
     model.addRealBulbsProperty.lazyLink( addRealBulbs => {
       if ( addRealBulbs ) {
-        this.circuitElementToolbox.carousel.scrollToItem( realLightBulbToolNode );
+        this.circuitElementToolbox.carousel.scrollToItem( realLightBulbToolNode! );
       }
     } );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
-    const circuitElementToolNodes: Node[] = [
+    const circuitElementToolNodes = [
 
-      circuitElementToolFactory.createWireToolNode(),
-      circuitElementToolFactory.createRightBatteryToolNode(),
-      circuitElementToolFactory.createLightBulbToolNode( model.circuit.lightBulbGroup ),
-      circuitElementToolFactory.createResistorToolNode(),
-      circuitElementToolFactory.createSwitchToolNode(),
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode1' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createRightBatteryToolNode( tandem ), tandemName: 'rightBatteryToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createLightBulbToolNode( tandem, model.circuit.lightBulbGroup ), tandemName: 'lightBulbToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createResistorToolNode( tandem ), tandemName: 'resistorToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createSwitchToolNode( tandem ), tandemName: 'switchToolNode' },
 
-      circuitElementToolFactory.createWireToolNode(),
-      circuitElementToolFactory.createFuseToolNode(),
-      circuitElementToolFactory.createHighVoltageBatteryToolNode(),
-      circuitElementToolFactory.createHighResistanceBulbToolNode(),
-      circuitElementToolFactory.createHighResistanceResistorToolNode(),
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode2' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createFuseToolNode( tandem ), tandemName: 'fuseToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createHighVoltageBatteryToolNode( tandem ), tandemName: 'highVoltageBatteryToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createHighResistanceBulbToolNode( tandem ), tandemName: 'highResistanceBulbToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createHighResistanceResistorToolNode( tandem ), tandemName: 'highResistanceResistorToolNode' },
 
-      circuitElementToolFactory.createWireToolNode(),
-      circuitElementToolFactory.createDollarBillToolNode(),
-      circuitElementToolFactory.createPaperClipToolNode(),
-      circuitElementToolFactory.createCoinToolNode(),
-      circuitElementToolFactory.createEraserToolNode(),
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode3' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createDollarBillToolNode( tandem ), tandemName: 'dollarBillToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createPaperClipToolNode( tandem ), tandemName: 'paperClipToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createCoinToolNode( tandem ), tandemName: 'coinToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createEraserToolNode( tandem ), tandemName: 'eraserToolNode' },
 
-      circuitElementToolFactory.createWireToolNode(),
-      circuitElementToolFactory.createPencilToolNode(),
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode4' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createPencilToolNode( tandem ), tandemName: 'pencilToolNode' },
 
-      realLightBulbToolNode // The automatic scrolling function assumes this be on the last page.
+      createLightBulbNode // The automatic scrolling function assumes this be on the last page.
     ];
 
-    // Check the assumption that the real light bulb tool node remains on the last page, so we can scroll to it
-    // without breaking the modularity of the pagination code.
-    assert && assert( circuitElementToolNodes.indexOf( realLightBulbToolNode ) >= circuitElementToolNodes.length - 5, 'realLightBulbToolNode should be' +
-                                                                                                                      ' on the last page' );
     super( model, circuitElementToolNodes, tandem, options );
 
     const collectDataButton = new RectangularPushButton( {
