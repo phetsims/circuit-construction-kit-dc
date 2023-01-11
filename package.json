@@ -27,7 +27,8 @@
     "simFeatures": {
       "supportsSound": false,
       "supportsInteractiveDescription": true,
-      "supportsInteractiveHighlights": false
+      "supportsInteractiveHighlights": false,
+      "supportsDynamicLocale": true
     },
     "supportsOutputJS": true,
     "published": true
