@@ -10,15 +10,11 @@ import circuitConstructionKitDc from './circuitConstructionKitDc.js';
 
 type StringsType = {
   'circuit-construction-kit-dc': {
-    'title': string;
     'titleStringProperty': LinkableProperty<string>;
   };
   'screen': {
-    'intro': string;
     'introStringProperty': LinkableProperty<string>;
-    'lab': string;
     'labStringProperty': LinkableProperty<string>;
-    'codap': string;
     'codapStringProperty': LinkableProperty<string>;
   }
 };
