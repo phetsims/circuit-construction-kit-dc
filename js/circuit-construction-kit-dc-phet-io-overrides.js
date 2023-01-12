@@ -226,7 +226,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.model.wireResistivityProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.model.zoomProperty": {
+    "circuitConstructionKitDc.introScreen.model.zoomLevelProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.view.displayOptionsPanel.visibleProperty": {
@@ -556,7 +556,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.model.wireResistivityProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.zoomProperty": {
+    "circuitConstructionKitDc.labScreen.model.zoomLevelProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.view.advancedAccordionBox.sourceResistanceControl.slider.visibleProperty": {
