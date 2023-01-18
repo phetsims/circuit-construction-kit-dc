@@ -112,7 +112,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.model.circuit.selectionProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.closedProperty": {
+    "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.isClosedProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.endVertexProperty": {
@@ -442,7 +442,7 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.model.circuit.seriesAmmeterGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.switchGroup.archetype.closedProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.switchGroup.archetype.isClosedProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.switchGroup.archetype.endVertexProperty": {
