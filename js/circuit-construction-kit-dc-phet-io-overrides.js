@@ -577,7 +577,10 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.view.meterNodes.voltmeterNode2.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.view.sensorToolbox.ammeterToolNode.visibleProperty": {
+    "circuitConstructionKitDc.labScreen.view.sensorToolbox.noncontactAmmeterToolNode": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.labScreen.view.sensorToolbox.seriesAmmeterToolNode": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.view.sensorToolbox.visibleProperty": {
