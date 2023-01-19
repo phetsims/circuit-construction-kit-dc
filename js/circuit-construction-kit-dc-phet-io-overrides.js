@@ -247,6 +247,12 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.view.sensorToolbox.visibleProperty": {
       "phetioFeatured": true
     },
+    "circuitConstructionKitDc.introScreen.view.sensorToolbox.noncontactAmmeterToolNode": {
+      "phetioFeatured": true
+    },
+    "circuitConstructionKitDc.introScreen.view.sensorToolbox.voltmeterToolNode": {
+      "phetioFeatured": true
+    },
     "circuitConstructionKitDc.introScreen.view.zoomButtonGroup.visibleProperty": {
       "phetioFeatured": true
     },
