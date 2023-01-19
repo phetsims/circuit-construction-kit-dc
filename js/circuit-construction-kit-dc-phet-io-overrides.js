@@ -121,9 +121,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.isDisposableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.isEditableProperty": {
-      "phetioFeatured": true
-    },
     "circuitConstructionKitDc.introScreen.model.circuit.switchGroup.archetype.isValueDisplayableProperty": {
       "phetioFeatured": true
     },
@@ -455,9 +452,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.switchGroup.archetype.isDisposableProperty": {
-      "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.model.circuit.switchGroup.archetype.isEditableProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.switchGroup.archetype.isValueDisplayableProperty": {
