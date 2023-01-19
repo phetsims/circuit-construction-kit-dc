@@ -322,52 +322,52 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.model.circuit.fuseGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.endVertexProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.endVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.isDisposableProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.isDisposableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.isEditableProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.isEditableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.isValueDisplayableProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.isValueDisplayableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.powerDissipatedProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.powerDissipatedProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.resistanceProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.resistanceProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highResistanceLightBulbGroup.archetype.startVertexProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeLightBulbGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.endVertexProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.endVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.isDisposableProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.isDisposableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.isEditableProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.isEditableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.isReversibleProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.isReversibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.isValueDisplayableProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.isValueDisplayableProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.powerDissipatedProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.powerDissipatedProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.powerGeneratedProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.powerGeneratedProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.startVertexProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.startVertexProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.model.circuit.highVoltageBatteryGroup.archetype.voltageProperty": {
+    "circuitConstructionKitDc.labScreen.model.circuit.extremeBatteryGroup.archetype.voltageProperty": {
       "phetioFeatured": true
     },
     "circuitConstructionKitDc.labScreen.model.circuit.lightBulbGroup.archetype.endVertexProperty": {

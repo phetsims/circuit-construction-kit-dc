@@ -63,9 +63,9 @@ class CodapScreenView extends CCKCScreenView {
 
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createFuseToolNode(),
-      circuitElementToolFactory.createHighVoltageBatteryToolNode(),
-      circuitElementToolFactory.createHighResistanceBulbToolNode(),
-      circuitElementToolFactory.createHighResistanceResistorToolNode(),
+      circuitElementToolFactory.createExtremeBatteryToolNode(),
+      circuitElementToolFactory.createExtremeBulbToolNode(),
+      circuitElementToolFactory.createExtremeResistorToolNode(),
 
       circuitElementToolFactory.createWireToolNode(),
       circuitElementToolFactory.createDollarBillToolNode(),
