@@ -559,12 +559,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.labScreen.model.zoomLevelProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.labScreen.view.advancedAccordionBox.sourceResistanceControl.slider.visibleProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.labScreen.view.advancedAccordionBox.wireResistivityControl.slider.visibleProperty": {
-      "phetioFeatured": false
-    },
     "circuitConstructionKitDc.labScreen.view.displayOptionsPanel.visibleProperty": {
       "phetioFeatured": true
     },
