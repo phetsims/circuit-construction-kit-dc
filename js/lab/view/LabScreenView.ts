@@ -1,4 +1,4 @@
-// Copyright 2017-2022, University of Colorado Boulder
+// Copyright 2017-2023, University of Colorado Boulder
 
 /**
  * The view for the Lab screen.
@@ -50,9 +50,9 @@ class LabScreenView extends CCKCScreenView {
 
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode2' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createFuseToolNode( tandem ), tandemName: 'fuseToolNode' },
-      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createHighVoltageBatteryToolNode( tandem ), tandemName: 'highVoltageBatteryToolNode' },
-      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createHighResistanceBulbToolNode( tandem ), tandemName: 'highResistanceBulbToolNode' },
-      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createHighResistanceResistorToolNode( tandem ), tandemName: 'highResistanceResistorToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createExtremeBatteryToolNode( tandem ), tandemName: 'extremeBatteryToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createExtremeBulbToolNode( tandem ), tandemName: 'extremeBulbToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createExtremeResistorToolNode( tandem ), tandemName: 'extremeResistorToolNode' },
 
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode3' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createDollarBillToolNode( tandem ), tandemName: 'dollarBillToolNode' },
