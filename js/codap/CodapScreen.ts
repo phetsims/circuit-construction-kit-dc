@@ -61,8 +61,7 @@ class CodapScreen extends Screen<CodapModel, CodapScreenView> {
     super(
       () => new CodapModel( tandem.createTandem( 'model' ) ),
       model => new CodapScreenView( model, tandem.createTandem( 'view' ), {
-        circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE },
-        tandem: tandem.createTandem( 'view' )
+        circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE }
       } ), options
     );
   }

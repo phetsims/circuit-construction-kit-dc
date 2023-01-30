@@ -28,7 +28,7 @@ class IntroScreenView extends CCKCScreenView {
     );
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
-    const circuitElementToolNodes = [
+    const circuitElementToolItems = [
 
       // This page is duplicated in the Lab Screen View
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode1' },
@@ -48,10 +48,9 @@ class IntroScreenView extends CCKCScreenView {
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createPencilToolNode( tandem ), tandemName: 'pencilToolNode' }
     ];
 
-    super( model, circuitElementToolNodes, tandem, {
+    super( model, circuitElementToolItems, tandem, {
       showAdvancedControls: false,
-      circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE },
-      tandem: tandem
+      circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE }
     } );
   }
 }

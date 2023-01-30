@@ -28,8 +28,7 @@ class LabScreen extends Screen<LabModel, LabScreenView> {
       () => new LabModel( tandem.createTandem( 'model' ) ),
       model => new LabScreenView( model, tandem.createTandem( 'view' ), {
         showNoncontactAmmeters: providedOptions.showNoncontactAmmeters,
-        circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE },
-        tandem: tandem.createTandem( 'view' )
+        circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE }
       } ), {
         name: labStringProperty,
         backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
