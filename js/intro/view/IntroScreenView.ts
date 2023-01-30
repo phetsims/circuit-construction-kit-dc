@@ -1,4 +1,4 @@
-// Copyright 2017-2022, University of Colorado Boulder
+// Copyright 2017-2023, University of Colorado Boulder
 
 /**
  * The view for the Intro screen.
@@ -23,7 +23,7 @@ class IntroScreenView extends CCKCScreenView {
       model.circuit,
       model.showLabelsProperty,
       model.viewTypeProperty,
-      point => this.circuitLayerNode.globalToLocalPoint( point ),
+      point => this.circuitNode.globalToLocalPoint( point ),
       tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'circuitElementTools' )
     );
 

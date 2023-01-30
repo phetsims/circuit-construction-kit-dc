@@ -27,7 +27,7 @@ class CodapScreenView extends CCKCScreenView {
       model.circuit,
       model.showLabelsProperty,
       model.viewTypeProperty,
-      point => this.circuitLayerNode.globalToLocalPoint( point ),
+      point => this.circuitNode.globalToLocalPoint( point ),
       tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'circuitElementTools' )
     );
 
