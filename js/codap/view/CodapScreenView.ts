@@ -96,8 +96,8 @@ class CodapScreenView extends CCKCScreenView {
 
     this.addChild( collectDataButton );
 
-    const anyMetersVisibleProperty = DerivedProperty.or( [ ...model.voltmeters.map( voltmeter => voltmeter.visibleProperty ),
-      ...model.ammeters.map( ammeter => ammeter.visibleProperty ) ] );
+    const anyMetersVisibleProperty = DerivedProperty.or( [ ...model.voltmeters.map( voltmeter => voltmeter.isActiveProperty ),
+      ...model.ammeters.map( ammeter => ammeter.isActiveProperty ) ] );
 
     anyMetersVisibleProperty.link( visible => collectDataButton.setVisible( visible ) );
 
