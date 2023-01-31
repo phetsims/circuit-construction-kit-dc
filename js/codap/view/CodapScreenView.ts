@@ -20,6 +20,8 @@ import Bounds2 from '../../../../dot/js/Bounds2.js';
 import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 
+
+// TODO: Extend LabScreenView - see https://github.com/phetsims/circuit-construction-kit-common/issues/916
 class CodapScreenView extends CCKCScreenView {
 
   public constructor( model: CircuitConstructionKitModel, tandem: Tandem, providedOptions?: CCKCScreenViewOptions ) {
