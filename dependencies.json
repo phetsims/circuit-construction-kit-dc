@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.2.13-rc.1 Tue Jan 31 2023 15:09:29 GMT-0700 (Mountain Standard Time)",
+  "comment": "# circuit-construction-kit-dc 1.2.13 Wed Feb 01 2023 10:42:41 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "3df8c5ff9a465b031f84195a90bbb7e1be10a14d",
     "branch": "HEAD"
@@ -25,7 +25,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "4947974e6215ed52c548280e3bd0ad722ebcbaf4",
+    "sha": "1423831db285edf75df4fe0994fd141893a53e4e",
     "branch": "1.2"
   },
   "dot": {
