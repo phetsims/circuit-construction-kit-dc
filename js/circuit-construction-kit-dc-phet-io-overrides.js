@@ -295,12 +295,6 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     "circuitConstructionKitDc.introScreen.view.zoomButtonGroup.visibleProperty": {
       "phetioFeatured": true
     },
-    "circuitConstructionKitDc.introScreen.view.zoomButtonGroup.zoomInButton.enabledProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.introScreen.view.zoomButtonGroup.zoomOutButton.enabledProperty": {
-      "phetioFeatured": false
-    },
     "circuitConstructionKitDc.labScreen.model.addRealBulbsProperty": {
       "phetioFeatured": true
     },
@@ -693,11 +687,5 @@ window.phet.preloads.phetio.phetioElementsOverrides =
     },
     "circuitConstructionKitDc.labScreen.view.zoomButtonGroup.visibleProperty": {
       "phetioFeatured": true
-    },
-    "circuitConstructionKitDc.labScreen.view.zoomButtonGroup.zoomInButton.enabledProperty": {
-      "phetioFeatured": false
-    },
-    "circuitConstructionKitDc.labScreen.view.zoomButtonGroup.zoomOutButton.enabledProperty": {
-      "phetioFeatured": false
     }
   };
