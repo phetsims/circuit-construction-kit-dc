@@ -13,6 +13,7 @@ import CircuitElementToolFactory from '../../../../circuit-construction-kit-comm
 import { Text } from '../../../../scenery/js/imports.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
+import { combineOptions } from '../../../../phet-core/js/optionize.js';
 import RectangularPushButton from '../../../../sun/js/buttons/RectangularPushButton.js';
 import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import Bounds2 from '../../../../dot/js/Bounds2.js';
@@ -23,7 +24,9 @@ import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 // TODO: Extend LabScreenView - see https://github.com/phetsims/circuit-construction-kit-common/issues/916
 class CodapScreenView extends CCKCScreenView {
 
-  public constructor( model: CircuitConstructionKitModel, tandem: Tandem, options?: CCKCScreenViewOptions ) {
+  public constructor( model: CircuitConstructionKitModel, tandem: Tandem, providedOptions?: CCKCScreenViewOptions ) {
+
+    const options = combineOptions<CCKCScreenViewOptions>( { showMeterPhetioIndex: true }, providedOptions );
 
     const circuitElementToolFactory = new CircuitElementToolFactory(
       model.circuit,

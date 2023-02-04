@@ -6,8 +6,6 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-
-// import Node
 import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';

@@ -63,21 +63,16 @@ class LabScreenView extends CCKCScreenView {
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode4' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createPencilToolNode( tandem ), tandemName: 'pencilToolNode' },
 
-      realBulbItem
+      realBulbItem // The automatic scrolling function assumes this be on the last page.
     ];
 
+    // Check the assumption that the real light bulb tool node remains on the last page, so we can scroll to it
+    // without breaking the modularity of the pagination code.
+    assert && assert( circuitElementToolNodes.indexOf( realBulbItem ) >= circuitElementToolNodes.length - 5, 'realLightBulbToolNode should be' +
+                                                                                                             ' on the last page' );
     super( model, circuitElementToolNodes, tandem, merge( {
       showSeriesAmmeters: true
     }, options ) );
-
-    // Scroll to the real bulbs if selected, but not on startup
-    model.addRealBulbsProperty.link( addRealBulbs => {
-      this.circuitElementToolbox.carousel.setItemVisibility( realBulbItem, addRealBulbs );
-
-      if ( addRealBulbs ) {
-        this.circuitElementToolbox.carousel.scrollToItem( realBulbItem );
-      }
-    } );
   }
 }
 
