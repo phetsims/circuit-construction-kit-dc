@@ -73,6 +73,15 @@ class LabScreenView extends CCKCScreenView {
     super( model, circuitElementToolNodes, tandem, merge( {
       showSeriesAmmeters: true
     }, options ) );
+
+    // Scroll to the real bulbs if selected, but not on startup
+    model.addRealBulbsProperty.link( addRealBulbs => {
+      this.circuitElementToolbox.carousel.setItemVisible( realBulbItem, addRealBulbs );
+
+      if ( addRealBulbs ) {
+        this.circuitElementToolbox.carousel.scrollToItem( realBulbItem );
+      }
+    } );
   }
 }
 
