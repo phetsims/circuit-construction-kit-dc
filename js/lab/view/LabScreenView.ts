@@ -11,6 +11,7 @@ import CircuitConstructionKitModel from '../../../../circuit-construction-kit-co
 import CCKCScreenView, { CCKCScreenViewOptions } from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
 import merge from '../../../../phet-core/js/merge.js';
+import { CarouselItem } from '../../../../sun/js/Carousel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
@@ -26,7 +27,7 @@ class LabScreenView extends CCKCScreenView {
       tandem.createTandem( 'circuitElementToolbox' ).createTandem( 'carousel' ).createTandem( 'circuitElementTools' )
     );
 
-    const realBulbItem = {
+    const realBulbItem: CarouselItem = {
       createNode: ( tandem: Tandem ) => {
         return circuitElementToolFactory.createLightBulbToolNode(
           tandem,
@@ -36,7 +37,14 @@ class LabScreenView extends CCKCScreenView {
           model.addRealBulbsProperty
         );
       },
-      tandemName: 'realBulbToolNode'
+      tandemName: 'realBulbToolNode',
+
+      alignBoxOptions: {
+
+        // PhET-iO clients can control the visibleProperty of the realBulbToolNode in studio, or through the checkbox.
+        // It is the same Property
+        visibleProperty: model.addRealBulbsProperty
+      }
     };
 
     // Tool nodes that appear on every screen. Pagination for the carousel, each page should begin with wire node
