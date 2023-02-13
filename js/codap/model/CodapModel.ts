@@ -6,14 +6,14 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
+import LabModel from '../../lab/model/LabModel.js';
 
-class CodapModel extends CircuitConstructionKitModel {
+class CodapModel extends LabModel {
 
   public constructor( tandem: Tandem ) {
-    super( false, true, tandem );
+    super( tandem );
   }
 }
 
