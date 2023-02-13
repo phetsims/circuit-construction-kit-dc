@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.3.0-dev.18 Mon Feb 13 2023 15:29:13 GMT-0500 (Eastern Standard Time)",
+  "comment": "# circuit-construction-kit-dc 1.3.0-dev.19 Mon Feb 13 2023 17:14:32 GMT-0500 (Eastern Standard Time)",
   "assert": {
     "sha": "c13a8c7741d95fbd8e37619c66ebcca8686dffe7",
     "branch": "master"
@@ -25,7 +25,7 @@
     "branch": "master"
   },
   "circuit-construction-kit-dc": {
-    "sha": "ba6b86d2e502f818380e7515f385f0cfa810c82b",
+    "sha": "a2cb4eae9e70b78986dda8d1f02bf5bf7b5707c7",
     "branch": "master"
   },
   "dot": {
@@ -57,7 +57,7 @@
     "branch": "master"
   },
   "phet-io-sim-specific": {
-    "sha": "0fb4563c0bd24b0662b8d6e1e16671d9acdd470d",
+    "sha": "8f797e8c58f930477f80801f5d4bc3dec307a79b",
     "branch": "master"
   },
   "phet-io-wrappers": {
