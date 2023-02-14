@@ -6,7 +6,6 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import Property from '../../../axon/js/Property.js';
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import lightBulbMiddle_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddle_png.js';
 import lightBulbMiddleIcon_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleIcon_png.js';
@@ -18,6 +17,7 @@ import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
 import Tandem from '../../../tandem/js/Tandem.js';
+import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCColors.js';
 
 const introStringProperty = CircuitConstructionKitDcStrings.screen.introStringProperty;
 
@@ -27,7 +27,7 @@ class IntroScreen extends Screen {
 
     // Create the icon
     const homeScreenIcon = Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, {
-      fill: CCKCConstants.BACKGROUND_COLOR
+      fill: CCKCColors.screenBackgroundColorProperty
     } );
     homeScreenIcon.addChild( new Image( lightBulbMiddle_png, {
       scale: 0.95,
@@ -37,7 +37,7 @@ class IntroScreen extends Screen {
     // Render a smaller icon for Edge because it is aliasing the image (even with mipmap on)
     // see https://github.com/phetsims/circuit-construction-kit-dc/issues/120
     const navigationBarIcon = Rectangle.dimension( Screen.MINIMUM_NAVBAR_ICON_SIZE, {
-      fill: CCKCConstants.BACKGROUND_COLOR
+      fill: CCKCColors.screenBackgroundColorProperty
     } );
     navigationBarIcon.addChild( new Image( lightBulbMiddleIcon_png, {
       scale: 1.05,
@@ -46,7 +46,7 @@ class IntroScreen extends Screen {
 
     const options = {
       name: introStringProperty,
-      backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
+      backgroundColorProperty: CCKCColors.screenBackgroundColorProperty,
       homeScreenIcon: new ScreenIcon( homeScreenIcon, {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1

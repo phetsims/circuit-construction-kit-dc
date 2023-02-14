@@ -6,8 +6,8 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import Property from '../../../axon/js/Property.js';
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
+import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCColors.js';
 import lightBulbMiddleHigh_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleHigh_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
@@ -26,7 +26,7 @@ class CodapScreen extends Screen<CodapModel, CodapScreenView> {
 
     // Create the icon
     const homeScreenIcon = Rectangle.dimension( Screen.MINIMUM_HOME_SCREEN_ICON_SIZE, {
-      fill: CCKCConstants.BACKGROUND_COLOR
+      fill: CCKCColors.screenBackgroundColorProperty
     } );
     homeScreenIcon.addChild( new Image( lightBulbMiddleHigh_png, {
       scale: 0.95,
@@ -36,7 +36,7 @@ class CodapScreen extends Screen<CodapModel, CodapScreenView> {
     // Render a smaller icon for Edge because it is aliasing the image (even with mipmap on)
     // see https://github.com/phetsims/circuit-construction-kit-dc/issues/120
     const navigationBarIcon = Rectangle.dimension( Screen.MINIMUM_NAVBAR_ICON_SIZE, {
-      fill: CCKCConstants.BACKGROUND_COLOR
+      fill: CCKCColors.screenBackgroundColorProperty
     } );
     navigationBarIcon.addChild( new Image( lightBulbMiddleHigh_png, {
       scale: 0.26,
@@ -45,7 +45,7 @@ class CodapScreen extends Screen<CodapModel, CodapScreenView> {
 
     const options = {
       name: codapStringProperty,
-      backgroundColorProperty: new Property( CCKCConstants.BACKGROUND_COLOR ),
+      backgroundColorProperty: CCKCColors.screenBackgroundColorProperty,
       homeScreenIcon: new ScreenIcon( homeScreenIcon, {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
