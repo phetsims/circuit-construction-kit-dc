@@ -21,7 +21,7 @@ import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCCol
 
 const introStringProperty = CircuitConstructionKitDcStrings.screen.introStringProperty;
 
-class IntroScreen extends Screen {
+class IntroScreen extends Screen<IntroModel, IntroScreenView> {
 
   public constructor( tandem: Tandem ) {
 
