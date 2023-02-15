@@ -166,17 +166,10 @@
       <details>
         <summary>About the A11y View Tool</summary>
         <p>
-          The A11y View is a design and presentation tool that we use to visually review and demonstrate the Interactive
-          Description design of a simulation. The descriptions we design live within our accessibility layer, we call
-          the Parallel DOM, or PDOM. The HTML of the PDOM provides document and interaction semantics for State
-          Descriptions (copied into the blue box), and timely delivery of Responsive Descriptions (copied into the
-          orange box). For a learner accessing the simulation with screen reader software, the State Descriptions
-          provide on-demand access the current state of simulation while Responsive Descriptions deliver relevant
-          changes - in real time - as the learner interacts with the simulation.
+          The A11y View is a design and presentation tool that visually displays a copy of the descriptions we design for the Interactive Description feature. The State Descriptions (blue box) track the current state of the simulation. The Responsive Descriptions (orange box) deliver relevant changes in real time as they happen. Using this tool, designers can test and assess the descriptions during the design process without using a screen reader. Educators can also use this tool to see if the content of the descritpions meets their teaching and learning needs.
         </p>
         <p>
-          <b>Please note</b> that learners who use screen reader software do not use this A11y View, they use the same
-          simulation that all learners use.
+          <b>Please note:</b> The A11y View is not for learners. In learning contexts, screen reader users access the Interactive Desctiption feature using the same simulation as everyone else.
         </p>
       </details>
     </div>
@@ -193,12 +186,7 @@
         </div>
         <details>
           <summary>About Responsive Descriptions</summary>
-          Responsive Descriptions deliver changes made to interactive objects (Object Responses) and changes to the
-          surrounding context (Context Responses). Only responses powered by ARIA Live appear in the activity log below,
-          and most are Context Responses. Most responses powered by ARIA Live are delivered politely, but some are
-          really important so we make them assertive (occasional line highlighted in pink). Note that many Object
-          Responses are delivered using the aria-valuetext attribute (see grey text under slider interactions in the
-          blue box).
+          Responsive Descriptions are a combination of object responses, descriptions of changes made directly to interactive objects, and context responses, descriptions of changes to the surrounding context. Together, they are designed to deliver relevant changes in real time as they happen. The object and context responses powered by ARIA Live appear in the activity log below. The object responses for slider interactions are powered by the aria-valuetext attribute, and are found in grey text under slider interactions in the blue box.
         </details>
         <div id='alert-copy-container' class='alert_copy_container' role='presentation'>
           <div id='polite-element-container'>
@@ -214,10 +202,7 @@
         <h3>State Descriptions for Circuit Construction Kit: DC</h3>
         <details>
           <summary>About State Descriptions</summary>
-          State Descriptions provide on-demand access to a full description of the current state of the simulation. This
-          lengthy description is accessible to the learner from the moment the simulation loads, and during any point as
-          they explore. The dynamic parts of the State Descriptions update silently as the learner interacts and makes
-          changes.
+          State Descriptions are a combination of static state descriptions (descriptions that never change) and dynamic state descriptions (descriptions that update silently as the simulation changes). Together, they form a complete description of the current state at any given moment. These are the descriptions that a screen reader users can read through or review as they feel the need when they accessing a simulation (i.e., not the A11y View tool).
         </details>
         <div id="dom-copy-container" class="dom_copy_container" role="presentation"></div>
       </div>
