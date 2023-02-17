@@ -31,7 +31,7 @@ class LabScreenView extends CCKCScreenView {
       createNode: ( tandem: Tandem ) => {
         return circuitElementToolFactory.createLightBulbToolNode(
           tandem,
-          model.circuit.realLightBulbGroup,
+          model.circuit.realLightBulbGroup!,
           CircuitConstructionKitCommonStrings.realBulbStringProperty,
           true,
           model.addRealBulbsProperty
