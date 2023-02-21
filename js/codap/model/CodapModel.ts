@@ -13,7 +13,7 @@ import LabModel from '../../lab/model/LabModel.js';
 class CodapModel extends LabModel {
 
   public constructor( tandem: Tandem ) {
-    super( tandem );
+    super( tandem, { showNoncontactAmmeters: true } );
   }
 }
 

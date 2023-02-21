@@ -13,7 +13,7 @@ import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 class IntroModel extends CircuitConstructionKitModel {
 
   public constructor( tandem: Tandem ) {
-    super( false, false, tandem );
+    super( false, false, tandem, { showNoncontactAmmeters: true } );
   }
 }
 

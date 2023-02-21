@@ -20,12 +20,16 @@ import LabScreenView from './view/LabScreenView.js';
 
 const labStringProperty = CircuitConstructionKitDcStrings.screen.labStringProperty;
 
+export type LabScreenOptions = {
+  showNoncontactAmmeters: boolean;
+};
+
 class LabScreen extends Screen<LabModel, LabScreenView> {
 
-  public constructor( tandem: Tandem, providedOptions: { showNoncontactAmmeters: boolean } ) {
+  public constructor( tandem: Tandem, providedOptions: LabScreenOptions ) {
 
     super(
-      () => new LabModel( tandem.createTandem( 'model' ) ),
+      () => new LabModel( tandem.createTandem( 'model' ), providedOptions ),
       model => new LabScreenView( model, tandem.createTandem( 'view' ), {
         showNoncontactAmmeters: providedOptions.showNoncontactAmmeters,
         circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE }
