@@ -48,7 +48,6 @@ class IntroScreenView extends CCKCScreenView {
 
     super( model, circuitElementToolItems, tandem, {
       showAdvancedControls: false,
-      showNoncontactAmmeters: true,
       circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE }
     } );
   }
