@@ -51,7 +51,7 @@ class LabScreenView extends CCKCScreenView {
     const circuitElementToolNodes = [
 
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode1' },
-      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createRightBatteryToolNode( tandem ), tandemName: 'rightBatteryToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createRightBatteryToolNode( tandem ), tandemName: 'batteryToolNode' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createLightBulbToolNode( tandem, model.circuit.lightBulbGroup ), tandemName: 'lightBulbToolNode' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createResistorToolNode( tandem ), tandemName: 'resistorToolNode' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createSwitchToolNode( tandem ), tandemName: 'switchToolNode' },
