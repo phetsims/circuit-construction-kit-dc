@@ -305,7 +305,6 @@
       element.tabIndex = '-1';
 
       // make sure that styling is removed, unless some styling was added just for the copy
-      // TODO: pdom-style is not used anywhere. Should we keep it? https://github.com/phetsims/chipper/issues/916
       if ( element.className !== 'pdom-style' ) {
         element.removeAttribute( 'style' );
       }
@@ -382,7 +381,6 @@
 
     // This is extremely inefficient every time the document changes, make a new copy, remove
     // the visual DOM, and add a new one
-    // TODO: Work on refining this, and only modifying the elements that change in the PDOM https://github.com/phetsims/chipper/issues/916
     copyContainer.innerHTML = '';
     const pdomCopy = pdomRoot.cloneNode( true );
     pdomCopy.removeAttribute( 'style' );
@@ -535,14 +533,12 @@
 
       // strip the styling from the copied DOM elements
 
-      // TODO: why do we do this? Isn't this an element purely in the a11y view? https://github.com/phetsims/chipper/issues/916
       alertList.removeAttribute( 'style' );
 
       // get the parent container for the parallel DOM copy and the alert content
       const copyContainer = document.getElementById( 'dom-copy-container' );
 
       // once for initial setup
-      // TODO: do we have to do this? https://github.com/phetsims/chipper/issues/916
       setPDOMCopyContent( PDOMRoot, copyContainer );
 
       // update the PDOM copy whenever the sim's PDOM changes
@@ -561,7 +557,6 @@
       document.getElementById( 'iframe' ).focus();
 
       // Provide fake focus highlighting to the PDOM copy based on what is actually highlighted in the sim.
-      // TODO: is polling the best way to do this? If so why 500? https://github.com/phetsims/chipper/issues/916
       let previousElement = null;
       setInterval( () => {
 
