@@ -34,7 +34,11 @@
     "published": true,
     "phet-io": {
       "compareDesignedAPIChanges": true
-    }
+    },
+    "screenNameKeys": [
+      "CIRCUIT_CONSTRUCTION_KIT_DC/screen.intro",
+      "CIRCUIT_CONSTRUCTION_KIT_DC/screen.lab"
+    ]
   },
   "eslintConfig": {
     "extends": "../chipper/eslint/sim_eslintrc.js"
