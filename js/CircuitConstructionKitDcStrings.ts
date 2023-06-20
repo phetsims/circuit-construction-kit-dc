@@ -5,17 +5,17 @@
  */
 /* eslint-disable */
 import getStringModule from '../../chipper/js/getStringModule.js';
-import LinkableProperty from '../../axon/js/LinkableProperty.js';
+import type LocalizedStringProperty from '../../chipper/js/LocalizedStringProperty.js';
 import circuitConstructionKitDc from './circuitConstructionKitDc.js';
 
 type StringsType = {
   'circuit-construction-kit-dc': {
-    'titleStringProperty': LinkableProperty<string>;
+    'titleStringProperty': LocalizedStringProperty;
   };
   'screen': {
-    'introStringProperty': LinkableProperty<string>;
-    'labStringProperty': LinkableProperty<string>;
-    'codapStringProperty': LinkableProperty<string>;
+    'introStringProperty': LocalizedStringProperty;
+    'labStringProperty': LocalizedStringProperty;
+    'codapStringProperty': LocalizedStringProperty;
   }
 };
 
