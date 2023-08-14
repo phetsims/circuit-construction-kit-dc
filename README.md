@@ -10,11 +10,11 @@ For a description of this simulation, associated resources, and a link to the pu
 <a href="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html" target="_blank">Click here to run "Circuit Construction Kit: DC".</a>
 
 <a href="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html" target="_blank">
-<img src="https://raw.githubusercontent.com/phetsims/circuit-construction-kit-dc/master/assets/circuit-construction-kit-dc-screenshot.png" alt="Screenshot" style="width: 400px;"/>
+<img src="https://raw.githubusercontent.com/phetsims/circuit-construction-kit-dc/main/assets/circuit-construction-kit-dc-screenshot.png" alt="Screenshot" style="width: 400px;"/>
 </a>
 
 ### Documentation
-The <a href="https://github.com/phetsims/phet-info/blob/master/doc/phet-development-overview.md" target="_blank">PhET Development Overview</a> is the most complete guide to PhET Simulation
+The <a href="https://github.com/phetsims/phet-info/blob/main/doc/phet-development-overview.md" target="_blank">PhET Development Overview</a> is the most complete guide to PhET Simulation
 Development. This guide includes how to obtain simulation code and its dependencies, notes about architecture & design, how to test and build
 the sims, as well as other important information.
 
@@ -81,4 +81,4 @@ Contact us at our Google Group: <a href="http://groups.google.com/forum/#!forum/
 Help us improve, create a <a href="http://github.com/phetsims/circuit-construction-kit-dc/issues/new" target="_blank">New Issue</a>
 
 ### License
-See the <a href="https://github.com/phetsims/circuit-construction-kit-dc/blob/master/LICENSE" target="_blank">LICENSE</a>
+See the <a href="https://github.com/phetsims/circuit-construction-kit-dc/blob/main/LICENSE" target="_blank">LICENSE</a>
