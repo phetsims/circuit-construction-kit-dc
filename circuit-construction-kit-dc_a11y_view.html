@@ -216,7 +216,7 @@
 
 <script type="application/javascript">
   const IS_BUILT_STRING = '{{IS_BUILT}}';
-  const IS_BUILT = IS_BUILT_STRING.indexOf( '\{\{' ) !== 0; // escape for better syntax highlighting support
+  const IS_BUILT = IS_BUILT_STRING.indexOf( '{{' ) !== 0; // escape for better syntax highlighting support
 
   // Grab all query parameters to pass to the simulation, and a couple of params that are required for this test
   let simulationQueryString = window.location.search;
@@ -245,9 +245,9 @@
   // apply sticky styling for all browsers except chrome.
   const left = document.getElementById( 'left' );
   const ua = navigator.userAgent.toLowerCase();
-  if ( ua.indexOf( 'safari' ) != -1 ) {
+  if ( ua.indexOf( 'safari' ) !== -1 ) {
     if ( ua.indexOf( 'chrome' ) > -1 ) {
-      left.classList.add( 'left' )
+      left.classList.add( 'left' );
     }
     else {
       left.classList.add( 'left-safari' );
@@ -257,7 +257,6 @@
 </script>
 
 <script>
-
   // Number of alerts that remain in the Activity log before fading out.
   const ACTIVITY_LOG_LENGTH = 10;
 
@@ -403,13 +402,13 @@
     let dirty = false;
 
     // poll for updates to help performance on chrome
-    setInterval( () => {
+    setInterval( () => { // eslint-disable-line bad-sim-text
 
       if ( dirty ) {
 
         // update the PDOM copy after a delay to fix a FF/Safari bug where cloneNode prevents hidden DOM elements
         // in the iframe from staying hidden - see https://github.com/phetsims/chipper/issues/648
-        setTimeout( function() {
+        setTimeout( () => { // eslint-disable-line bad-sim-text
           setPDOMCopyContent( pdomRoot, copyContainer );
           dirty = false;
         }, 10 );
@@ -463,7 +462,7 @@
             for ( let i = 0; i < fadeArray.length; i++ ) {
               const fadeChild = fadeArray[ i ];
 
-              const intervalId = window.setInterval( () => {
+              const intervalId = window.setInterval( () => { // eslint-disable-line bad-sim-text
                 fadeChild.style.opacity = fadeChild.style.opacity * 0.95;
 
                 // stop animating and remove child
@@ -478,7 +477,7 @@
       } );
     } );
 
-    liveObserver.observe( originalElement, mutationConfig )
+    liveObserver.observe( originalElement, mutationConfig );
   }
 
   /**
@@ -490,10 +489,6 @@
       listElement.removeChild( listElement.lastChild );
     }
   }
-
-</script>
-
-<script type="application/javascript">
 
   // constants
   // see https://developer.mozilla.org/en-US/docs/Web/API/MutationObserverInit for details
@@ -558,7 +553,7 @@
 
       // Provide fake focus highlighting to the PDOM copy based on what is actually highlighted in the sim.
       let previousElement = null;
-      setInterval( () => {
+      setInterval( () => { // eslint-disable-line bad-sim-text
 
         if ( previousElement ) {
           previousElement.classList.remove( 'highlight' );
