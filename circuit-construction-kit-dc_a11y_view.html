@@ -416,13 +416,13 @@
     let dirty = false;
 
     // poll for updates to help performance on chrome
-    setInterval( () => { // eslint-disable-line bad-sim-text
+    setInterval( () => {
 
       if ( dirty ) {
 
         // update the PDOM copy after a delay to fix a FF/Safari bug where cloneNode prevents hidden DOM elements
         // in the iframe from staying hidden - see https://github.com/phetsims/chipper/issues/648
-        setTimeout( () => { // eslint-disable-line bad-sim-text
+        setTimeout( () => {
           setPDOMCopyContent( pdomRoot, copyContainer );
           dirty = false;
         }, 10 );
@@ -476,7 +476,7 @@
             for ( let i = 0; i < fadeArray.length; i++ ) {
               const fadeChild = fadeArray[ i ];
 
-              const intervalId = window.setInterval( () => { // eslint-disable-line bad-sim-text
+              const intervalId = window.setInterval( () => {
                 fadeChild.style.opacity = fadeChild.style.opacity * 0.95;
 
                 // stop animating and remove child
@@ -569,7 +569,7 @@
 
       // Provide fake focus highlighting to the PDOM copy based on what is actually highlighted in the sim.
       let previousElement = null;
-      setInterval( () => { // eslint-disable-line bad-sim-text
+      setInterval( () => {
 
         if ( previousElement ) {
           previousElement.classList.remove( 'highlight' );
