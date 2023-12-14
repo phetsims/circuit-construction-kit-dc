@@ -25,7 +25,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "6ab038c2f2ae99a5aac00832602d155b46e89388",
+    "sha": "269dcf95e7fafa89702e7be9903e3d251f4eeb71",
     "branch": "1.3"
   },
   "dot": {
@@ -61,7 +61,7 @@
     "branch": "HEAD"
   },
   "phet-io-wrappers": {
-    "sha": "babbc6d652b3b40105b456c4d5c2412c73643209",
+    "sha": "b9c1c8b1b854e5241c65586c4d4d7569c8321a03",
     "branch": "HEAD"
   },
   "phetcommon": {
@@ -69,7 +69,7 @@
     "branch": "HEAD"
   },
   "phetmarks": {
-    "sha": "5b3084a2ea029dec575e5dd00752b4013056c13b",
+    "sha": "b81bc619a736ab7c5baba44f4449d6f8aafa89dd",
     "branch": "HEAD"
   },
   "query-string-machine": {
@@ -101,7 +101,7 @@
     "branch": "HEAD"
   },
   "tandem": {
-    "sha": "7bc718360705b49b32b6554c9e6fee1fe4338e4f",
+    "sha": "fc267d7fa8a17b69d0098f7e0258cf634d33b19f",
     "branch": "HEAD"
   },
   "twixt": {
