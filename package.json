@@ -52,7 +52,7 @@
         ],
         "parserOptions": {
           "project": [
-            "../circuit-construction-kit-dc/tsconfig.json"
+            "../chipper/tsconfig/eslint-all/tsconfig.json"
           ]
         }
       }
