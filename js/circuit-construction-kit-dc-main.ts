@@ -6,6 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import CCKCQueryParameters from '../../circuit-construction-kit-common/js/CCKCQueryParameters.js';
 import CCKCSimulationPreferencesContentNode from '../../circuit-construction-kit-common/js/view/CCKCSimulationPreferencesContentNode.js';
 import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim from '../../joist/js/Sim.js';
@@ -15,10 +16,9 @@ import '../../scenery/js/nodes/Image.js';
 import soundManager from '../../tambo/js/soundManager.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CircuitConstructionKitDcStrings from './CircuitConstructionKitDcStrings.js';
+import CodapScreen from './codap/CodapScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
-import CodapScreen from './codap/CodapScreen.js';
-import CCKCQueryParameters from '../../circuit-construction-kit-common/js/CCKCQueryParameters.js';
 
 // constants
 const tandem = Tandem.ROOT;
