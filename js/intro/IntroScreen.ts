@@ -7,17 +7,17 @@
  */
 
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
+import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCColors.js';
 import lightBulbMiddle_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddle_png.js';
 import lightBulbMiddleIcon_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleIcon_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import { Image, Rectangle } from '../../../scenery/js/imports.js';
+import Tandem from '../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
-import Tandem from '../../../tandem/js/Tandem.js';
-import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCColors.js';
 
 const introStringProperty = CircuitConstructionKitDcStrings.screen.introStringProperty;
 
