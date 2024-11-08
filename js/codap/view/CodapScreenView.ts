@@ -6,17 +6,17 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
+import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import { CCKCScreenViewOptions } from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
+import Bounds2 from '../../../../dot/js/Bounds2.js';
+import { combineOptions } from '../../../../phet-core/js/optionize.js';
+import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
 import { Text } from '../../../../scenery/js/imports.js';
+import RectangularPushButton from '../../../../sun/js/buttons/RectangularPushButton.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
-import { combineOptions } from '../../../../phet-core/js/optionize.js';
-import RectangularPushButton from '../../../../sun/js/buttons/RectangularPushButton.js';
-import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCConstants.js';
-import Bounds2 from '../../../../dot/js/Bounds2.js';
-import PhetFont from '../../../../scenery-phet/js/PhetFont.js';
-import DerivedProperty from '../../../../axon/js/DerivedProperty.js';
 import LabScreenView from '../../lab/view/LabScreenView.js';
 
 class CodapScreenView extends LabScreenView {
