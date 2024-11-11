@@ -250,7 +250,9 @@
 
   // in unbuilt mode and on phet-server, the brand suffix is removed
   const filenameEnding = ( window.location.hostname === 'phet.colorado.edu' || !IS_BUILT ) ? '.html' : '_phet.html';
-  const repoLocale = 'circuit-construction-kit-dc_en';
+
+  // Unbuilt sims include all locales in the en file, built versions only include all strings in the all file
+  const repoLocale = `circuit-construction-kit-dc_${IS_BUILT ? 'all' : 'en'}`;
   const simURL = repoLocale + filenameEnding + simulationQueryString;
 
   // set the source of the sim iframe
