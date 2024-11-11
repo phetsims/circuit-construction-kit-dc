@@ -22,6 +22,8 @@ const labStringProperty = CircuitConstructionKitDcStrings.screen.labStringProper
 
 export type LabScreenOptions = {
   showNoncontactAmmeters: boolean;
+  showAdvancedControls: boolean;
+  showCharts?: boolean;
 };
 
 class LabScreen extends Screen<LabModel, LabScreenView> {
@@ -31,7 +33,8 @@ class LabScreen extends Screen<LabModel, LabScreenView> {
     super(
       () => new LabModel( tandem.createTandem( 'model' ), providedOptions ),
       model => new LabScreenView( model, tandem.createTandem( 'view' ), {
-        circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE }
+        circuitElementToolboxOptions: { carouselScale: CCKCConstants.DC_CAROUSEL_SCALE },
+        showCharts: providedOptions.showCharts
       } ), {
         name: labStringProperty,
         backgroundColorProperty: CCKCColors.screenBackgroundColorProperty,

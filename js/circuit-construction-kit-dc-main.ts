@@ -16,7 +16,6 @@ import '../../scenery/js/nodes/Image.js';
 import soundManager from '../../tambo/js/soundManager.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CircuitConstructionKitDcStrings from './CircuitConstructionKitDcStrings.js';
-import CodapScreen from './codap/CodapScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
 
@@ -27,14 +26,12 @@ const circuitConstructionKitDcTitleStringProperty = CircuitConstructionKitDcStri
 
 simLauncher.launch( () => {
 
-  const showCodapScreen = CCKCQueryParameters.codap;
-
-  const screensToShow = showCodapScreen ? [ new CodapScreen( tandem.createTandem( 'codapScreen' ) ) ] : [
+  const screensToShow = [
     new IntroScreen( tandem.createTandem( 'introScreen' ) ),
     new LabScreen( tandem.createTandem( 'labScreen' ), {
-      showNoncontactAmmeters: true
-    } )
-  ];
+      showNoncontactAmmeters: true,
+      showAdvancedControls: true
+    } ) ];
 
   // Launch the simulation once everything is ready
   const sim = new Sim( circuitConstructionKitDcTitleStringProperty, screensToShow, {
