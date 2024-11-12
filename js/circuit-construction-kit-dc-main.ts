@@ -6,7 +6,6 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
-import CCKCQueryParameters from '../../circuit-construction-kit-common/js/CCKCQueryParameters.js';
 import CCKCSimulationPreferencesContentNode from '../../circuit-construction-kit-common/js/view/CCKCSimulationPreferencesContentNode.js';
 import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import Sim from '../../joist/js/Sim.js';
