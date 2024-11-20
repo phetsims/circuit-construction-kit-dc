@@ -382,6 +382,8 @@
 
             // add a new element to the DOM that displays the value of the attribute
             const valueElement = document.createElement( 'p' );
+
+            // Assign a className so that we can avoid removing this specific styling when we present the PDOM copy
             valueElement.className = 'pdom-style';
             valueElement.style.opacity = 0.55;
             valueElement.style.display = 'inline-block';
@@ -403,8 +405,8 @@
    */
   function setPDOMCopyContent( pdomRoot, copyContainer ) {
 
-    // This is extremely inefficient every time the document changes, make a new copy, remove
-    // the visual DOM, and add a new one
+    // NOTE: This is extremely inefficient every time the document changes, make a new copy, remove
+    // the visual DOM, and add a new one.
     copyContainer.innerHTML = '';
     const pdomCopy = pdomRoot.cloneNode( true );
     pdomCopy.removeAttribute( 'style' );
@@ -424,7 +426,8 @@
    */
   function addPDOMObserver( pdomRoot, copyContainer, mutationConfig ) {
 
-    let dirty = false;
+    // Initially dirty so that the PDOM copy is updated on the first frame
+    let dirty = true;
 
     // poll for updates to help performance on chrome
     setInterval( () => {
@@ -553,15 +556,8 @@
       // get the alert dom elements from the PDOM copy
       const alertList = document.getElementById( 'alert-list' );
 
-      // strip the styling from the copied DOM elements
-
-      alertList.removeAttribute( 'style' );
-
       // get the parent container for the parallel DOM copy and the alert content
       const copyContainer = document.getElementById( 'dom-copy-container' );
-
-      // once for initial setup
-      setPDOMCopyContent( PDOMRoot, copyContainer );
 
       // update the PDOM copy whenever the sim's PDOM changes
       addPDOMObserver( PDOMRoot, copyContainer, MUTATION_OBSERVER_CONFIG );
@@ -575,19 +571,20 @@
       const clearButton = document.getElementById( 'clear-activity-log-button' );
       clearButton.addEventListener( 'click', () => clearActivityLog( alertList ) );
 
+      const iframe = document.getElementById( 'iframe' );
+      const iframeDocument = iframe.contentWindow.document
+
       // set focus to the loaded iframe
-      document.getElementById( 'iframe' ).focus();
+      iframe.focus();
 
-      // Provide fake focus highlighting to the PDOM copy based on what is actually highlighted in the sim.
       let previousElement = null;
-      setInterval( () => {
-
+      iframeDocument.addEventListener( 'focusin', event => {
         if ( previousElement ) {
           previousElement.classList.remove( 'highlight' );
         }
-        previousElement = document.getElementById( 'iframe' ).contentWindow.document.activeElement;
+        previousElement = iframeDocument.activeElement;
         previousElement.classList.add( 'highlight' );
-      }, 500 );
+      } );
     }
   } );
 </script>
