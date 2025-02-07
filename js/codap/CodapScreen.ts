@@ -11,7 +11,8 @@ import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCCol
 import lightBulbMiddleHigh_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleHigh_png.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
-import { Image, Rectangle } from '../../../scenery/js/imports.js';
+import Image from '../../../scenery/js/nodes/Image.js';
+import Rectangle from '../../../scenery/js/nodes/Rectangle.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
