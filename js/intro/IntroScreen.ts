@@ -1,4 +1,4 @@
-// Copyright 2017-2024, University of Colorado Boulder
+// Copyright 2017-2025, University of Colorado Boulder
 
 /**
  * The "Intro" for the Circuit Construction Kit: DC simulation.
