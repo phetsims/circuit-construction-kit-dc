@@ -19,9 +19,8 @@
     ],
     "runnable": true,
     "supportedBrands": [
-      "phet",
-      "adapted-from-phet",
-      "phet-io"
+      "phet-io",
+      "phet"
     ],
     "simulation": true,
     "simFeatures": {
