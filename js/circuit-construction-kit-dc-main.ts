@@ -39,7 +39,7 @@ simLauncher.launch( () => {
     preferencesModel: new PreferencesModel( {
       simulationOptions: {
         customPreferences: [ {
-          createContent: tandem => new CCKCSimulationPreferencesContentNode( tandem.createTandem( 'simPreferences' ) )
+          createContent: tandem => new CCKCSimulationPreferencesContentNode( tandem )
         } ]
       }
     } ),
