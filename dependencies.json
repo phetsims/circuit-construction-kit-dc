@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.4.0-rc.1 Tue Mar 18 2025 19:51:08 GMT-0600 (Mountain Daylight Time)",
+  "comment": "# circuit-construction-kit-dc 1.4.0-rc.2 Tue Mar 18 2025 19:56:48 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "f6d41b399ad32df2a00ab4b329981be0c574d77a",
     "branch": "HEAD"
@@ -22,10 +22,10 @@
   },
   "circuit-construction-kit-common": {
     "sha": "edc4b3873f542101f08bb6b70f786adcbfc86f91",
-    "branch": "circuit-construction-kit-dc-1.4"
+    "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "0c133d177ba4efc244da9efcc9c246ef902e25fd",
+    "sha": "ee23d7f8613ee7120d16705748270b334e63334c",
     "branch": "1.4"
   },
   "dot": {
@@ -58,7 +58,7 @@
   },
   "phet-io-sim-specific": {
     "sha": "7c127a88b3ad5904ec5d2b262ac0cf1a3dec26c7",
-    "branch": "circuit-construction-kit-dc-1.4"
+    "branch": "HEAD"
   },
   "phet-io-wrappers": {
     "sha": "35200b5b33e955304d4d0933cecc3bf3cc55c8fe",
