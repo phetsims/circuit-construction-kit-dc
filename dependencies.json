@@ -25,7 +25,7 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-dc": {
-    "sha": "b6cf7debe3303807ba26157b2a127605ec74d4a9",
+    "sha": "7cabd5d2891252073b8da708445d9751d7e67ec7",
     "branch": "1.4"
   },
   "dot": {
@@ -37,7 +37,7 @@
     "branch": "HEAD"
   },
   "joist": {
-    "sha": "7837753599e01083f99501d04eb90834de1d328f",
+    "sha": "86ebb72d2583077bb0e511ce7f2fabdf0f27266d",
     "branch": "HEAD"
   },
   "kite": {
