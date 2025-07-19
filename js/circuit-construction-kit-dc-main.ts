@@ -11,7 +11,6 @@ import CCKCSim from '../../circuit-construction-kit-common/js/view/CCKCSim.js';
 import CCKCSimulationPreferencesContentNode from '../../circuit-construction-kit-common/js/view/CCKCSimulationPreferencesContentNode.js';
 import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import simLauncher from '../../joist/js/simLauncher.js';
-import soundManager from '../../tambo/js/soundManager.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CircuitConstructionKitDcStrings from './CircuitConstructionKitDcStrings.js';
 import CodapScreen from './codap/CodapScreen.js';
@@ -53,7 +52,4 @@ simLauncher.launch( () => {
     phetioDesigned: true
   } );
   sim.start();
-
-  // Disable sounds for joist/home screen/navigation bar/carousel, but leave sound for the dog bark
-  soundManager.setOutputLevelForCategory( 'user-interface', 0 );
 } );
