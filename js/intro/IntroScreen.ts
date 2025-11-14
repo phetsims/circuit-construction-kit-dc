@@ -7,6 +7,7 @@
  */
 
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
+import CCKKeyboardHelpNode from '../../../circuit-construction-kit-common/js/view/CCKKeyboardHelpNode.js';
 import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCColors.js';
 import lightBulbMiddle_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddle_png.js';
 import lightBulbMiddleIcon_png from '../../../circuit-construction-kit-common/mipmaps/lightBulbMiddleIcon_png.js';
@@ -56,6 +57,7 @@ class IntroScreen extends Screen<IntroModel, IntroScreenView> {
         maxIconWidthProportion: 1,
         maxIconHeightProportion: 1
       } ),
+      createKeyboardHelpNode: () => new CCKKeyboardHelpNode(),
       tandem: tandem,
       maxDT: CCKCConstants.MAX_DT
     };

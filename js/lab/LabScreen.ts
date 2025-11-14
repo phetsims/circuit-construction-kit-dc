@@ -7,6 +7,7 @@
  */
 
 import CCKCConstants from '../../../circuit-construction-kit-common/js/CCKCConstants.js';
+import CCKKeyboardHelpNode from '../../../circuit-construction-kit-common/js/view/CCKKeyboardHelpNode.js';
 import CCKCColors from '../../../circuit-construction-kit-common/js/view/CCKCColors.js';
 import Screen from '../../../joist/js/Screen.js';
 import ScreenIcon from '../../../joist/js/ScreenIcon.js';
@@ -40,6 +41,7 @@ class LabScreen extends Screen<LabModel, LabScreenView> {
           maxIconWidthProportion: 1,
           maxIconHeightProportion: 1
         } ),
+        createKeyboardHelpNode: () => new CCKKeyboardHelpNode(),
         tandem: tandem,
         maxDT: CCKCConstants.MAX_DT
       }
