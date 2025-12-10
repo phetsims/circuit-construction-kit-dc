@@ -17,12 +17,13 @@ import CodapScreen from './codap/CodapScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
 
+
 // constants
 const tandem = Tandem.ROOT;
 
 const circuitConstructionKitDcTitleStringProperty = CircuitConstructionKitDcStrings[ 'circuit-construction-kit-dc' ].titleStringProperty;
 
-simLauncher.launch( () => {
+simLauncher.launch( async () => {
 
   const showCodapScreen = CCKCQueryParameters.codap;
 
@@ -52,4 +53,21 @@ simLauncher.launch( () => {
     phetioDesigned: true
   } );
   sim.start();
+
+  // EEcircuit hello world test
+  // @ts-expect-error
+  const eesim = new window.EEcircuit.Simulation();
+  await eesim.start();
+
+  // Simple RC circuit netlist
+  const netlist = `RC Circuit Test
+v1 1 0 dc 5
+r1 1 2 1k
+c1 2 0 1u
+.tran 0.01m 5m
+.end`;
+
+  eesim.setNetList( netlist );
+  const result = await eesim.runSim();
+  console.log( 'EEcircuit result:', result );
 } );

@@ -15,7 +15,11 @@
       "circuit-construction-kit-common",
       "twixt",
       "griddle",
-      "bamboo"
+      "bamboo",
+      "sherpa"
+    ],
+    "preload": [
+      "../sherpa/lib/eecircuit-engine-1.5.6.js"
     ],
     "runnable": true,
     "supportedBrands": [

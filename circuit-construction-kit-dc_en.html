@@ -38,7 +38,11 @@
           "circuit-construction-kit-common",
           "twixt",
           "griddle",
-          "bamboo"
+          "bamboo",
+          "sherpa"
+        ],
+        "preload": [
+          "../sherpa/lib/eecircuit-engine-1.5.6.js"
         ],
         "runnable": true,
         "supportedBrands": [
@@ -127,7 +131,8 @@
     '../chipper/js/browser/initialize-globals.js',
     '../sherpa/lib/seedrandom-2.4.2.js',
     '../sherpa/lib/base64-js-1.2.0.js',
-    '../sherpa/lib/TextEncoderLite-3c9f6f0.js'
+    '../sherpa/lib/TextEncoderLite-3c9f6f0.js',
+    '../sherpa/lib/eecircuit-engine-1.5.6.js'
   ];
 
   const query = new URLSearchParams( window.location.search );
