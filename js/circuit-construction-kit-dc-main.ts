@@ -35,9 +35,9 @@ simLauncher.launch( async () => {
   ];
 
   // Initialize EEcircuit solver if using that solver
-  if ( CCKCQueryParameters.solver === 'eecircuit' ) {
+  if ( CCKCQueryParameters.solver === 'spice' ) {
     const { default: EEcircuitSolverManager } = await import(
-      '../../circuit-construction-kit-common/js/model/analysis/EEcircuitSolverManager.js'
+      '../../circuit-construction-kit-common/js/model/analysis/spice/SpiceSolverManager.js'
     );
     await EEcircuitSolverManager.instance.initialize();
   }
