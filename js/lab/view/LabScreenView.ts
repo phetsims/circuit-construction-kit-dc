@@ -70,6 +70,7 @@ class LabScreenView extends CCKCScreenView {
 
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createWireToolNode( tandem ), tandemName: 'wireToolNode4' },
       { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createPencilToolNode( tandem ), tandemName: 'pencilToolNode' },
+      { createNode: ( tandem: Tandem ) => circuitElementToolFactory.createThinPencilToolNode( tandem ), tandemName: 'thinPencilToolNode' },
 
       realBulbItem // The automatic scrolling function assumes this be on the last page.
     ];
