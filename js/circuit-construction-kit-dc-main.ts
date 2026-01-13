@@ -13,7 +13,6 @@ import PreferencesModel from '../../joist/js/preferences/PreferencesModel.js';
 import simLauncher from '../../joist/js/simLauncher.js';
 import Tandem from '../../tandem/js/Tandem.js';
 import CircuitConstructionKitDcStrings from './CircuitConstructionKitDcStrings.js';
-import CodapScreen from './codap/CodapScreen.js';
 import IntroScreen from './intro/IntroScreen.js';
 import LabScreen from './lab/LabScreen.js';
 
@@ -25,25 +24,21 @@ const circuitConstructionKitDcTitleStringProperty = CircuitConstructionKitDcStri
 
 simLauncher.launch( async () => {
 
-  const showCodapScreen = CCKCQueryParameters.codap;
-
-  const screensToShow = showCodapScreen ? [ new CodapScreen( tandem.createTandem( 'codapScreen' ) ) ] : [
-    new IntroScreen( tandem.createTandem( 'introScreen' ) ),
-    new LabScreen( tandem.createTandem( 'labScreen' ), {
-      showNoncontactAmmeters: true
-    } )
-  ];
-
   // Initialize EEcircuit solver if using that solver
   if ( CCKCQueryParameters.solver === 'spice' ) {
     const { default: EEcircuitSolverManager } = await import(
       '../../circuit-construction-kit-common/js/model/analysis/spice/SpiceSolverManager.js'
-    );
+      );
     await EEcircuitSolverManager.instance.initialize();
   }
 
   // Launch the simulation once everything is ready
-  const sim = new CCKCSim( circuitConstructionKitDcTitleStringProperty, screensToShow, {
+  const sim = new CCKCSim( circuitConstructionKitDcTitleStringProperty, [
+    new IntroScreen( tandem.createTandem( 'introScreen' ) ),
+    new LabScreen( tandem.createTandem( 'labScreen' ), {
+      showNoncontactAmmeters: true
+    } )
+  ], {
     preferencesModel: new PreferencesModel( {
       simulationOptions: {
         customPreferences: [ {
