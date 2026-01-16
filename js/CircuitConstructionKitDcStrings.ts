@@ -18,7 +18,6 @@ type StringsType = {
   'screen': {
     'introStringProperty': LocalizedStringProperty;
     'labStringProperty': LocalizedStringProperty;
-    'codapStringProperty': LocalizedStringProperty;
   }
 };
 
