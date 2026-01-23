@@ -6,6 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import CircuitConstructionKitCommonFluent from '../../../../circuit-construction-kit-common/js/CircuitConstructionKitCommonFluent.js';
 import CircuitConstructionKitCommonStrings from '../../../../circuit-construction-kit-common/js/CircuitConstructionKitCommonStrings.js';
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import CCKCScreenView, { CCKCScreenViewOptions } from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
@@ -33,6 +34,7 @@ class LabScreenView extends CCKCScreenView {
           tandem,
           model.circuit.realLightBulbGroup!,
           CircuitConstructionKitCommonStrings.realBulbStringProperty,
+          CircuitConstructionKitCommonFluent.a11y.circuitDescription.circuitComponentTypePlurals.realLightBulbStringProperty,
           true,
           model.addRealBulbsProperty
         );
