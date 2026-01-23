@@ -18,6 +18,14 @@ type StringsType = {
   'screen': {
     'introStringProperty': LocalizedStringProperty;
     'labStringProperty': LocalizedStringProperty;
+  };
+  'a11y': {
+    'introScreen': {
+      'screenButtonsHelpTextStringProperty': LocalizedStringProperty;
+    };
+    'labScreen': {
+      'screenButtonsHelpTextStringProperty': LocalizedStringProperty;
+    }
   }
 };
 

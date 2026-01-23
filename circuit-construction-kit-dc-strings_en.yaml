@@ -1,0 +1,12 @@
+# Strings for PhET's Circuit Construction Kit: DC simulation
+
+circuit-construction-kit-dc.title: 'Circuit Construction Kit: DC'
+
+screen.intro: Intro
+screen.lab:   Lab
+
+a11y:
+  introScreen:
+    screenButtonsHelpText: Build circuits and measure voltage and current.
+  labScreen:
+    screenButtonsHelpText: Build circuits with a larger variety of components and experiment with advanced options.

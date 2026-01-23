@@ -15,6 +15,7 @@ import Image from '../../../scenery/js/nodes/Image.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import labScreenIcon_png from '../../images/labScreenIcon_png.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
+import CircuitConstructionKitDcFluent from '../CircuitConstructionKitDcFluent.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import LabModel from './model/LabModel.js';
 import LabScreenView from './view/LabScreenView.js';
@@ -42,6 +43,7 @@ class LabScreen extends Screen<LabModel, LabScreenView> {
           maxIconHeightProportion: 1
         } ),
         createKeyboardHelpNode: () => new CCKKeyboardHelpNode(),
+        screenButtonsHelpText: CircuitConstructionKitDcFluent.a11y.labScreen.screenButtonsHelpTextStringProperty,
         tandem: tandem,
         maxDT: CCKCConstants.MAX_DT
       }

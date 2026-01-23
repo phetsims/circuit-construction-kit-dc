@@ -7,5 +7,17 @@
   },
   "screen.lab": {
     "value": "Lab"
+  },
+  "a11y": {
+    "introScreen": {
+      "screenButtonsHelpText": {
+        "value": "Build circuits and measure voltage and current."
+      }
+    },
+    "labScreen": {
+      "screenButtonsHelpText": {
+        "value": "Build circuits with a larger variety of components and experiment with advanced options."
+      }
+    }
   }
 }

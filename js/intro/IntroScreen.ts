@@ -17,6 +17,7 @@ import Image from '../../../scenery/js/nodes/Image.js';
 import Rectangle from '../../../scenery/js/nodes/Rectangle.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
+import CircuitConstructionKitDcFluent from '../CircuitConstructionKitDcFluent.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import IntroModel from './model/IntroModel.js';
 import IntroScreenView from './view/IntroScreenView.js';
@@ -58,6 +59,7 @@ class IntroScreen extends Screen<IntroModel, IntroScreenView> {
         maxIconHeightProportion: 1
       } ),
       createKeyboardHelpNode: () => new CCKKeyboardHelpNode(),
+      screenButtonsHelpText: CircuitConstructionKitDcFluent.a11y.introScreen.screenButtonsHelpTextStringProperty,
       tandem: tandem,
       maxDT: CCKCConstants.MAX_DT
     };
