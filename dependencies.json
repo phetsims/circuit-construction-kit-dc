@@ -1,11 +1,11 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.5.0-dev.3 Fri Jan 30 2026 09:09:02 GMT-0700 (Mountain Standard Time)",
+  "comment": "# circuit-construction-kit-dc 1.5.0-dev.4 Wed Feb 04 2026 14:37:50 GMT-0700 (Mountain Standard Time)",
   "assert": {
     "sha": "1a4637cfff70e7e8b0844dc43848a86ae89b4cf5",
     "branch": "main"
   },
   "axon": {
-    "sha": "86fd899eb258d289cb339399a38f8b12b0e64818",
+    "sha": "5aed9439631251e9c50a53a6da698564d39cebbb",
     "branch": "main"
   },
   "bamboo": {
@@ -21,11 +21,11 @@
     "branch": "main"
   },
   "circuit-construction-kit-common": {
-    "sha": "96d6b2168d8e3d9bdea0d3d063dd792dffb8c997",
+    "sha": "7d592af6a2e392a75b3637e4d71263077b133bcc",
     "branch": "main"
   },
   "circuit-construction-kit-dc": {
-    "sha": "7f589bfa95843e963aa5fc4ea29bce94ea9b46aa",
+    "sha": "8b9e6a46dc7a3b9d663564c332c10da3f63a8557",
     "branch": "main"
   },
   "dot": {
@@ -33,7 +33,7 @@
     "branch": "main"
   },
   "griddle": {
-    "sha": "3db85e8ad5190cd9d1bae2fd8de9c73e24b6fae2",
+    "sha": "9c3f2d79ed255b9e358d7e0a878125f37ccf736e",
     "branch": "main"
   },
   "joist": {
@@ -45,7 +45,7 @@
     "branch": "main"
   },
   "perennial-alias": {
-    "sha": "d42a481b537ee94f9e1171a234288af4e8f9341d",
+    "sha": "b4a81c2e1382ea4e8cc084c2536de43a77ceb7d9",
     "branch": "main"
   },
   "phet-core": {
@@ -57,7 +57,7 @@
     "branch": "main"
   },
   "phet-io-sim-specific": {
-    "sha": "2a1876672297b58b9bc4b0b9652bb1cd14d52184",
+    "sha": "efacb54684ea0609ec03bdd19120847017faad31",
     "branch": "main"
   },
   "phet-io-wrappers": {
@@ -77,15 +77,15 @@
     "branch": "main"
   },
   "scenery": {
-    "sha": "d1b27840df69f8c4f2c367e530541f18065fad3a",
+    "sha": "b3cc31f118c52e3690ddd0464d3baa2a6b33dbe8",
     "branch": "main"
   },
   "scenery-phet": {
-    "sha": "dc365d507a42c2a8cd33c2ee0aa99b70e813d3fa",
+    "sha": "92e414c6558552bc6078917f2366b6ee831e707c",
     "branch": "main"
   },
   "sherpa": {
-    "sha": "2ff8289402eec347800c6c03b6fdfb5132622536",
+    "sha": "0272dcb1af47cc793701dcd7eae0fea72328eb09",
     "branch": "main"
   },
   "studio": {
@@ -93,7 +93,7 @@
     "branch": "main"
   },
   "sun": {
-    "sha": "2c7abcf830a2beed74bab0a79a96b311a84926ba",
+    "sha": "bf52f8caab7803f24c1f16bdf5c0697b68133fa1",
     "branch": "main"
   },
   "tambo": {
