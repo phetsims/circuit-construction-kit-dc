@@ -39,3 +39,6 @@ For an exemplar, see https://github.com/phetsims/balancing-chemical-equations/bl
 
 ### Other Changes
 * Increased the maximum number of switches from 5 to 10.
+* Added a button to open/close the selected switch.
+* Added a button to disconnect the selected component from the circuit.
+* Changed the label of high-voltage and high-resistance components to begin with "Extreme".
