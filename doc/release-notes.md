@@ -36,9 +36,11 @@ For an exemplar, see https://github.com/phetsims/balancing-chemical-equations/bl
 * Interactive Highlights: see _Preferences > Visual > Interactive Highlights_
 * Basic Sound
 * Core Description
+* New circuit component: Thin Pencil
+* Button to open/close the selected switch
+* Button to disconnect the selected component from the circuit
 
 ### Other Changes
 * Increased the maximum number of switches from 5 to 10.
-* Added a button to open/close the selected switch.
-* Added a button to disconnect the selected component from the circuit.
-* Changed the label of high-voltage and high-resistance components to begin with "Extreme".
+* High-voltage and high-resistance circuit component labels begin with "Extreme".
+* Improved color contrast.
