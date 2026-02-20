@@ -6,6 +6,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  */
 
+import CCKCConstants from '../../circuit-construction-kit-common/js/CCKCConstants.js';
 import CCKCQueryParameters from '../../circuit-construction-kit-common/js/CCKCQueryParameters.js';
 import CCKCSim from '../../circuit-construction-kit-common/js/view/CCKCSim.js';
 import CCKCSimulationPreferencesContentNode from '../../circuit-construction-kit-common/js/view/CCKCSimulationPreferencesContentNode.js';
@@ -48,13 +49,7 @@ simLauncher.launch( async () => {
         } ]
       }
     } ),
-    credits: {
-      leadDesign: 'Amy Rouinfar',
-      softwareDevelopment: 'Sam Reid, Denzell Barnett, Matthew Blackman',
-      team: 'Michael Dubson, Ariel Paul, Kathy Perkins, Wendy Adams, Carl Wieman',
-      qualityAssurance: 'Jaspe Arias, Steele Dalton, Amanda Davis, Alex Dornan, Jaron Droder, Bryce Griebenow, Clifford Hardin, Ethan Johnson, Megan Lai, Brooklyn Lash, Emily Miller, Matthew Moore, Ashton Morris, Liam Mulhall, Devon Quispe, Ben Roberts, Jacob Romero, Nancy Salpepi, Marla Schulz, Ethan Ward, Kathryn Woessner',
-      graphicArts: 'Bryce Gruneich, Mariah Hermsmeyer, Cheryl McCutchan'
-    },
+    credits: CCKCConstants.CREDITS,
     phetioDesigned: true
   } );
   sim.start();
