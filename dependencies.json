@@ -1,15 +1,15 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.5.0-dev.4 Wed Feb 04 2026 14:37:50 GMT-0700 (Mountain Standard Time)",
+  "comment": "# circuit-construction-kit-dc 1.5.0-dev.5 Fri Feb 20 2026 06:26:16 GMT-0700 (Mountain Standard Time)",
   "assert": {
-    "sha": "1a4637cfff70e7e8b0844dc43848a86ae89b4cf5",
+    "sha": "4fa534de08d265643688965bf233cb73326c3cb7",
     "branch": "main"
   },
   "axon": {
-    "sha": "5aed9439631251e9c50a53a6da698564d39cebbb",
+    "sha": "f39f107a8c3791fb02a192ab8c83302352afa64f",
     "branch": "main"
   },
   "bamboo": {
-    "sha": "de88c8850a3a6b9bf083d7959d5fc5089c809e94",
+    "sha": "5d83d846e0b085a866f8ef6217e57680e683459a",
     "branch": "main"
   },
   "brand": {
@@ -17,39 +17,39 @@
     "branch": "main"
   },
   "chipper": {
-    "sha": "d000627a01d63233d74464960ccf217091bdc826",
+    "sha": "edcacc2a3b14b7a5836f40f2d04b75f9a0864997",
     "branch": "main"
   },
   "circuit-construction-kit-common": {
-    "sha": "7d592af6a2e392a75b3637e4d71263077b133bcc",
+    "sha": "69afc1d469b38060654f8993d2f320b75205aa73",
     "branch": "main"
   },
   "circuit-construction-kit-dc": {
-    "sha": "8b9e6a46dc7a3b9d663564c332c10da3f63a8557",
+    "sha": "6fb6d1482ff742e0538508542eb0d5a87689a509",
     "branch": "main"
   },
   "dot": {
-    "sha": "d53993a52d17d70df0030c77f8fb1d61ce9b02f1",
+    "sha": "e171982c0a535924cffff003849b4954e78effe6",
     "branch": "main"
   },
   "griddle": {
-    "sha": "9c3f2d79ed255b9e358d7e0a878125f37ccf736e",
+    "sha": "5b7053173cb71d7671a7f97068f5d54ee62bb950",
     "branch": "main"
   },
   "joist": {
-    "sha": "443c05277c8a29c4eb5ee32729e6b656c670428b",
+    "sha": "362881cae85f06dd9e5e9b9133693d9458f98eec",
     "branch": "main"
   },
   "kite": {
-    "sha": "c2247535a060fcc9cf5d3b82f76d8a65ee451d37",
+    "sha": "ffeb3d65a0cb51940323117c2d7e93cc0260dbe1",
     "branch": "main"
   },
   "perennial-alias": {
-    "sha": "b4a81c2e1382ea4e8cc084c2536de43a77ceb7d9",
+    "sha": "e8414d7cb0b64b2c7d202f33f01b821c747667e5",
     "branch": "main"
   },
   "phet-core": {
-    "sha": "0d7de8ddf7b2b3dfcbe0abdd2332e784ec6acc15",
+    "sha": "ea1c4f3f52a2703f5f3f7f359d75e8d38a499344",
     "branch": "main"
   },
   "phet-io": {
@@ -57,7 +57,7 @@
     "branch": "main"
   },
   "phet-io-sim-specific": {
-    "sha": "efacb54684ea0609ec03bdd19120847017faad31",
+    "sha": "e9adc384151fd3b7a2fecf841fcf739e4bf44729",
     "branch": "main"
   },
   "phet-io-wrappers": {
@@ -65,11 +65,11 @@
     "branch": "main"
   },
   "phetcommon": {
-    "sha": "9403a9e598b5656b601c7ecd345bf6a4ff41fb63",
+    "sha": "3517f9a7c3f5cc0cab593c3e47562db967e69144",
     "branch": "main"
   },
   "phetmarks": {
-    "sha": "1ea943a9f23a38646e764ed7cb679c7381c2df8b",
+    "sha": "e7683f3b7ea42982c6a0332716bbf6b1476f8227",
     "branch": "main"
   },
   "query-string-machine": {
@@ -77,15 +77,15 @@
     "branch": "main"
   },
   "scenery": {
-    "sha": "b3cc31f118c52e3690ddd0464d3baa2a6b33dbe8",
+    "sha": "cabc1373b74437a50f7e26b65da20829a6ecdc07",
     "branch": "main"
   },
   "scenery-phet": {
-    "sha": "92e414c6558552bc6078917f2366b6ee831e707c",
+    "sha": "33cec83616444bdedf0f8ffd879f1f527ebbe2ec",
     "branch": "main"
   },
   "sherpa": {
-    "sha": "0272dcb1af47cc793701dcd7eae0fea72328eb09",
+    "sha": "1af5338e83919131e778a4c814994fda5d3a82bf",
     "branch": "main"
   },
   "studio": {
@@ -93,19 +93,19 @@
     "branch": "main"
   },
   "sun": {
-    "sha": "bf52f8caab7803f24c1f16bdf5c0697b68133fa1",
+    "sha": "1624e090553d879e700ca9c21aaad07cd0f32db6",
     "branch": "main"
   },
   "tambo": {
-    "sha": "691b39440cac26e562137a052fc27629d2d5897c",
+    "sha": "804a218d738b74b87d20b93c2e0babb49aa26045",
     "branch": "main"
   },
   "tandem": {
-    "sha": "7a397f84d2d2a03529832e9093fe3b1fc2e37c18",
+    "sha": "f7504238b954752bee54b4d8d19f186bb6fb1fa0",
     "branch": "main"
   },
   "twixt": {
-    "sha": "49b9b291339b3474036568ac6eddf71c973958cb",
+    "sha": "1944fc3e3a7504926d86c651fb1b3e6fccb3aec2",
     "branch": "main"
   },
   "utterance-queue": {
