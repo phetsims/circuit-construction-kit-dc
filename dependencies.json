@@ -1,5 +1,5 @@
 {
-  "comment": "# circuit-construction-kit-dc 1.5.0-rc.1 Fri Feb 27 2026 14:08:03 GMT-0700 (Mountain Standard Time)",
+  "comment": "# circuit-construction-kit-dc 1.5.0-rc.1 Mon Mar 16 2026 11:46:36 GMT-0600 (Mountain Daylight Time)",
   "assert": {
     "sha": "4fa534de08d265643688965bf233cb73326c3cb7",
     "branch": "HEAD"
@@ -21,11 +21,11 @@
     "branch": "HEAD"
   },
   "circuit-construction-kit-common": {
-    "sha": "2283746746fdb05b3fe3041ed5bdb1d059e39b0d",
-    "branch": "HEAD"
+    "sha": "d3c304e089d3f2375cfd821b418f2a602c70da5e",
+    "branch": "circuit-construction-kit-dc-1.5"
   },
   "circuit-construction-kit-dc": {
-    "sha": "0297493bc157fff21e8038b465439f137d2d8d14",
+    "sha": "ee41307332c19f26e249419fc96a3f53817e7641",
     "branch": "1.5"
   },
   "dot": {
@@ -57,8 +57,8 @@
     "branch": "HEAD"
   },
   "phet-io-sim-specific": {
-    "sha": "0ac2fdd2223ea9e97c2bed161450442f8b09acc2",
-    "branch": "HEAD"
+    "sha": "9b9d871088bd14babb662da0180fee2b76c33493",
+    "branch": "circuit-construction-kit-dc-1.5"
   },
   "phet-io-wrappers": {
     "sha": "02882cd512270b24b3072ad2a4089c638c50305c",
@@ -77,8 +77,8 @@
     "branch": "HEAD"
   },
   "scenery": {
-    "sha": "5481340b766b28f95d9bc3eb1c936f8dbbf0866a",
-    "branch": "HEAD"
+    "sha": "04a1c5c04e0cdaf3382948fa7416f4925bdc9eb1",
+    "branch": "circuit-construction-kit-dc-1.5"
   },
   "scenery-phet": {
     "sha": "c7ff170569f6b5a12a5c64f5660a7b8bf3ddd264",
