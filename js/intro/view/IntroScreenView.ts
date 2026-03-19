@@ -10,7 +10,6 @@ import CCKCConstants from '../../../../circuit-construction-kit-common/js/CCKCCo
 import CCKCScreenView from '../../../../circuit-construction-kit-common/js/view/CCKCScreenView.js';
 import CircuitElementToolFactory from '../../../../circuit-construction-kit-common/js/view/CircuitElementToolFactory.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 import IntroModel from '../model/IntroModel.js';
 
 class IntroScreenView extends CCKCScreenView {
@@ -55,5 +54,4 @@ class IntroScreenView extends CCKCScreenView {
   }
 }
 
-circuitConstructionKitDc.register( 'IntroScreenView', IntroScreenView );
 export default IntroScreenView;

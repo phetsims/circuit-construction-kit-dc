@@ -14,7 +14,6 @@ import CircuitElementToolFactory from '../../../../circuit-construction-kit-comm
 import merge from '../../../../phet-core/js/merge.js';
 import { CarouselItem } from '../../../../sun/js/Carousel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
 class LabScreenView extends CCKCScreenView {
 
@@ -97,5 +96,4 @@ class LabScreenView extends CCKCScreenView {
   }
 }
 
-circuitConstructionKitDc.register( 'LabScreenView', LabScreenView );
 export default LabScreenView;

@@ -14,7 +14,6 @@ import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import Tandem from '../../../tandem/js/Tandem.js';
 import labScreenIcon_png from '../../images/labScreenIcon_png.js';
-import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import CircuitConstructionKitDcFluent from '../CircuitConstructionKitDcFluent.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import LabModel from './model/LabModel.js';
@@ -51,5 +50,4 @@ class LabScreen extends Screen<LabModel, LabScreenView> {
   }
 }
 
-circuitConstructionKitDc.register( 'LabScreen', LabScreen );
 export default LabScreen;

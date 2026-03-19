@@ -62,5 +62,3 @@ const CircuitConstructionKitDcFluent = {
 };
 
 export default CircuitConstructionKitDcFluent;
-
-circuitConstructionKitDc.register('CircuitConstructionKitDcFluent', CircuitConstructionKitDcFluent);

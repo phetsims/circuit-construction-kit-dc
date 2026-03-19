@@ -8,7 +8,6 @@
 
 import CircuitConstructionKitModel from '../../../../circuit-construction-kit-common/js/model/CircuitConstructionKitModel.js';
 import Tandem from '../../../../tandem/js/Tandem.js';
-import circuitConstructionKitDc from '../../circuitConstructionKitDc.js';
 
 class IntroModel extends CircuitConstructionKitModel {
 
@@ -17,5 +16,4 @@ class IntroModel extends CircuitConstructionKitModel {
   }
 }
 
-circuitConstructionKitDc.register( 'IntroModel', IntroModel );
 export default IntroModel;

@@ -16,7 +16,6 @@ import ScreenIcon from '../../../joist/js/ScreenIcon.js';
 import Image from '../../../scenery/js/nodes/Image.js';
 import Rectangle from '../../../scenery/js/nodes/Rectangle.js';
 import Tandem from '../../../tandem/js/Tandem.js';
-import circuitConstructionKitDc from '../circuitConstructionKitDc.js';
 import CircuitConstructionKitDcFluent from '../CircuitConstructionKitDcFluent.js';
 import CircuitConstructionKitDcStrings from '../CircuitConstructionKitDcStrings.js';
 import IntroModel from './model/IntroModel.js';
@@ -72,5 +71,4 @@ class IntroScreen extends Screen<IntroModel, IntroScreenView> {
   }
 }
 
-circuitConstructionKitDc.register( 'IntroScreen', IntroScreen );
 export default IntroScreen;
