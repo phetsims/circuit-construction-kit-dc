@@ -1,4 +1,4 @@
-// Copyright 2017-2023, University of Colorado Boulder
+// Copyright 2017-2026, University of Colorado Boulder
 
 /**
  * Model for the Lab Screen.
