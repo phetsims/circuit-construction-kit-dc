@@ -29,7 +29,7 @@ For an exemplar, see https://github.com/phetsims/balancing-chemical-equations/bl
 *
 -->
 
-## 1.5 (YYYY-MM-DD)
+## 1.5 (2026-03-31)
 
 ### New Features
 * Alternative Input
