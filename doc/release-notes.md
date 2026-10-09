@@ -9,7 +9,7 @@ Instructions:
 * Developer and designer should collaborate on what to include for any release beyond 1.0. 
 * For each new version, add a section to the top of these release notes - reverse chronological order, with the most-recent version at the top.
 
-For an exemplar, see https://github.com/phetsims/balancing-chemical-equations/blob/main/doc/release-notes.md
+For an exemplar, see [release-notes.md](../../balancing-chemical-equations/doc/release-notes.md)
 -->
 
 <!-- 
